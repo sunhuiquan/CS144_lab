@@ -1,3 +1,14 @@
+# My Lab Experience
+1.环境我用的是自己搭建的Ubuntu虚拟机，版本20，工具链搭建十分简单，比当时我搭建xv6的工具舒服了多少倍，不过也可能是我踩坑踩出来了。。。
+
+2.除了lab的pdf之外，一定要看sponge的documentary，在里头可以找到要用的TCPsocket。
+
+3.Lab本身很普通，也不难，但出了个非常让我预料不到的bug，当我开了代理的时候，vscode单步调试正常出结果，而vscode直接运行和bash直接执行都没有输出，简直玄幻。后来意外关掉代理后结果正常，我被整吐了🤮。
+
+***
+
+# This is the initial README.md with the lab0.
+
 For build prereqs, see [the CS144 VM setup instructions](https://web.stanford.edu/class/cs144/vm_howto).
 
 ## Sponge quickstart

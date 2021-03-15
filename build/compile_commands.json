@@ -1,0 +1,97 @@
+[
+{
+  "directory": "/home/suen/Work/CS144_lab/build/libsponge",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/sponge.dir/byte_stream.cc.o -c /home/suen/Work/CS144_lab/libsponge/byte_stream.cc",
+  "file": "/home/suen/Work/CS144_lab/libsponge/byte_stream.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/libsponge",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/sponge.dir/util/address.cc.o -c /home/suen/Work/CS144_lab/libsponge/util/address.cc",
+  "file": "/home/suen/Work/CS144_lab/libsponge/util/address.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/libsponge",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/sponge.dir/util/buffer.cc.o -c /home/suen/Work/CS144_lab/libsponge/util/buffer.cc",
+  "file": "/home/suen/Work/CS144_lab/libsponge/util/buffer.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/libsponge",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/sponge.dir/util/eventloop.cc.o -c /home/suen/Work/CS144_lab/libsponge/util/eventloop.cc",
+  "file": "/home/suen/Work/CS144_lab/libsponge/util/eventloop.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/libsponge",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/sponge.dir/util/file_descriptor.cc.o -c /home/suen/Work/CS144_lab/libsponge/util/file_descriptor.cc",
+  "file": "/home/suen/Work/CS144_lab/libsponge/util/file_descriptor.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/libsponge",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/sponge.dir/util/parser.cc.o -c /home/suen/Work/CS144_lab/libsponge/util/parser.cc",
+  "file": "/home/suen/Work/CS144_lab/libsponge/util/parser.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/libsponge",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/sponge.dir/util/socket.cc.o -c /home/suen/Work/CS144_lab/libsponge/util/socket.cc",
+  "file": "/home/suen/Work/CS144_lab/libsponge/util/socket.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/libsponge",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/sponge.dir/util/tun.cc.o -c /home/suen/Work/CS144_lab/libsponge/util/tun.cc",
+  "file": "/home/suen/Work/CS144_lab/libsponge/util/tun.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/libsponge",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/sponge.dir/util/util.cc.o -c /home/suen/Work/CS144_lab/libsponge/util/util.cc",
+  "file": "/home/suen/Work/CS144_lab/libsponge/util/util.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/apps",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/webget.dir/webget.cc.o -c /home/suen/Work/CS144_lab/apps/webget.cc",
+  "file": "/home/suen/Work/CS144_lab/apps/webget.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/tests",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/byte_stream_many_writes.dir/byte_stream_many_writes.cc.o -c /home/suen/Work/CS144_lab/tests/byte_stream_many_writes.cc",
+  "file": "/home/suen/Work/CS144_lab/tests/byte_stream_many_writes.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/tests",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/byte_stream_capacity.dir/byte_stream_capacity.cc.o -c /home/suen/Work/CS144_lab/tests/byte_stream_capacity.cc",
+  "file": "/home/suen/Work/CS144_lab/tests/byte_stream_capacity.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/tests",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/byte_stream_two_writes.dir/byte_stream_two_writes.cc.o -c /home/suen/Work/CS144_lab/tests/byte_stream_two_writes.cc",
+  "file": "/home/suen/Work/CS144_lab/tests/byte_stream_two_writes.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/tests",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/byte_stream_one_write.dir/byte_stream_one_write.cc.o -c /home/suen/Work/CS144_lab/tests/byte_stream_one_write.cc",
+  "file": "/home/suen/Work/CS144_lab/tests/byte_stream_one_write.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/tests",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/byte_stream_construction.dir/byte_stream_construction.cc.o -c /home/suen/Work/CS144_lab/tests/byte_stream_construction.cc",
+  "file": "/home/suen/Work/CS144_lab/tests/byte_stream_construction.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/tests",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/spongechecks.dir/byte_stream_test_harness.cc.o -c /home/suen/Work/CS144_lab/tests/byte_stream_test_harness.cc",
+  "file": "/home/suen/Work/CS144_lab/tests/byte_stream_test_harness.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/doctests",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/parser_dt.dir/parser_dt.cc.o -c /home/suen/Work/CS144_lab/doctests/parser_dt.cc",
+  "file": "/home/suen/Work/CS144_lab/doctests/parser_dt.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/doctests",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/socket_dt.dir/socket_dt.cc.o -c /home/suen/Work/CS144_lab/doctests/socket_dt.cc",
+  "file": "/home/suen/Work/CS144_lab/doctests/socket_dt.cc"
+},
+{
+  "directory": "/home/suen/Work/CS144_lab/build/doctests",
+  "command": "/usr/bin/c++   -I/home/suen/Work/CS144_lab/libsponge/util -I/home/suen/Work/CS144_lab/libsponge/tcp_helpers -I/home/suen/Work/CS144_lab/libsponge   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/address_dt.dir/address_dt.cc.o -c /home/suen/Work/CS144_lab/doctests/address_dt.cc",
+  "file": "/home/suen/Work/CS144_lab/doctests/address_dt.cc"
+}
+]

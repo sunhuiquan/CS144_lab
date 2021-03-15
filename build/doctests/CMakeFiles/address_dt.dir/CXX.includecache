@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libsponge/util/address.hh
+cstddef
+-
+cstdint
+-
+netdb.h
+-
+netinet/in.h
+-
+string
+-
+sys/socket.h
+-
+utility
+-
+
+/home/suen/Work/CS144_lab/doctests/address_dt.cc
+address.hh
+/home/suen/Work/CS144_lab/doctests/address.hh
+cstdlib
+-
+iostream
+-
+stdexcept
+-
+address_example_1.cc
+/home/suen/Work/CS144_lab/doctests/address_example_1.cc
+address_example_2.cc
+/home/suen/Work/CS144_lab/doctests/address_example_2.cc
+address_example_3.cc
+/home/suen/Work/CS144_lab/doctests/address_example_3.cc
+
+/home/suen/Work/CS144_lab/doctests/address_example_1.cc
+
+/home/suen/Work/CS144_lab/doctests/address_example_2.cc
+
+/home/suen/Work/CS144_lab/doctests/address_example_3.cc
+

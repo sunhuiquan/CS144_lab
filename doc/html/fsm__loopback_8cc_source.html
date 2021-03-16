@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Doc Lab 0: tests/fsm_loopback.cc 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Doc Lab 0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('fsm__loopback_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">fsm_loopback.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;tcp_config.hh&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;tcp_expectation.hh&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;tcp_fsm_test_harness.hh&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;tcp_header.hh&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;tcp_segment.hh&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;util.hh&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using</span> State = <a class="code" href="classTCPTestHarness.html#adc9a7b18d3fa7c40eea57fd2d5d2fe50">TCPTestHarness::State</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">static</span> constexpr <span class="keywordtype">unsigned</span> NREPS = 64;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> main() {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        TCPConfig cfg{};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        cfg.recv_capacity = 65000;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">auto</span> rd = get_random_generator();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">// loop segments back into the same FSM</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> rep_no = 0; rep_no &lt; NREPS; ++rep_no) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keyword">const</span> WrappingInt32 rx_offset(rd());</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <a class="code" href="classTCPTestHarness.html">TCPTestHarness</a> test_1 = <a class="code" href="classTCPTestHarness.html#abdfadfd3e54f715c1a5eeea350b593ed">TCPTestHarness::in_established</a>(cfg, rx_offset - 1, rx_offset - 1);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            test_1.<a class="code" href="classTCPTestHarness.html#a908763d9a18e86a8f6a8165b696a3866">send_ack</a>(rx_offset, rx_offset, 65000);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">string</span> d(cfg.recv_capacity, 0);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            generate(d.begin(), d.end(), [&amp;] { return rd(); });</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordtype">size_t</span> sendoff = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">while</span> (sendoff &lt; d.size()) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">size_t</span> len = min(d.size() - sendoff, <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(rd()) % 8192);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">if</span> (len == 0) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                test_1.<a class="code" href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">execute</a>(<a class="code" href="structWrite.html">Write</a>{d.substr(sendoff, len)});</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                test_1.<a class="code" href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">execute</a>(<a class="code" href="structTick.html">Tick</a>(1));</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                test_1.<a class="code" href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">execute</a>(<a class="code" href="structExpectBytesInFlight.html">ExpectBytesInFlight</a>{len});</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                test_1.<a class="code" href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">execute</a>(<a class="code" href="structExpectSegmentAvailable.html">ExpectSegmentAvailable</a>{}, <span class="stringliteral">&quot;test 1 failed: cannot read after write()&quot;</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordtype">size_t</span> n_segments = ceil(<span class="keywordtype">double</span>(len) / TCPConfig::MAX_PAYLOAD_SIZE);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keywordtype">size_t</span> bytes_remaining = len;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="comment">// Transfer the data segments</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n_segments; ++i) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    <span class="keywordtype">size_t</span> expected_size = min(bytes_remaining, TCPConfig::MAX_PAYLOAD_SIZE);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <span class="keyword">auto</span> seg = test_1.<a class="code" href="classTCPTestHarness.html#a10121d170e37ffd755b1c624b5897653">expect_seg</a>(<a class="code" href="structExpectSegment.html">ExpectSegment</a>{}.with_payload_size(expected_size));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    bytes_remaining -= expected_size;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    test_1.<a class="code" href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">execute</a>(<a class="code" href="structSendSegment.html">SendSegment</a>{move(seg)});</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    test_1.<a class="code" href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">execute</a>(<a class="code" href="structTick.html">Tick</a>(1));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="comment">// Transfer the (bare) ack segments</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n_segments; ++i) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    <span class="keyword">auto</span> seg = test_1.<a class="code" href="classTCPTestHarness.html#a10121d170e37ffd755b1c624b5897653">expect_seg</a>(<a class="code" href="structExpectSegment.html">ExpectSegment</a>{}.with_ack(<span class="keyword">true</span>).with_payload_size(0));</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    test_1.<a class="code" href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">execute</a>(<a class="code" href="structSendSegment.html">SendSegment</a>{move(seg)});</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    test_1.<a class="code" href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">execute</a>(<a class="code" href="structTick.html">Tick</a>(1));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                test_1.<a class="code" href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">execute</a>(<a class="code" href="structExpectNoSegment.html">ExpectNoSegment</a>{});</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                test_1.<a class="code" href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">execute</a>(<a class="code" href="structExpectBytesInFlight.html">ExpectBytesInFlight</a>{0});</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                sendoff += len;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            test_1.<a class="code" href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">execute</a>(<a class="code" href="structExpectData.html">ExpectData</a>{}.with_data(d), <span class="stringliteral">&quot;test 1 falied: got back the wrong data&quot;</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> exception &amp;e) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        cerr &lt;&lt; e.what() &lt;&lt; endl;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> EXIT_FAILURE;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="astructWrite_html"><div class="ttname"><a href="structWrite.html">Write</a></div><div class="ttdef"><b>Definition:</b> <a href="byte__stream__test__harness_8hh_source.html#l00049">byte_stream_test_harness.hh:49</a></div></div>
+<div class="ttc" id="astructExpectNoSegment_html"><div class="ttname"><a href="structExpectNoSegment.html">ExpectNoSegment</a></div><div class="ttdef"><b>Definition:</b> <a href="sender__harness_8hh_source.html#l00102">sender_harness.hh:102</a></div></div>
+<div class="ttc" id="aclassTCPTestHarness_html_a50506739389063689876de9d402e3213"><div class="ttname"><a href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">TCPTestHarness::execute</a></div><div class="ttdeci">void execute(const TCPTestStep &amp;step, std::string note=&quot;&quot;)</div><div class="ttdoc">execute one step in a test.</div><div class="ttdef"><b>Definition:</b> <a href="tcp__fsm__test__harness_8cc_source.html#l00144">tcp_fsm_test_harness.cc:144</a></div></div>
+<div class="ttc" id="aclassTCPTestHarness_html"><div class="ttname"><a href="classTCPTestHarness.html">TCPTestHarness</a></div><div class="ttdoc">Test adapter for TCPConnection</div><div class="ttdef"><b>Definition:</b> <a href="tcp__fsm__test__harness_8hh_source.html#l00059">tcp_fsm_test_harness.hh:59</a></div></div>
+<div class="ttc" id="astructExpectSegmentAvailable_html"><div class="ttname"><a href="structExpectSegmentAvailable.html">ExpectSegmentAvailable</a></div><div class="ttdef"><b>Definition:</b> <a href="tcp__expectation_8hh_source.html#l00097">tcp_expectation.hh:97</a></div></div>
+<div class="ttc" id="astructSendSegment_html"><div class="ttname"><a href="structSendSegment.html">SendSegment</a></div><div class="ttdef"><b>Definition:</b> <a href="tcp__expectation_8hh_source.html#l00385">tcp_expectation.hh:385</a></div></div>
+<div class="ttc" id="astructExpectSegment_html"><div class="ttname"><a href="structExpectSegment.html">ExpectSegment</a></div><div class="ttdef"><b>Definition:</b> <a href="sender__harness_8hh_source.html#l00213">sender_harness.hh:213</a></div></div>
+<div class="ttc" id="aclassTCPTestHarness_html_a10121d170e37ffd755b1c624b5897653"><div class="ttname"><a href="classTCPTestHarness.html#a10121d170e37ffd755b1c624b5897653">TCPTestHarness::expect_seg</a></div><div class="ttdeci">TCPSegment expect_seg(const ExpectSegment &amp;expectation, std::string note=&quot;&quot;)</div><div class="ttdoc">expect and read a segment</div><div class="ttdef"><b>Definition:</b> <a href="tcp__fsm__test__harness_8cc_source.html#l00167">tcp_fsm_test_harness.cc:167</a></div></div>
+<div class="ttc" id="aclassTCPTestHarness_html_abdfadfd3e54f715c1a5eeea350b593ed"><div class="ttname"><a href="classTCPTestHarness.html#abdfadfd3e54f715c1a5eeea350b593ed">TCPTestHarness::in_established</a></div><div class="ttdeci">static TCPTestHarness in_established(const TCPConfig &amp;cfg, const WrappingInt32 tx_isn=WrappingInt32{0}, const WrappingInt32 rx_isn=WrappingInt32{0})</div><div class="ttdoc">Create an FSM with an established connection</div><div class="ttdef"><b>Definition:</b> <a href="tcp__fsm__test__harness_8cc_source.html#l00207">tcp_fsm_test_harness.cc:207</a></div></div>
+<div class="ttc" id="astructTick_html"><div class="ttname"><a href="structTick.html">Tick</a></div><div class="ttdef"><b>Definition:</b> <a href="sender__harness_8hh_source.html#l00141">sender_harness.hh:141</a></div></div>
+<div class="ttc" id="astructExpectBytesInFlight_html"><div class="ttname"><a href="structExpectBytesInFlight.html">ExpectBytesInFlight</a></div><div class="ttdef"><b>Definition:</b> <a href="sender__harness_8hh_source.html#l00086">sender_harness.hh:86</a></div></div>
+<div class="ttc" id="astructExpectData_html"><div class="ttname"><a href="structExpectData.html">ExpectData</a></div><div class="ttdef"><b>Definition:</b> <a href="tcp__expectation_8hh_source.html#l00054">tcp_expectation.hh:54</a></div></div>
+<div class="ttc" id="aclassTCPTestHarness_html_adc9a7b18d3fa7c40eea57fd2d5d2fe50"><div class="ttname"><a href="classTCPTestHarness.html#adc9a7b18d3fa7c40eea57fd2d5d2fe50">TCPTestHarness::State</a></div><div class="ttdeci">TCPState::State State</div><div class="ttdoc">TCP state names</div><div class="ttdef"><b>Definition:</b> <a href="tcp__fsm__test__harness_8hh_source.html#l00067">tcp_fsm_test_harness.hh:67</a></div></div>
+<div class="ttc" id="aclassTCPTestHarness_html_a908763d9a18e86a8f6a8165b696a3866"><div class="ttname"><a href="classTCPTestHarness.html#a908763d9a18e86a8f6a8165b696a3866">TCPTestHarness::send_ack</a></div><div class="ttdeci">void send_ack(const WrappingInt32 seqno, const WrappingInt32 ackno, const std::optional&lt; uint16_t &gt; swin={})</div><div class="ttdoc">construct an ACK segment and inject it into TCPConnection</div><div class="ttdef"><b>Definition:</b> <a href="tcp__fsm__test__harness_8cc_source.html#l00087">tcp_fsm_test_harness.cc:87</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><b>fsm_loopback.cc</b></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

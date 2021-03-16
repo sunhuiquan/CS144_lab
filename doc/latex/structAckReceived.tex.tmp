@@ -1,0 +1,46 @@
+\hypertarget{structAckReceived}{}\doxysection{Ack\+Received结构体 参考}
+\label{structAckReceived}\index{AckReceived@{AckReceived}}
+
+
+类 Ack\+Received 继承关系图\+:
+% FIG 0
+
+
+Ack\+Received 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structAckReceived_a09713178999f7faa10b765d81a2704f8}\label{structAckReceived_a09713178999f7faa10b765d81a2704f8}} 
+{\bfseries Ack\+Received} (Wrapping\+Int32 ackno)
+\item 
+\mbox{\Hypertarget{structAckReceived_a46dc3457312bafdd5cacf19e4c2ef59a}\label{structAckReceived_a46dc3457312bafdd5cacf19e4c2ef59a}} 
+std\+::string {\bfseries description} () const
+\item 
+\mbox{\Hypertarget{structAckReceived_a4115827163cf667bccaaa58cf08be01e}\label{structAckReceived_a4115827163cf667bccaaa58cf08be01e}} 
+\mbox{\hyperlink{structAckReceived}{Ack\+Received}} \& {\bfseries with\+\_\+win} (uint16\+\_\+t win)
+\item 
+\mbox{\Hypertarget{structAckReceived_a5a3b9c0673fe38afcd16128edc79265b}\label{structAckReceived_a5a3b9c0673fe38afcd16128edc79265b}} 
+void {\bfseries execute} (T\+C\+P\+Sender \&sender, std\+::deque$<$ T\+C\+P\+Segment $>$ \&) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structAckReceived_adb759f99e3e87f3c9e57fee9a0064afc}\label{structAckReceived_adb759f99e3e87f3c9e57fee9a0064afc}} 
+Wrapping\+Int32 {\bfseries \+\_\+ackno}
+\item 
+\mbox{\Hypertarget{structAckReceived_aa556d7ddf95fb0d0103d3ebace738750}\label{structAckReceived_aa556d7ddf95fb0d0103d3ebace738750}} 
+std\+::optional$<$ uint16\+\_\+t $>$ {\bfseries \+\_\+window\+\_\+advertisement} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 sender\+\_\+harness.\+hh 第 179 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+tests/sender\+\_\+harness.\+hh\end{DoxyCompactItemize}

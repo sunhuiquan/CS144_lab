@@ -1,0 +1,30 @@
+digraph "类继承关系图"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="SenderTestStep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structSenderTestStep.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="SenderAction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structSenderAction.html",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AckReceived",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAckReceived.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Close",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structClose.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Tick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structTick.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="WriteBytes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structWriteBytes.html",tooltip=" "];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SenderExpectation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structSenderExpectation.html",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ExpectBytesInFlight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structExpectBytesInFlight.html",tooltip=" "];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ExpectNoSegment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structExpectNoSegment.html",tooltip=" "];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="ExpectSegment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structExpectSegment.html",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="ExpectOneSegment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structExpectOneSegment.html",tooltip=" "];
+  Node6 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="ExpectSeqno",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structExpectSeqno.html",tooltip=" "];
+}

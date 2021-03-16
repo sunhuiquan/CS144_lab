@@ -1,0 +1,71 @@
+\hypertarget{classBufferViewList}{}\doxysection{Buffer\+View\+List类 参考}
+\label{classBufferViewList}\index{BufferViewList@{BufferViewList}}
+
+
+A non-\/owning temporary view (similar to std\+::string\+\_\+view) of a discontiguous string  
+
+
+
+
+{\ttfamily \#include $<$buffer.\+hh$>$}
+
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBufferViewList_ace022dad8cc79a20aa14bab51176a7c0}\label{classBufferViewList_ace022dad8cc79a20aa14bab51176a7c0}} 
+void \mbox{\hyperlink{classBufferViewList_ace022dad8cc79a20aa14bab51176a7c0}{remove\+\_\+prefix}} (size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Discard the first {\ttfamily n} bytes of the string (does not require a copy or move) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBufferViewList_a6cc68814c2de37a7fac9faacd0844431}\label{classBufferViewList_a6cc68814c2de37a7fac9faacd0844431}} 
+size\+\_\+t \mbox{\hyperlink{classBufferViewList_a6cc68814c2de37a7fac9faacd0844431}{size}} () const
+\begin{DoxyCompactList}\small\item\em Size of the string \end{DoxyCompactList}\item 
+std\+::vector$<$ iovec $>$ \mbox{\hyperlink{classBufferViewList_ad3e793bc8cd723ff74c584778b851697}{as\+\_\+iovecs}} () const
+\begin{DoxyCompactList}\small\item\em Convert to a vector of {\ttfamily iovec} structures \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Constructors}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBufferViewList_a4afd1f5bd264564e7a5b1cdef72d6c92}\label{classBufferViewList_a4afd1f5bd264564e7a5b1cdef72d6c92}} 
+\mbox{\hyperlink{classBufferViewList_a4afd1f5bd264564e7a5b1cdef72d6c92}{Buffer\+View\+List}} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Construct from a std\+::string \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBufferViewList_a296f21f97ec6b39d10e47992edf6c085}\label{classBufferViewList_a296f21f97ec6b39d10e47992edf6c085}} 
+\mbox{\hyperlink{classBufferViewList_a296f21f97ec6b39d10e47992edf6c085}{Buffer\+View\+List}} (const char $\ast$s)
+\begin{DoxyCompactList}\small\item\em Construct from a C string (must be N\+U\+L\+L-\/terminated) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBufferViewList_ae2b3812450026f7eba65a82802b7b966}\label{classBufferViewList_ae2b3812450026f7eba65a82802b7b966}} 
+\mbox{\hyperlink{classBufferViewList_ae2b3812450026f7eba65a82802b7b966}{Buffer\+View\+List}} (const \mbox{\hyperlink{classBufferList}{Buffer\+List}} \&buffers)
+\begin{DoxyCompactList}\small\item\em Construct from a \mbox{\hyperlink{classBufferList}{Buffer\+List}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBufferViewList_a486daed0a873f16c47f60761922882d3}\label{classBufferViewList_a486daed0a873f16c47f60761922882d3}} 
+\mbox{\hyperlink{classBufferViewList_a486daed0a873f16c47f60761922882d3}{Buffer\+View\+List}} (std\+::string\+\_\+view str)
+\begin{DoxyCompactList}\small\item\em Construct from a std\+::string\+\_\+view \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{详细描述}
+A non-\/owning temporary view (similar to std\+::string\+\_\+view) of a discontiguous string 
+
+在文件 buffer.\+hh 第 97 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classBufferViewList_ad3e793bc8cd723ff74c584778b851697}\label{classBufferViewList_ad3e793bc8cd723ff74c584778b851697}} 
+\index{BufferViewList@{BufferViewList}!as\_iovecs@{as\_iovecs}}
+\index{as\_iovecs@{as\_iovecs}!BufferViewList@{BufferViewList}}
+\doxysubsubsection{\texorpdfstring{as\_iovecs()}{as\_iovecs()}}
+{\footnotesize\ttfamily vector$<$ iovec $>$ Buffer\+View\+List\+::as\+\_\+iovecs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Convert to a vector of {\ttfamily iovec} structures 
+
+\begin{DoxyNote}{注解}
+used for system calls that write discontiguous buffers, e.\+g. writev(2) and sendmsg(2) 
+\end{DoxyNote}
+
+
+在文件 buffer.\+cc 第 97 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+libsponge/util/buffer.\+hh\item 
+libsponge/util/buffer.\+cc\end{DoxyCompactItemize}

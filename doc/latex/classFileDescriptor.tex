@@ -1,0 +1,162 @@
+\hypertarget{classFileDescriptor}{}\doxysection{File\+Descriptor类 参考}
+\label{classFileDescriptor}\index{FileDescriptor@{FileDescriptor}}
+
+
+A reference-\/counted handle to a file descriptor  
+
+
+
+
+{\ttfamily \#include $<$file\+\_\+descriptor.\+hh$>$}
+
+
+
+类 File\+Descriptor 继承关系图\+:
+% FIG 0
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFileDescriptor_a38601e6502236d3f0c6f0a0e53c1b94b}{File\+Descriptor}} (const int fd)
+\begin{DoxyCompactList}\small\item\em Construct from a file descriptor number returned by the kernel \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFileDescriptor_a0e44b13a4b20c5966fd417a8226f57c6}\label{classFileDescriptor_a0e44b13a4b20c5966fd417a8226f57c6}} 
+\mbox{\hyperlink{classFileDescriptor_a0e44b13a4b20c5966fd417a8226f57c6}{$\sim$\+File\+Descriptor}} ()=default
+\begin{DoxyCompactList}\small\item\em Free the std\+::shared\+\_\+ptr; the F\+D\+Wrapper destructor calls \mbox{\hyperlink{classFileDescriptor_a0b4c184bbf05d8882b1c93c30fc797d3}{close()}} when the refcount goes to zero. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classFileDescriptor_a78855a48fc15ec7ae673c56b652de915}{read}} (const size\+\_\+t limit=std\+::numeric\+\_\+limits$<$ size\+\_\+t $>$\+::max())
+\begin{DoxyCompactList}\small\item\em Read up to {\ttfamily limit} bytes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFileDescriptor_a91f3db1adeefd12d3f15feb8c7e611db}{read}} (std\+::string \&str, const size\+\_\+t limit=std\+::numeric\+\_\+limits$<$ size\+\_\+t $>$\+::max())
+\begin{DoxyCompactList}\small\item\em Read up to {\ttfamily limit} bytes into {\ttfamily str} (caller can allocate storage) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFileDescriptor_aade41c7d139523e1b57df81687504278}\label{classFileDescriptor_aade41c7d139523e1b57df81687504278}} 
+size\+\_\+t \mbox{\hyperlink{classFileDescriptor_aade41c7d139523e1b57df81687504278}{write}} (const char $\ast$str, const bool write\+\_\+all=true)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structWrite}{Write}} a string, possibly blocking until all is written \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFileDescriptor_af9be4ebca27ab3edca2df582121fca1b}\label{classFileDescriptor_af9be4ebca27ab3edca2df582121fca1b}} 
+size\+\_\+t \mbox{\hyperlink{classFileDescriptor_af9be4ebca27ab3edca2df582121fca1b}{write}} (const std\+::string \&str, const bool write\+\_\+all=true)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structWrite}{Write}} a string, possibly blocking until all is written \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFileDescriptor_a8a326f9a32a86c2c6a093bae571bca4b}\label{classFileDescriptor_a8a326f9a32a86c2c6a093bae571bca4b}} 
+size\+\_\+t \mbox{\hyperlink{classFileDescriptor_a8a326f9a32a86c2c6a093bae571bca4b}{write}} (\mbox{\hyperlink{classBufferViewList}{Buffer\+View\+List}} buffer, const bool write\+\_\+all=true)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structWrite}{Write}} a buffer (or list of buffers), possibly blocking until all is written \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFileDescriptor_a0b4c184bbf05d8882b1c93c30fc797d3}\label{classFileDescriptor_a0b4c184bbf05d8882b1c93c30fc797d3}} 
+void \mbox{\hyperlink{classFileDescriptor_a0b4c184bbf05d8882b1c93c30fc797d3}{close}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structClose}{Close}} the underlying file descriptor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} \mbox{\hyperlink{classFileDescriptor_a4d88ff579b074022a82de830fed5caa6}{duplicate}} () const
+\begin{DoxyCompactList}\small\item\em Copy a \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} explicitly, increasing the F\+D\+Wrapper refcount \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFileDescriptor_aac68fd3da7f579a3912aeb4eabd5fcb0}\label{classFileDescriptor_aac68fd3da7f579a3912aeb4eabd5fcb0}} 
+void \mbox{\hyperlink{classFileDescriptor_aac68fd3da7f579a3912aeb4eabd5fcb0}{set\+\_\+blocking}} (const bool blocking\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Set blocking(true) or non-\/blocking(false) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Copy/move constructor/assignment operators}\par
+{\em \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} can be moved, but cannot be copied (but see \mbox{\hyperlink{classFileDescriptor_a4d88ff579b074022a82de830fed5caa6}{duplicate()}}) }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFileDescriptor_adbc8da70d830f97e117b0297b9227059}\label{classFileDescriptor_adbc8da70d830f97e117b0297b9227059}} 
+\mbox{\hyperlink{classFileDescriptor_adbc8da70d830f97e117b0297b9227059}{File\+Descriptor}} (const \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} \&other)=delete
+\begin{DoxyCompactList}\small\item\em copy construction is forbidden \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFileDescriptor_a7258fe94b5f058dc5b9207af89aa82a7}\label{classFileDescriptor_a7258fe94b5f058dc5b9207af89aa82a7}} 
+\mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} \& \mbox{\hyperlink{classFileDescriptor_a7258fe94b5f058dc5b9207af89aa82a7}{operator=}} (const \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} \&other)=delete
+\begin{DoxyCompactList}\small\item\em copy assignment is forbidden \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFileDescriptor_a38559c18c541145e783ece7637ffb214}\label{classFileDescriptor_a38559c18c541145e783ece7637ffb214}} 
+\mbox{\hyperlink{classFileDescriptor_a38559c18c541145e783ece7637ffb214}{File\+Descriptor}} (\mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} \&\&other)=default
+\begin{DoxyCompactList}\small\item\em move construction is allowed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFileDescriptor_ad7b5d9f69a013a9231fa4dc73fc67b54}\label{classFileDescriptor_ad7b5d9f69a013a9231fa4dc73fc67b54}} 
+\mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} \& \mbox{\hyperlink{classFileDescriptor_ad7b5d9f69a013a9231fa4dc73fc67b54}{operator=}} (\mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} \&\&other)=default
+\begin{DoxyCompactList}\small\item\em move assignment is allowed \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{详细描述}
+A reference-\/counted handle to a file descriptor 
+
+In addition, \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} tracks E\+OF state and calls to \mbox{\hyperlink{classFileDescriptor_a78855a48fc15ec7ae673c56b652de915}{File\+Descriptor\+::read}} and \mbox{\hyperlink{classFileDescriptor_aade41c7d139523e1b57df81687504278}{File\+Descriptor\+::write}}, which \mbox{\hyperlink{classEventLoop}{Event\+Loop}} uses to detect busy loop conditions.
+
+For an example of \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} use, see the \mbox{\hyperlink{classEventLoop}{Event\+Loop}} class documentation. 
+
+在文件 file\+\_\+descriptor.\+hh 第 12 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classFileDescriptor_a38601e6502236d3f0c6f0a0e53c1b94b}\label{classFileDescriptor_a38601e6502236d3f0c6f0a0e53c1b94b}} 
+\index{FileDescriptor@{FileDescriptor}!FileDescriptor@{FileDescriptor}}
+\index{FileDescriptor@{FileDescriptor}!FileDescriptor@{FileDescriptor}}
+\doxysubsubsection{\texorpdfstring{FileDescriptor()}{FileDescriptor()}}
+{\footnotesize\ttfamily File\+Descriptor\+::\+File\+Descriptor (\begin{DoxyParamCaption}\item[{const int}]{fd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct from a file descriptor number returned by the kernel 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em fd} & is the file descriptor number returned by open(2) or similar \\
+\hline
+\end{DoxyParams}
+
+
+在文件 file\+\_\+descriptor.\+cc 第 39 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classFileDescriptor_a4d88ff579b074022a82de830fed5caa6}\label{classFileDescriptor_a4d88ff579b074022a82de830fed5caa6}} 
+\index{FileDescriptor@{FileDescriptor}!duplicate@{duplicate}}
+\index{duplicate@{duplicate}!FileDescriptor@{FileDescriptor}}
+\doxysubsubsection{\texorpdfstring{duplicate()}{duplicate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} File\+Descriptor\+::duplicate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Copy a \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} explicitly, increasing the F\+D\+Wrapper refcount 
+
+\begin{DoxyReturn}{返回}
+a copy of this \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} 
+\end{DoxyReturn}
+
+
+在文件 file\+\_\+descriptor.\+cc 第 45 行定义.
+
+\mbox{\Hypertarget{classFileDescriptor_a78855a48fc15ec7ae673c56b652de915}\label{classFileDescriptor_a78855a48fc15ec7ae673c56b652de915}} 
+\index{FileDescriptor@{FileDescriptor}!read@{read}}
+\index{read@{read}!FileDescriptor@{FileDescriptor}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string File\+Descriptor\+::read (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{limit = {\ttfamily std\+:\+:numeric\+\_\+limits$<$size\+\_\+t$>$\+:\+:max()} }\end{DoxyParamCaption})}
+
+
+
+Read up to {\ttfamily limit} bytes 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em limit} & is the maximum number of bytes to read; fewer bytes may be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+a vector of bytes read 
+\end{DoxyReturn}
+
+
+在文件 file\+\_\+descriptor.\+cc 第 68 行定义.
+
+\mbox{\Hypertarget{classFileDescriptor_a91f3db1adeefd12d3f15feb8c7e611db}\label{classFileDescriptor_a91f3db1adeefd12d3f15feb8c7e611db}} 
+\index{FileDescriptor@{FileDescriptor}!read@{read}}
+\index{read@{read}!FileDescriptor@{FileDescriptor}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void File\+Descriptor\+::read (\begin{DoxyParamCaption}\item[{std\+::string \&}]{str,  }\item[{const size\+\_\+t}]{limit = {\ttfamily std\+:\+:numeric\+\_\+limits$<$size\+\_\+t$>$\+:\+:max()} }\end{DoxyParamCaption})}
+
+
+
+Read up to {\ttfamily limit} bytes into {\ttfamily str} (caller can allocate storage) 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em limit} & is the maximum number of bytes to read; fewer bytes may be returned \\
+\hline
+\mbox{\texttt{ out}}  & {\em str} & is the string to be read \\
+\hline
+\end{DoxyParams}
+
+
+在文件 file\+\_\+descriptor.\+cc 第 49 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+libsponge/util/file\+\_\+descriptor.\+hh\item 
+libsponge/util/file\+\_\+descriptor.\+cc\end{DoxyCompactItemize}

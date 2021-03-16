@@ -1,0 +1,8 @@
+digraph "类继承关系图"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="UDPSocket::received\l_datagram",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUDPSocket_1_1received__datagram.html",tooltip="Returned by UDPSocket::recv; carries received data and information about the sender"];
+}

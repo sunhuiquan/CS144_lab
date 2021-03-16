@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Doc Lab 0: ByteStream类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Doc Lab 0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classByteStream.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classByteStream-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ByteStream类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>An in-order byte stream.  
+ <a href="classByteStream.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="byte__stream_8hh_source.html">byte_stream.hh</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a6a344e7b329f769ecd44d337323cb599"><td class="memItemLeft" align="right" valign="top"><a id="a6a344e7b329f769ecd44d337323cb599"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#a6a344e7b329f769ecd44d337323cb599">ByteStream</a> (const size_t capacity)</td></tr>
+<tr class="memdesc:a6a344e7b329f769ecd44d337323cb599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a stream with room for <code>capacity</code> bytes. <br /></td></tr>
+<tr class="separator:a6a344e7b329f769ecd44d337323cb599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">"Input" interface for the writer</div></td></tr>
+<tr class="memitem:a449f69921c565304b92b38d43b059500"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#a449f69921c565304b92b38d43b059500">write</a> (const std::string &amp;data)</td></tr>
+<tr class="separator:a449f69921c565304b92b38d43b059500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14145f1e6c963f8e010fd6df7c758f2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#aa14145f1e6c963f8e010fd6df7c758f2">remaining_capacity</a> () const</td></tr>
+<tr class="separator:aa14145f1e6c963f8e010fd6df7c758f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef2c209ade239e09b336589d40f31150"><td class="memItemLeft" align="right" valign="top"><a id="aef2c209ade239e09b336589d40f31150"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#aef2c209ade239e09b336589d40f31150">end_input</a> ()</td></tr>
+<tr class="memdesc:aef2c209ade239e09b336589d40f31150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal that the byte stream has reached its ending <br /></td></tr>
+<tr class="separator:aef2c209ade239e09b336589d40f31150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816938c16b076aac391eaf239794254f"><td class="memItemLeft" align="right" valign="top"><a id="a816938c16b076aac391eaf239794254f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#a816938c16b076aac391eaf239794254f">set_error</a> ()</td></tr>
+<tr class="memdesc:a816938c16b076aac391eaf239794254f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate that the stream suffered an error. <br /></td></tr>
+<tr class="separator:a816938c16b076aac391eaf239794254f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">"Output" interface for the reader</div></td></tr>
+<tr class="memitem:aeb60af8552d0410933556235a457f725"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#aeb60af8552d0410933556235a457f725">peek_output</a> (const size_t len) const</td></tr>
+<tr class="separator:aeb60af8552d0410933556235a457f725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62172814cd4ed0314c1772d931eaed2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#ae62172814cd4ed0314c1772d931eaed2">pop_output</a> (const size_t len)</td></tr>
+<tr class="memdesc:ae62172814cd4ed0314c1772d931eaed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove bytes from the buffer  <a href="classByteStream.html#ae62172814cd4ed0314c1772d931eaed2">更多...</a><br /></td></tr>
+<tr class="separator:ae62172814cd4ed0314c1772d931eaed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a682c7b2501245dd98385789c2deb0bdf"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#a682c7b2501245dd98385789c2deb0bdf">read</a> (const size_t len)</td></tr>
+<tr class="separator:a682c7b2501245dd98385789c2deb0bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a4a5050f50476e40535dbdbbfccfad1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#a4a4a5050f50476e40535dbdbbfccfad1">input_ended</a> () const</td></tr>
+<tr class="separator:a4a4a5050f50476e40535dbdbbfccfad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38189e3b81bf6b3eab5b6feab91272a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#ac38189e3b81bf6b3eab5b6feab91272a">error</a> () const</td></tr>
+<tr class="separator:ac38189e3b81bf6b3eab5b6feab91272a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab654cd52ea3d99c72cbc716ebac41118"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#ab654cd52ea3d99c72cbc716ebac41118">buffer_size</a> () const</td></tr>
+<tr class="separator:ab654cd52ea3d99c72cbc716ebac41118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af017091c7be77b4df190f03284899af4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#af017091c7be77b4df190f03284899af4">buffer_empty</a> () const</td></tr>
+<tr class="separator:af017091c7be77b4df190f03284899af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c2ddd9f4f4c0ac2bb88b4625e32c86a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#a7c2ddd9f4f4c0ac2bb88b4625e32c86a">eof</a> () const</td></tr>
+<tr class="separator:a7c2ddd9f4f4c0ac2bb88b4625e32c86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">General accounting</div></td></tr>
+<tr class="memitem:a3ec6c5ae2cd07b542946074196d0e930"><td class="memItemLeft" align="right" valign="top"><a id="a3ec6c5ae2cd07b542946074196d0e930"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#a3ec6c5ae2cd07b542946074196d0e930">bytes_written</a> () const</td></tr>
+<tr class="memdesc:a3ec6c5ae2cd07b542946074196d0e930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of bytes written <br /></td></tr>
+<tr class="separator:a3ec6c5ae2cd07b542946074196d0e930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0985ed739d369795deb8e12619b362"><td class="memItemLeft" align="right" valign="top"><a id="a2f0985ed739d369795deb8e12619b362"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classByteStream.html#a2f0985ed739d369795deb8e12619b362">bytes_read</a> () const</td></tr>
+<tr class="memdesc:a2f0985ed739d369795deb8e12619b362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of bytes popped <br /></td></tr>
+<tr class="separator:a2f0985ed739d369795deb8e12619b362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>An in-order byte stream. </p>
+<p>Bytes are written on the "input" side and read from the "output" side. The byte stream is finite: the writer can end the input, and then no more bytes can be written. </p>
+
+<p class="definition">在文件 <a class="el" href="byte__stream_8hh_source.html">byte_stream.hh</a> 第 <a class="el" href="byte__stream_8hh_source.html#l00016">16</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="af017091c7be77b4df190f03284899af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af017091c7be77b4df190f03284899af4">&#9670;&nbsp;</a></span>buffer_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ByteStream::buffer_empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if the buffer is empty </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="byte__stream_8cc_source.html">byte_stream.cc</a> 第 <a class="el" href="byte__stream_8cc_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab654cd52ea3d99c72cbc716ebac41118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab654cd52ea3d99c72cbc716ebac41118">&#9670;&nbsp;</a></span>buffer_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ByteStream::buffer_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the maximum amount that can currently be read from the stream </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="byte__stream_8cc_source.html">byte_stream.cc</a> 第 <a class="el" href="byte__stream_8cc_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7c2ddd9f4f4c0ac2bb88b4625e32c86a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c2ddd9f4f4c0ac2bb88b4625e32c86a">&#9670;&nbsp;</a></span>eof()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ByteStream::eof </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if the output has reached the ending </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="byte__stream_8cc_source.html">byte_stream.cc</a> 第 <a class="el" href="byte__stream_8cc_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac38189e3b81bf6b3eab5b6feab91272a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38189e3b81bf6b3eab5b6feab91272a">&#9670;&nbsp;</a></span>error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ByteStream::error </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if the stream has suffered an error </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="byte__stream_8hh_source.html">byte_stream.hh</a> 第 <a class="el" href="byte__stream_8hh_source.html#l00066">66</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4a4a5050f50476e40535dbdbbfccfad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a4a5050f50476e40535dbdbbfccfad1">&#9670;&nbsp;</a></span>input_ended()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ByteStream::input_ended </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd><code>true</code> if the stream input has ended </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="byte__stream_8cc_source.html">byte_stream.cc</a> 第 <a class="el" href="byte__stream_8cc_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aeb60af8552d0410933556235a457f725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb60af8552d0410933556235a457f725">&#9670;&nbsp;</a></span>peek_output()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ByteStream::peek_output </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="structPeek.html">Peek</a> at next "len" bytes of the stream </p><dl class="section return"><dt>返回</dt><dd>a string</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>bytes will be copied from the output side of the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="byte__stream_8cc_source.html">byte_stream.cc</a> 第 <a class="el" href="byte__stream_8cc_source.html#l00027">27</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae62172814cd4ed0314c1772d931eaed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae62172814cd4ed0314c1772d931eaed2">&#9670;&nbsp;</a></span>pop_output()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ByteStream::pop_output </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove bytes from the buffer </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>bytes will be removed from the output side of the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="byte__stream_8cc_source.html">byte_stream.cc</a> 第 <a class="el" href="byte__stream_8cc_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a682c7b2501245dd98385789c2deb0bdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a682c7b2501245dd98385789c2deb0bdf">&#9670;&nbsp;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ByteStream::read </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Read (i.e., copy and then pop) the next "len" bytes of the stream </p><dl class="section return"><dt>返回</dt><dd>a vector of bytes read </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="byte__stream_8hh_source.html">byte_stream.hh</a> 第 <a class="el" href="byte__stream_8hh_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa14145f1e6c963f8e010fd6df7c758f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa14145f1e6c963f8e010fd6df7c758f2">&#9670;&nbsp;</a></span>remaining_capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ByteStream::remaining_capacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>返回</dt><dd>the number of additional bytes that the stream has space for </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="byte__stream_8cc_source.html">byte_stream.cc</a> 第 <a class="el" href="byte__stream_8cc_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a449f69921c565304b92b38d43b059500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a449f69921c565304b92b38d43b059500">&#9670;&nbsp;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ByteStream::write </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="structWrite.html">Write</a> a string of bytes into the stream. <a class="el" href="structWrite.html">Write</a> as many as will fit, and return how many were written. </p><dl class="section return"><dt>返回</dt><dd>the number of bytes accepted into the stream </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="byte__stream_8cc_source.html">byte_stream.cc</a> 第 <a class="el" href="byte__stream_8cc_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>libsponge/<a class="el" href="byte__stream_8hh_source.html">byte_stream.hh</a></li>
+<li>libsponge/<a class="el" href="byte__stream_8cc_source.html">byte_stream.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classByteStream.html">ByteStream</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

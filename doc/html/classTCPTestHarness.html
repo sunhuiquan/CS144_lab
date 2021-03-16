@@ -1,0 +1,1035 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Doc Lab 0: TCPTestHarness类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Doc Lab 0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classTCPTestHarness.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classTCPTestHarness-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">TCPTestHarness类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Test adapter for TCPConnection  
+ <a href="classTCPTestHarness.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="tcp__fsm__test__harness_8hh_source.html">tcp_fsm_test_harness.hh</a>&gt;</code></p>
+<div class="dynheader">
+TCPTestHarness 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTCPTestHarness__coll__graph.png" border="0" usemap="#TCPTestHarness_coll__map" alt="Collaboration graph"/></div>
+<!-- MAP 0 -->
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:adc9a7b18d3fa7c40eea57fd2d5d2fe50"><td class="memItemLeft" align="right" valign="top"><a id="adc9a7b18d3fa7c40eea57fd2d5d2fe50"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#adc9a7b18d3fa7c40eea57fd2d5d2fe50">State</a> = TCPState::State</td></tr>
+<tr class="memdesc:adc9a7b18d3fa7c40eea57fd2d5d2fe50"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP state names <br /></td></tr>
+<tr class="separator:adc9a7b18d3fa7c40eea57fd2d5d2fe50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2558ee1e47c27219f1c304156ebbe66b"><td class="memItemLeft" align="right" valign="top"><a id="a2558ee1e47c27219f1c304156ebbe66b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a2558ee1e47c27219f1c304156ebbe66b">VecIterT</a> = std::string::const_iterator</td></tr>
+<tr class="memdesc:a2558ee1e47c27219f1c304156ebbe66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for a const iterator to a vector of bytes <br /></td></tr>
+<tr class="separator:a2558ee1e47c27219f1c304156ebbe66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae5deb4ae3a35dc230456e51c3c749bf1"><td class="memItemLeft" align="right" valign="top"><a id="ae5deb4ae3a35dc230456e51c3c749bf1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#ae5deb4ae3a35dc230456e51c3c749bf1">TCPTestHarness</a> (const TCPConfig &amp;c_fsm={})</td></tr>
+<tr class="memdesc:ae5deb4ae3a35dc230456e51c3c749bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a test harness, optionally passing a configuration to the TCPConnection under test <br /></td></tr>
+<tr class="separator:ae5deb4ae3a35dc230456e51c3c749bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d11746f61a3147671648b7489a78373"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a7d11746f61a3147671648b7489a78373">send_fin</a> (const WrappingInt32 seqno, const std::optional&lt; WrappingInt32 &gt; ackno={})</td></tr>
+<tr class="memdesc:a7d11746f61a3147671648b7489a78373"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct a FIN segment and inject it into TCPConnection  <a href="classTCPTestHarness.html#a7d11746f61a3147671648b7489a78373">更多...</a><br /></td></tr>
+<tr class="separator:a7d11746f61a3147671648b7489a78373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908763d9a18e86a8f6a8165b696a3866"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a908763d9a18e86a8f6a8165b696a3866">send_ack</a> (const WrappingInt32 seqno, const WrappingInt32 ackno, const std::optional&lt; uint16_t &gt; swin={})</td></tr>
+<tr class="memdesc:a908763d9a18e86a8f6a8165b696a3866"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct an ACK segment and inject it into TCPConnection  <a href="classTCPTestHarness.html#a908763d9a18e86a8f6a8165b696a3866">更多...</a><br /></td></tr>
+<tr class="separator:a908763d9a18e86a8f6a8165b696a3866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae4c4e2233373fbc85f313f4e156b7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#aaae4c4e2233373fbc85f313f4e156b7d">send_rst</a> (const WrappingInt32 seqno, const std::optional&lt; WrappingInt32 &gt; ackno={})</td></tr>
+<tr class="memdesc:aaae4c4e2233373fbc85f313f4e156b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct a RST segment and inject it into TCPConnection  <a href="classTCPTestHarness.html#aaae4c4e2233373fbc85f313f4e156b7d">更多...</a><br /></td></tr>
+<tr class="separator:aaae4c4e2233373fbc85f313f4e156b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac90d80502a3db093e3f1904b0dd89ff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#ac90d80502a3db093e3f1904b0dd89ff0">send_syn</a> (const WrappingInt32 seqno, const std::optional&lt; WrappingInt32 &gt; ackno={})</td></tr>
+<tr class="memdesc:ac90d80502a3db093e3f1904b0dd89ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct a SYN segment and inject it into TCPConnection  <a href="classTCPTestHarness.html#ac90d80502a3db093e3f1904b0dd89ff0">更多...</a><br /></td></tr>
+<tr class="separator:ac90d80502a3db093e3f1904b0dd89ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322a1d10c9ef803061bdef7109cb2006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a322a1d10c9ef803061bdef7109cb2006">send_byte</a> (const WrappingInt32 seqno, const std::optional&lt; WrappingInt32 &gt; ackno, const uint8_t val)</td></tr>
+<tr class="memdesc:a322a1d10c9ef803061bdef7109cb2006"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct a segment containing one byte and inject it into TCPConnection  <a href="classTCPTestHarness.html#a322a1d10c9ef803061bdef7109cb2006">更多...</a><br /></td></tr>
+<tr class="separator:a322a1d10c9ef803061bdef7109cb2006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5426f9eed523b6364cf9a0f1bebe50ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a5426f9eed523b6364cf9a0f1bebe50ec">send_data</a> (const WrappingInt32 seqno, const WrappingInt32 ackno, <a class="el" href="classTCPTestHarness.html#a2558ee1e47c27219f1c304156ebbe66b">VecIterT</a> begin, <a class="el" href="classTCPTestHarness.html#a2558ee1e47c27219f1c304156ebbe66b">VecIterT</a> end)</td></tr>
+<tr class="memdesc:a5426f9eed523b6364cf9a0f1bebe50ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct a segment containing the specified payload and inject it into TCPConnection  <a href="classTCPTestHarness.html#a5426f9eed523b6364cf9a0f1bebe50ec">更多...</a><br /></td></tr>
+<tr class="separator:a5426f9eed523b6364cf9a0f1bebe50ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b69827e550890e372822fb2835c4e4"><td class="memItemLeft" align="right" valign="top"><a id="a80b69827e550890e372822fb2835c4e4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a80b69827e550890e372822fb2835c4e4">can_read</a> () const</td></tr>
+<tr class="memdesc:a80b69827e550890e372822fb2835c4e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">is it possible to read from the <a class="el" href="classTestFdAdapter.html" title="An FdAdapterBase that writes to a TestFD. Does not (need to) support reading.">TestFdAdapter</a> (i.e., read a segment TCPConnection previously wrote)? <br /></td></tr>
+<tr class="separator:a80b69827e550890e372822fb2835c4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50506739389063689876de9d402e3213"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">execute</a> (const <a class="el" href="structTCPTestStep.html">TCPTestStep</a> &amp;step, std::string note=&quot;&quot;)</td></tr>
+<tr class="memdesc:a50506739389063689876de9d402e3213"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute one step in a test.  <a href="classTCPTestHarness.html#a50506739389063689876de9d402e3213">更多...</a><br /></td></tr>
+<tr class="separator:a50506739389063689876de9d402e3213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10121d170e37ffd755b1c624b5897653"><td class="memItemLeft" align="right" valign="top">TCPSegment&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a10121d170e37ffd755b1c624b5897653">expect_seg</a> (const <a class="el" href="structExpectSegment.html">ExpectSegment</a> &amp;expectation, std::string note=&quot;&quot;)</td></tr>
+<tr class="memdesc:a10121d170e37ffd755b1c624b5897653"><td class="mdescLeft">&#160;</td><td class="mdescRight">expect and read a segment  <a href="classTCPTestHarness.html#a10121d170e37ffd755b1c624b5897653">更多...</a><br /></td></tr>
+<tr class="separator:a10121d170e37ffd755b1c624b5897653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a9efb53d2e3b82b8047da05890037dd14"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classTCPTestHarness.html">TCPTestHarness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a9efb53d2e3b82b8047da05890037dd14">in_listen</a> (const TCPConfig &amp;cfg)</td></tr>
+<tr class="memdesc:a9efb53d2e3b82b8047da05890037dd14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an FSM in the "LISTEN" state.  <a href="classTCPTestHarness.html#a9efb53d2e3b82b8047da05890037dd14">更多...</a><br /></td></tr>
+<tr class="separator:a9efb53d2e3b82b8047da05890037dd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ceca5078cc5c2df8d494aa80f07189"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classTCPTestHarness.html">TCPTestHarness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#af4ceca5078cc5c2df8d494aa80f07189">in_syn_sent</a> (const TCPConfig &amp;cfg, const WrappingInt32 tx_isn=WrappingInt32{0})</td></tr>
+<tr class="memdesc:af4ceca5078cc5c2df8d494aa80f07189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an FSM which has sent a SYN.  <a href="classTCPTestHarness.html#af4ceca5078cc5c2df8d494aa80f07189">更多...</a><br /></td></tr>
+<tr class="separator:af4ceca5078cc5c2df8d494aa80f07189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfadfd3e54f715c1a5eeea350b593ed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classTCPTestHarness.html">TCPTestHarness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#abdfadfd3e54f715c1a5eeea350b593ed">in_established</a> (const TCPConfig &amp;cfg, const WrappingInt32 tx_isn=WrappingInt32{0}, const WrappingInt32 rx_isn=WrappingInt32{0})</td></tr>
+<tr class="memdesc:abdfadfd3e54f715c1a5eeea350b593ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an FSM with an established connection  <a href="classTCPTestHarness.html#abdfadfd3e54f715c1a5eeea350b593ed">更多...</a><br /></td></tr>
+<tr class="separator:abdfadfd3e54f715c1a5eeea350b593ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a009d0b767cf6f934bfdda7fd76d403b2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classTCPTestHarness.html">TCPTestHarness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a009d0b767cf6f934bfdda7fd76d403b2">in_close_wait</a> (const TCPConfig &amp;cfg, const WrappingInt32 tx_isn=WrappingInt32{0}, const WrappingInt32 rx_isn=WrappingInt32{0})</td></tr>
+<tr class="memdesc:a009d0b767cf6f934bfdda7fd76d403b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an FSM in CLOSE_WAIT  <a href="classTCPTestHarness.html#a009d0b767cf6f934bfdda7fd76d403b2">更多...</a><br /></td></tr>
+<tr class="separator:a009d0b767cf6f934bfdda7fd76d403b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90553f7db8c3b6adddc92b4754f3fa3c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classTCPTestHarness.html">TCPTestHarness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a90553f7db8c3b6adddc92b4754f3fa3c">in_last_ack</a> (const TCPConfig &amp;cfg, const WrappingInt32 tx_isn=WrappingInt32{0}, const WrappingInt32 rx_isn=WrappingInt32{0})</td></tr>
+<tr class="memdesc:a90553f7db8c3b6adddc92b4754f3fa3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an FSM in LAST_ACK  <a href="classTCPTestHarness.html#a90553f7db8c3b6adddc92b4754f3fa3c">更多...</a><br /></td></tr>
+<tr class="separator:a90553f7db8c3b6adddc92b4754f3fa3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6399be899fd83890da0e66799ae6af39"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classTCPTestHarness.html">TCPTestHarness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a6399be899fd83890da0e66799ae6af39">in_fin_wait_1</a> (const TCPConfig &amp;cfg, const WrappingInt32 tx_isn=WrappingInt32{0}, const WrappingInt32 rx_isn=WrappingInt32{0})</td></tr>
+<tr class="memdesc:a6399be899fd83890da0e66799ae6af39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an FSM in FIN_WAIT_1  <a href="classTCPTestHarness.html#a6399be899fd83890da0e66799ae6af39">更多...</a><br /></td></tr>
+<tr class="separator:a6399be899fd83890da0e66799ae6af39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e86b14f3d1f1ccaab5e8c790c37d9d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classTCPTestHarness.html">TCPTestHarness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a37e86b14f3d1f1ccaab5e8c790c37d9d">in_fin_wait_2</a> (const TCPConfig &amp;cfg, const WrappingInt32 tx_isn=WrappingInt32{0}, const WrappingInt32 rx_isn=WrappingInt32{0})</td></tr>
+<tr class="memdesc:a37e86b14f3d1f1ccaab5e8c790c37d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an FSM in FIN_WAIT_2  <a href="classTCPTestHarness.html#a37e86b14f3d1f1ccaab5e8c790c37d9d">更多...</a><br /></td></tr>
+<tr class="separator:a37e86b14f3d1f1ccaab5e8c790c37d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2c67913e20a4939d22f98fc9eafed7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classTCPTestHarness.html">TCPTestHarness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#aed2c67913e20a4939d22f98fc9eafed7">in_closing</a> (const TCPConfig &amp;cfg, const WrappingInt32 tx_isn=WrappingInt32{0}, const WrappingInt32 rx_isn=WrappingInt32{0})</td></tr>
+<tr class="memdesc:aed2c67913e20a4939d22f98fc9eafed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an FSM in CLOSING  <a href="classTCPTestHarness.html#aed2c67913e20a4939d22f98fc9eafed7">更多...</a><br /></td></tr>
+<tr class="separator:aed2c67913e20a4939d22f98fc9eafed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154f3d5ce37fc34e1420813b3aa4cb44"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classTCPTestHarness.html">TCPTestHarness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a154f3d5ce37fc34e1420813b3aa4cb44">in_time_wait</a> (const TCPConfig &amp;cfg, const WrappingInt32 tx_isn=WrappingInt32{0}, const WrappingInt32 rx_isn=WrappingInt32{0})</td></tr>
+<tr class="memdesc:a154f3d5ce37fc34e1420813b3aa4cb44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an FSM in TIME_WAIT  <a href="classTCPTestHarness.html#a154f3d5ce37fc34e1420813b3aa4cb44">更多...</a><br /></td></tr>
+<tr class="separator:a154f3d5ce37fc34e1420813b3aa4cb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a283d6c63e5f99f96474580d53d8db4c7"><td class="memItemLeft" align="right" valign="top"><a id="a283d6c63e5f99f96474580d53d8db4c7"></a>
+<a class="el" href="classTestFdAdapter.html">TestFdAdapter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a283d6c63e5f99f96474580d53d8db4c7">_flt</a> {}</td></tr>
+<tr class="memdesc:a283d6c63e5f99f96474580d53d8db4c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">FdAdapter mockup <br /></td></tr>
+<tr class="separator:a283d6c63e5f99f96474580d53d8db4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af203a65e1a5edec3c0b6df9074fcda0e"><td class="memItemLeft" align="right" valign="top"><a id="af203a65e1a5edec3c0b6df9074fcda0e"></a>
+TCPConnection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#af203a65e1a5edec3c0b6df9074fcda0e">_fsm</a></td></tr>
+<tr class="memdesc:af203a65e1a5edec3c0b6df9074fcda0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The TCPConnection under test <br /></td></tr>
+<tr class="separator:af203a65e1a5edec3c0b6df9074fcda0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431562ffcd1c56ab3914d320182b6711"><td class="memItemLeft" align="right" valign="top"><a id="a431562ffcd1c56ab3914d320182b6711"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTCPTestHarness.html#a431562ffcd1c56ab3914d320182b6711">_steps_executed</a> {}</td></tr>
+<tr class="memdesc:a431562ffcd1c56ab3914d320182b6711"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of test steps that passed <br /></td></tr>
+<tr class="separator:a431562ffcd1c56ab3914d320182b6711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Test adapter for TCPConnection </p>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8hh_source.html">tcp_fsm_test_harness.hh</a> 第 <a class="el" href="tcp__fsm__test__harness_8hh_source.html#l00059">59</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a50506739389063689876de9d402e3213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50506739389063689876de9d402e3213">&#9670;&nbsp;</a></span>execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPTestHarness::execute </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structTCPTestStep.html">TCPTestStep</a> &amp;&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>note</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>execute one step in a test. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">step</td><td>is a representation of the step. i.e. an action or expectation </td></tr>
+    <tr><td class="paramname">note</td><td>is an (optional) string describing the significance of this step </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00144">144</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a10121d170e37ffd755b1c624b5897653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10121d170e37ffd755b1c624b5897653">&#9670;&nbsp;</a></span>expect_seg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TCPSegment TCPTestHarness::expect_seg </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structExpectSegment.html">ExpectSegment</a> &amp;&#160;</td>
+          <td class="paramname"><em>expectation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>note</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>expect and read a segment </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expectaion</td><td>is a representation of the properties of the expected segment. </td></tr>
+    <tr><td class="paramname">note</td><td>is an (optional) string describing the significance of this step </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00167">167</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a009d0b767cf6f934bfdda7fd76d403b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a009d0b767cf6f934bfdda7fd76d403b2">&#9670;&nbsp;</a></span>in_close_wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTCPTestHarness.html">TCPTestHarness</a> TCPTestHarness::in_close_wait </td>
+          <td>(</td>
+          <td class="paramtype">const TCPConfig &amp;&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>tx_isn</em> = <code>WrappingInt32{0}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>rx_isn</em> = <code>WrappingInt32{0}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an FSM in CLOSE_WAIT </p>
+<p>SYNs have been traded, and then the machine received and ACK'd FIN. No payload was exchanged. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_isn</td><td>is the ISN of the FSM's outbound sequence. i.e. the seqno for the SYN. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_isn</td><td>is the ISN of the FSM's inbound sequence. i.e. the seqno for the SYN.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>SYNs have been traded, and then the machine received and ACK'd FIN. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_isn</td><td>is the ISN of the FSM's outbound sequence. i.e. the seqno for the SYN. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_isn</td><td>is the ISN of the FSM's inbound sequence. i.e. the seqno for the SYN. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aed2c67913e20a4939d22f98fc9eafed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed2c67913e20a4939d22f98fc9eafed7">&#9670;&nbsp;</a></span>in_closing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTCPTestHarness.html">TCPTestHarness</a> TCPTestHarness::in_closing </td>
+          <td>(</td>
+          <td class="paramtype">const TCPConfig &amp;&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>tx_isn</em> = <code>WrappingInt32{0}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>rx_isn</em> = <code>WrappingInt32{0}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an FSM in CLOSING </p>
+<p>SYNs have been traded, then the TCP sent FIN, then received FIN No payload was exchanged. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_isn</td><td>is the ISN of the FSM's outbound sequence. i.e. the seqno for the SYN. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_isn</td><td>is the ISN of the FSM's inbound sequence. i.e. the seqno for the SYN. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00288">288</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abdfadfd3e54f715c1a5eeea350b593ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdfadfd3e54f715c1a5eeea350b593ed">&#9670;&nbsp;</a></span>in_established()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTCPTestHarness.html">TCPTestHarness</a> TCPTestHarness::in_established </td>
+          <td>(</td>
+          <td class="paramtype">const TCPConfig &amp;&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>tx_isn</em> = <code>WrappingInt32{0}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>rx_isn</em> = <code>WrappingInt32{0}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an FSM with an established connection </p>
+<p>The mahine has sent and received a SYN, and both SYNs have been ACK'd No payload was exchanged. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_isn</td><td>is the ISN of the FSM's outbound sequence. i.e. the seqno for the SYN. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_isn</td><td>is the ISN of the FSM's inbound sequence. i.e. the seqno for the SYN.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The mahine has sent and received a SYN, and both SYNs have been ACK'd </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_isn</td><td>is the ISN of the FSM's outbound sequence. i.e. the seqno for the SYN. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_isn</td><td>is the ISN of the FSM's inbound sequence. i.e. the seqno for the SYN. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00207">207</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6399be899fd83890da0e66799ae6af39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6399be899fd83890da0e66799ae6af39">&#9670;&nbsp;</a></span>in_fin_wait_1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTCPTestHarness.html">TCPTestHarness</a> TCPTestHarness::in_fin_wait_1 </td>
+          <td>(</td>
+          <td class="paramtype">const TCPConfig &amp;&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>tx_isn</em> = <code>WrappingInt32{0}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>rx_isn</em> = <code>WrappingInt32{0}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an FSM in FIN_WAIT_1 </p>
+<p>Create an FSM in FIN_WAIT</p>
+<p>SYNs have been traded, then the TCP sent FIN. No payload was exchanged. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_isn</td><td>is the ISN of the FSM's outbound sequence. i.e. the seqno for the SYN. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_isn</td><td>is the ISN of the FSM's inbound sequence. i.e. the seqno for the SYN. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00256">256</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a37e86b14f3d1f1ccaab5e8c790c37d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37e86b14f3d1f1ccaab5e8c790c37d9d">&#9670;&nbsp;</a></span>in_fin_wait_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTCPTestHarness.html">TCPTestHarness</a> TCPTestHarness::in_fin_wait_2 </td>
+          <td>(</td>
+          <td class="paramtype">const TCPConfig &amp;&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>tx_isn</em> = <code>WrappingInt32{0}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>rx_isn</em> = <code>WrappingInt32{0}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an FSM in FIN_WAIT_2 </p>
+<p>SYNs have been traded, then the TCP sent FIN. No payload was exchanged. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_isn</td><td>is the ISN of the FSM's outbound sequence. i.e. the seqno for the SYN. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_isn</td><td>is the ISN of the FSM's inbound sequence. i.e. the seqno for the SYN.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>SYNs have been traded, then the TCP sent FIN, which was ACK'd No payload was exchanged. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_isn</td><td>is the ISN of the FSM's outbound sequence. i.e. the seqno for the SYN. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_isn</td><td>is the ISN of the FSM's inbound sequence. i.e. the seqno for the SYN. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00273">273</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a90553f7db8c3b6adddc92b4754f3fa3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90553f7db8c3b6adddc92b4754f3fa3c">&#9670;&nbsp;</a></span>in_last_ack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTCPTestHarness.html">TCPTestHarness</a> TCPTestHarness::in_last_ack </td>
+          <td>(</td>
+          <td class="paramtype">const TCPConfig &amp;&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>tx_isn</em> = <code>WrappingInt32{0}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>rx_isn</em> = <code>WrappingInt32{0}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an FSM in LAST_ACK </p>
+<p>SYNs have been traded, then the machine received and ACK'd FIN, and then it sent its own FIN. No payload was exchanged. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_isn</td><td>is the ISN of the FSM's outbound sequence. i.e. the seqno for the SYN. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_isn</td><td>is the ISN of the FSM's inbound sequence. i.e. the seqno for the SYN.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>SYNs have been traded, then the machine received and ACK'd FIN, and then it sent its own FIN. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_isn</td><td>is the ISN of the FSM's outbound sequence. i.e. the seqno for the SYN. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_isn</td><td>is the ISN of the FSM's inbound sequence. i.e. the seqno for the SYN. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00239">239</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9efb53d2e3b82b8047da05890037dd14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9efb53d2e3b82b8047da05890037dd14">&#9670;&nbsp;</a></span>in_listen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTCPTestHarness.html">TCPTestHarness</a> TCPTestHarness::in_listen </td>
+          <td>(</td>
+          <td class="paramtype">const TCPConfig &amp;&#160;</td>
+          <td class="paramname"><em>cfg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an FSM in the "LISTEN" state. </p>
+<p>Create a FSM in the "LISTEN" state. </p>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00182">182</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af4ceca5078cc5c2df8d494aa80f07189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ceca5078cc5c2df8d494aa80f07189">&#9670;&nbsp;</a></span>in_syn_sent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTCPTestHarness.html">TCPTestHarness</a> TCPTestHarness::in_syn_sent </td>
+          <td>(</td>
+          <td class="paramtype">const TCPConfig &amp;&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>tx_isn</em> = <code>WrappingInt32{0}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an FSM which has sent a SYN. </p>
+<p>The SYN has been consumed, but not ACK'd by the test harness </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_isn</td><td>is the ISN of the FSM's outbound sequence. i.e. the seqno for the SYN. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00192">192</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a154f3d5ce37fc34e1420813b3aa4cb44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a154f3d5ce37fc34e1420813b3aa4cb44">&#9670;&nbsp;</a></span>in_time_wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTCPTestHarness.html">TCPTestHarness</a> TCPTestHarness::in_time_wait </td>
+          <td>(</td>
+          <td class="paramtype">const TCPConfig &amp;&#160;</td>
+          <td class="paramname"><em>cfg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>tx_isn</em> = <code>WrappingInt32{0}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>rx_isn</em> = <code>WrappingInt32{0}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an FSM in TIME_WAIT </p>
+<p>SYNs have been traded, then the TCP sent FIN, then received FIN/ACK, and ACK'd. No payload was exchanged. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_isn</td><td>is the ISN of the FSM's outbound sequence. i.e. the seqno for the SYN. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_isn</td><td>is the ISN of the FSM's inbound sequence. i.e. the seqno for the SYN. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00304">304</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a908763d9a18e86a8f6a8165b696a3866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a908763d9a18e86a8f6a8165b696a3866">&#9670;&nbsp;</a></span>send_ack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPTestHarness::send_ack </td>
+          <td>(</td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>seqno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>ackno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::optional&lt; uint16_t &gt;&#160;</td>
+          <td class="paramname"><em>swin</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>construct an ACK segment and inject it into TCPConnection </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">seqno</td><td>is the sequence number of the segment </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ackno</td><td>is the acknowledgment number of the segment </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">swin</td><td>is the optional window size for the segment; if no value, uses default value (137 bytes) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00087">87</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a322a1d10c9ef803061bdef7109cb2006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a322a1d10c9ef803061bdef7109cb2006">&#9670;&nbsp;</a></span>send_byte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPTestHarness::send_byte </td>
+          <td>(</td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>seqno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::optional&lt; WrappingInt32 &gt;&#160;</td>
+          <td class="paramname"><em>ackno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>construct a segment containing one byte and inject it into TCPConnection </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">seqno</td><td>is the sequence number of the segment </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ackno</td><td>is the optional acknowledgment number of the segment; if no value, ACK flag is not set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>is the value of the one-byte payload </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00120">120</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5426f9eed523b6364cf9a0f1bebe50ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5426f9eed523b6364cf9a0f1bebe50ec">&#9670;&nbsp;</a></span>send_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPTestHarness::send_data </td>
+          <td>(</td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>seqno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>ackno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTCPTestHarness.html#a2558ee1e47c27219f1c304156ebbe66b">VecIterT</a>&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTCPTestHarness.html#a2558ee1e47c27219f1c304156ebbe66b">VecIterT</a>&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>construct a segment containing the specified payload and inject it into TCPConnection </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">seqno</td><td>is the sequence number of the segment </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ackno</td><td>is the acknowledgment number of the segment </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">begin</td><td>is an iterator to the start of the payload </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">end</td><td>is an iterator to the end of the payload </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00133">133</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7d11746f61a3147671648b7489a78373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d11746f61a3147671648b7489a78373">&#9670;&nbsp;</a></span>send_fin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPTestHarness::send_fin </td>
+          <td>(</td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>seqno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::optional&lt; WrappingInt32 &gt;&#160;</td>
+          <td class="paramname"><em>ackno</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>construct a FIN segment and inject it into TCPConnection </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">seqno</td><td>is the sequence number of the segment </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ackno</td><td>is the optional acknowledgment number of the segment; if no value, ACK flag is not set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00075">75</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aaae4c4e2233373fbc85f313f4e156b7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaae4c4e2233373fbc85f313f4e156b7d">&#9670;&nbsp;</a></span>send_rst()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPTestHarness::send_rst </td>
+          <td>(</td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>seqno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::optional&lt; WrappingInt32 &gt;&#160;</td>
+          <td class="paramname"><em>ackno</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>construct a RST segment and inject it into TCPConnection </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">seqno</td><td>is the sequence number of the segment </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ackno</td><td>is the optional acknowledgment number of the segment; if no value, ACK flag is not set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00097">97</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac90d80502a3db093e3f1904b0dd89ff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac90d80502a3db093e3f1904b0dd89ff0">&#9670;&nbsp;</a></span>send_syn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TCPTestHarness::send_syn </td>
+          <td>(</td>
+          <td class="paramtype">const WrappingInt32&#160;</td>
+          <td class="paramname"><em>seqno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::optional&lt; WrappingInt32 &gt;&#160;</td>
+          <td class="paramname"><em>ackno</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>construct a SYN segment and inject it into TCPConnection </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">seqno</td><td>is the sequence number of the segment </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ackno</td><td>is the optional acknowledgment number of the segment; if no value, ACK flag is not set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a> 第 <a class="el" href="tcp__fsm__test__harness_8cc_source.html#l00108">108</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>tests/<a class="el" href="tcp__fsm__test__harness_8hh_source.html">tcp_fsm_test_harness.hh</a></li>
+<li>tests/<a class="el" href="tcp__fsm__test__harness_8cc_source.html">tcp_fsm_test_harness.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classTCPTestHarness.html">TCPTestHarness</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

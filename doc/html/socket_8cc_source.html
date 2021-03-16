@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Doc Lab 0: libsponge/util/socket.cc 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Doc Lab 0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('socket_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">socket.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;socket.hh&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;util.hh&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// default constructor for socket of (subclassed) domain and type</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classSocket.html#a93828c96ff40034195c9ee97f4ea240e">   14</a></span>&#160;<span class="comment"></span><a class="code" href="classSocket.html#a93828c96ff40034195c9ee97f4ea240e">Socket::Socket</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> domain, <span class="keyword">const</span> <span class="keywordtype">int</span> type) : <a class="code" href="classFileDescriptor.html">FileDescriptor</a>(SystemCall(<span class="stringliteral">&quot;socket&quot;</span>, socket(domain, type, 0))) {}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// construct from file descriptor</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classSocket.html#a70415b788fe6bab72252ab7a6001ec8c">   20</a></span>&#160;<span class="comment"></span><a class="code" href="classSocket.html#a93828c96ff40034195c9ee97f4ea240e">Socket::Socket</a>(<a class="code" href="classFileDescriptor.html">FileDescriptor</a> &amp;&amp;fd, <span class="keyword">const</span> <span class="keywordtype">int</span> domain, <span class="keyword">const</span> <span class="keywordtype">int</span> type) : <a class="code" href="classFileDescriptor.html">FileDescriptor</a>(move(fd)) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> actual_value;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    socklen_t len;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// verify domain</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    len = <span class="keyword">sizeof</span>(actual_value);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    SystemCall(<span class="stringliteral">&quot;getsockopt&quot;</span>, getsockopt(fd_num(), SOL_SOCKET, SO_DOMAIN, &amp;actual_value, &amp;len));</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> ((len != <span class="keyword">sizeof</span>(actual_value)) or (actual_value != domain)) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;socket domain mismatch&quot;</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// verify type</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    len = <span class="keyword">sizeof</span>(actual_value);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    SystemCall(<span class="stringliteral">&quot;getsockopt&quot;</span>, getsockopt(fd_num(), SOL_SOCKET, SO_TYPE, &amp;actual_value, &amp;len));</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> ((len != <span class="keyword">sizeof</span>(actual_value)) or (actual_value != type)) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;socket type mismatch&quot;</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// get the local or peer address the socket is connected to</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span><a class="code" href="classAddress.html">Address</a> Socket::get_address(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;name_of_function,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                            <span class="keyword">const</span> <span class="keyword">function</span>&lt;<span class="keywordtype">int</span>(<span class="keywordtype">int</span>, sockaddr *, socklen_t *)&gt; &amp;<span class="keyword">function</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classAddress_1_1Raw.html">Address::Raw</a> address;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    socklen_t size = <span class="keyword">sizeof</span>(address);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    SystemCall(name_of_function, <span class="keyword">function</span>(fd_num(), address, &amp;size));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> {address, size};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classSocket.html#ac4abb7c7d50f79e7b358f0c8b9e36872">   54</a></span>&#160;<a class="code" href="classAddress.html">Address</a> <a class="code" href="classSocket.html#ac4abb7c7d50f79e7b358f0c8b9e36872">Socket::local_address</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> get_address(<span class="stringliteral">&quot;getsockname&quot;</span>, getsockname); }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classSocket.html#ac84bc70e67e9a156c79052e410e6bfa3">   57</a></span>&#160;<a class="code" href="classAddress.html">Address</a> <a class="code" href="classSocket.html#ac84bc70e67e9a156c79052e410e6bfa3">Socket::peer_address</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> get_address(<span class="stringliteral">&quot;getpeername&quot;</span>, getpeername); }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">// bind socket to a specified local address (usually to listen/accept)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classSocket.html#ab45c9389663bd9cbd02afdd87c9611dc">   61</a></span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="classSocket.html#ab45c9389663bd9cbd02afdd87c9611dc">Socket::bind</a>(<span class="keyword">const</span> <a class="code" href="classAddress.html">Address</a> &amp;address) { SystemCall(<span class="stringliteral">&quot;bind&quot;</span>, ::<a class="code" href="classSocket.html#ab45c9389663bd9cbd02afdd87c9611dc">bind</a>(fd_num(), address, address.<a class="code" href="classAddress.html#a616505289b7760a728bb673604f44faa">size</a>())); }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// connect socket to a specified peer address</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classSocket.html#a37018cb0609cd98256bd2d2739e7d3c5">   65</a></span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="classSocket.html#a37018cb0609cd98256bd2d2739e7d3c5">Socket::connect</a>(<span class="keyword">const</span> <a class="code" href="classAddress.html">Address</a> &amp;address) { SystemCall(<span class="stringliteral">&quot;connect&quot;</span>, ::<a class="code" href="classSocket.html#a37018cb0609cd98256bd2d2739e7d3c5">connect</a>(fd_num(), address, address.<a class="code" href="classAddress.html#a616505289b7760a728bb673604f44faa">size</a>())); }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// shut down a socket in the specified way</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classSocket.html#a55b6a988853d81f7812f3604e7dfc4c0">   69</a></span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="classSocket.html#a55b6a988853d81f7812f3604e7dfc4c0">Socket::shutdown</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> how) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    SystemCall(<span class="stringliteral">&quot;shutdown&quot;</span>, ::<a class="code" href="classSocket.html#a55b6a988853d81f7812f3604e7dfc4c0">shutdown</a>(fd_num(), how));</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">switch</span> (how) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">case</span> SHUT_RD:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            register_read();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">case</span> SHUT_WR:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            register_write();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">case</span> SHUT_RDWR:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            register_read();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            register_write();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;Socket::shutdown() called with invalid `how`&quot;</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classUDPSocket.html#afc369f97e9714ddc527770c4e1228e24">   88</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUDPSocket.html#a0c8db40dac1297323912b698618a0467">UDPSocket::recv</a>(<a class="code" href="structUDPSocket_1_1received__datagram.html">received_datagram</a> &amp;datagram, <span class="keyword">const</span> <span class="keywordtype">size_t</span> mtu) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// receive source address and payload</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="classAddress_1_1Raw.html">Address::Raw</a> datagram_source_address;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    datagram.<a class="code" href="structUDPSocket_1_1received__datagram.html#ad634327c54f0321c51b20e2ccd518692">payload</a>.resize(mtu);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    socklen_t fromlen = <span class="keyword">sizeof</span>(datagram_source_address);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">const</span> ssize_t recv_len = SystemCall(</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="stringliteral">&quot;recvfrom&quot;</span>,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        ::recvfrom(</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            fd_num(), datagram.<a class="code" href="structUDPSocket_1_1received__datagram.html#ad634327c54f0321c51b20e2ccd518692">payload</a>.data(), datagram.<a class="code" href="structUDPSocket_1_1received__datagram.html#ad634327c54f0321c51b20e2ccd518692">payload</a>.size(), MSG_TRUNC, datagram_source_address, &amp;fromlen));</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span> (recv_len &gt; ssize_t(mtu)) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;recvfrom (oversized datagram)&quot;</span>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    register_read();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    datagram.<a class="code" href="structUDPSocket_1_1received__datagram.html#a6905c642c13757c5a6f087046e85904a">source_address</a> = {datagram_source_address, fromlen};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    datagram.<a class="code" href="structUDPSocket_1_1received__datagram.html#ad634327c54f0321c51b20e2ccd518692">payload</a>.resize(recv_len);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classUDPSocket.html#a0c8db40dac1297323912b698618a0467">  109</a></span>&#160;<a class="code" href="structUDPSocket_1_1received__datagram.html">UDPSocket::received_datagram</a> <a class="code" href="classUDPSocket.html#a0c8db40dac1297323912b698618a0467">UDPSocket::recv</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> mtu) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="structUDPSocket_1_1received__datagram.html">received_datagram</a> ret{{<span class="keyword">nullptr</span>, 0}, <span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="classUDPSocket.html#a0c8db40dac1297323912b698618a0467">recv</a>(ret, mtu);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">void</span> sendmsg_helper(<span class="keyword">const</span> <span class="keywordtype">int</span> fd_num,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <span class="keyword">const</span> sockaddr *destination_address,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                    <span class="keyword">const</span> socklen_t destination_address_len,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    <span class="keyword">const</span> <a class="code" href="classBufferViewList.html">BufferViewList</a> &amp;payload) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">auto</span> iovecs = payload.<a class="code" href="classBufferViewList.html#ad3e793bc8cd723ff74c584778b851697">as_iovecs</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    msghdr message{};</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    message.msg_name = <span class="keyword">const_cast&lt;</span>sockaddr *<span class="keyword">&gt;</span>(destination_address);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    message.msg_namelen = destination_address_len;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    message.msg_iov = iovecs.data();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    message.msg_iovlen = iovecs.size();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">const</span> ssize_t bytes_sent = SystemCall(<span class="stringliteral">&quot;sendmsg&quot;</span>, ::sendmsg(fd_num, &amp;message, 0));</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">if</span> (<span class="keywordtype">size_t</span>(bytes_sent) != payload.<a class="code" href="classBufferViewList.html#a6cc68814c2de37a7fac9faacd0844431">size</a>()) {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">throw</span> runtime_error(<span class="stringliteral">&quot;datagram payload too big for sendmsg()&quot;</span>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classUDPSocket.html#af8c3554c3102b93a56eee18f30485078">  134</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUDPSocket.html#af8c3554c3102b93a56eee18f30485078">UDPSocket::sendto</a>(<span class="keyword">const</span> <a class="code" href="classAddress.html">Address</a> &amp;destination, <span class="keyword">const</span> <a class="code" href="classBufferViewList.html">BufferViewList</a> &amp;payload) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    sendmsg_helper(fd_num(), destination, destination.<a class="code" href="classAddress.html#a616505289b7760a728bb673604f44faa">size</a>(), payload);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    register_write();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classUDPSocket.html#a72727325869a92bf1df91ab99f72daf9">  139</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classUDPSocket.html#a72727325869a92bf1df91ab99f72daf9">UDPSocket::send</a>(<span class="keyword">const</span> <a class="code" href="classBufferViewList.html">BufferViewList</a> &amp;payload) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    sendmsg_helper(fd_num(), <span class="keyword">nullptr</span>, 0, payload);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    register_write();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">// mark the socket as listening for incoming connections</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classTCPSocket.html#abbcc8052062ef85830da9864fe023e80">  146</a></span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="classTCPSocket.html#abbcc8052062ef85830da9864fe023e80">TCPSocket::listen</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> backlog) { SystemCall(<span class="stringliteral">&quot;listen&quot;</span>, ::<a class="code" href="classTCPSocket.html#abbcc8052062ef85830da9864fe023e80">listen</a>(fd_num(), backlog)); }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">// accept a new incoming connection</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classTCPSocket.html#a45d4ff72e1f0c755225e60f89326085c">  151</a></span>&#160;<span class="comment"></span><a class="code" href="classTCPSocket.html">TCPSocket</a> <a class="code" href="classTCPSocket.html#a45d4ff72e1f0c755225e60f89326085c">TCPSocket::accept</a>() {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    register_read();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classTCPSocket.html#a7a50427a401d1a6f3209d51818bad901">TCPSocket</a>(<a class="code" href="classFileDescriptor.html">FileDescriptor</a>(SystemCall(<span class="stringliteral">&quot;accept&quot;</span>, ::<a class="code" href="classTCPSocket.html#a45d4ff72e1f0c755225e60f89326085c">accept</a>(fd_num(), <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>))));</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">// set socket option</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> option_type&gt;</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="classSocket.html#aaed9784f0b69e899124fe1f5c0ac1065">  162</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classSocket.html#aaed9784f0b69e899124fe1f5c0ac1065">Socket::setsockopt</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> level, <span class="keyword">const</span> <span class="keywordtype">int</span> option, <span class="keyword">const</span> option_type &amp;option_value) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    SystemCall(<span class="stringliteral">&quot;setsockopt&quot;</span>, ::<a class="code" href="classSocket.html#aaed9784f0b69e899124fe1f5c0ac1065">setsockopt</a>(fd_num(), level, option, &amp;option_value, <span class="keyword">sizeof</span>(option_value)));</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">// allow local address to be reused sooner, at the cost of some robustness</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classSocket.html#afc6ed565fddaa9d7ee4904ecc96bb6c0">  168</a></span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="classSocket.html#afc6ed565fddaa9d7ee4904ecc96bb6c0">Socket::set_reuseaddr</a>() { <a class="code" href="classSocket.html#aaed9784f0b69e899124fe1f5c0ac1065">setsockopt</a>(SOL_SOCKET, SO_REUSEADDR, <span class="keywordtype">int</span>(<span class="keyword">true</span>)); }</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassTCPSocket_html_a45d4ff72e1f0c755225e60f89326085c"><div class="ttname"><a href="classTCPSocket.html#a45d4ff72e1f0c755225e60f89326085c">TCPSocket::accept</a></div><div class="ttdeci">TCPSocket accept()</div><div class="ttdoc">Accept a new incoming connection</div><div class="ttdef"><b>Definition:</b> <a href="socket_8cc_source.html#l00151">socket.cc:151</a></div></div>
+<div class="ttc" id="aclassTCPSocket_html_a7a50427a401d1a6f3209d51818bad901"><div class="ttname"><a href="classTCPSocket.html#a7a50427a401d1a6f3209d51818bad901">TCPSocket::TCPSocket</a></div><div class="ttdeci">TCPSocket()</div><div class="ttdoc">Default: construct an unbound, unconnected TCP socket</div><div class="ttdef"><b>Definition:</b> <a href="socket_8hh_source.html#l00096">socket.hh:96</a></div></div>
+<div class="ttc" id="astructUDPSocket_1_1received__datagram_html_ad634327c54f0321c51b20e2ccd518692"><div class="ttname"><a href="structUDPSocket_1_1received__datagram.html#ad634327c54f0321c51b20e2ccd518692">UDPSocket::received_datagram::payload</a></div><div class="ttdeci">std::string payload</div><div class="ttdoc">UDP datagram payload</div><div class="ttdef"><b>Definition:</b> <a href="socket_8hh_source.html#l00064">socket.hh:64</a></div></div>
+<div class="ttc" id="aclassFileDescriptor_html"><div class="ttname"><a href="classFileDescriptor.html">FileDescriptor</a></div><div class="ttdoc">A reference-counted handle to a file descriptor</div><div class="ttdef"><b>Definition:</b> <a href="file__descriptor_8hh_source.html#l00012">file_descriptor.hh:12</a></div></div>
+<div class="ttc" id="aclassUDPSocket_html_a72727325869a92bf1df91ab99f72daf9"><div class="ttname"><a href="classUDPSocket.html#a72727325869a92bf1df91ab99f72daf9">UDPSocket::send</a></div><div class="ttdeci">void send(const BufferViewList &amp;payload)</div><div class="ttdoc">Send datagram to the socket's connected address (must call connect() first)</div><div class="ttdef"><b>Definition:</b> <a href="socket_8cc_source.html#l00139">socket.cc:139</a></div></div>
+<div class="ttc" id="aclassTCPSocket_html"><div class="ttname"><a href="classTCPSocket.html">TCPSocket</a></div><div class="ttdoc">A wrapper around TCP sockets</div><div class="ttdef"><b>Definition:</b> <a href="socket_8hh_source.html#l00088">socket.hh:88</a></div></div>
+<div class="ttc" id="aclassUDPSocket_html_af8c3554c3102b93a56eee18f30485078"><div class="ttname"><a href="classUDPSocket.html#af8c3554c3102b93a56eee18f30485078">UDPSocket::sendto</a></div><div class="ttdeci">void sendto(const Address &amp;destination, const BufferViewList &amp;payload)</div><div class="ttdoc">Send a datagram to specified Address</div><div class="ttdef"><b>Definition:</b> <a href="socket_8cc_source.html#l00134">socket.cc:134</a></div></div>
+<div class="ttc" id="aclassTCPSocket_html_abbcc8052062ef85830da9864fe023e80"><div class="ttname"><a href="classTCPSocket.html#abbcc8052062ef85830da9864fe023e80">TCPSocket::listen</a></div><div class="ttdeci">void listen(const int backlog=16)</div><div class="ttdoc">Mark a socket as listening for incoming connections</div><div class="ttdef"><b>Definition:</b> <a href="socket_8cc_source.html#l00146">socket.cc:146</a></div></div>
+<div class="ttc" id="aclassAddress_1_1Raw_html"><div class="ttname"><a href="classAddress_1_1Raw.html">Address::Raw</a></div><div class="ttdoc">Wrapper around sockaddr_storage.</div><div class="ttdef"><b>Definition:</b> <a href="address_8hh_source.html#l00017">address.hh:17</a></div></div>
+<div class="ttc" id="aclassBufferViewList_html"><div class="ttname"><a href="classBufferViewList.html">BufferViewList</a></div><div class="ttdoc">A non-owning temporary view (similar to std::string_view) of a discontiguous string</div><div class="ttdef"><b>Definition:</b> <a href="buffer_8hh_source.html#l00097">buffer.hh:97</a></div></div>
+<div class="ttc" id="aclassBufferViewList_html_a6cc68814c2de37a7fac9faacd0844431"><div class="ttname"><a href="classBufferViewList.html#a6cc68814c2de37a7fac9faacd0844431">BufferViewList::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdoc">Size of the string</div><div class="ttdef"><b>Definition:</b> <a href="buffer_8cc_source.html#l00089">buffer.cc:89</a></div></div>
+<div class="ttc" id="aclassSocket_html_a93828c96ff40034195c9ee97f4ea240e"><div class="ttname"><a href="classSocket.html#a93828c96ff40034195c9ee97f4ea240e">Socket::Socket</a></div><div class="ttdeci">Socket(const int domain, const int type)</div><div class="ttdoc">Construct via socket(2)</div><div class="ttdef"><b>Definition:</b> <a href="socket_8cc_source.html#l00014">socket.cc:14</a></div></div>
+<div class="ttc" id="aclassAddress_html"><div class="ttname"><a href="classAddress.html">Address</a></div><div class="ttdoc">Wrapper around IPv4 addresses and DNS operations.</div><div class="ttdef"><b>Definition:</b> <a href="address_8hh_source.html#l00013">address.hh:13</a></div></div>
+<div class="ttc" id="aclassSocket_html_a55b6a988853d81f7812f3604e7dfc4c0"><div class="ttname"><a href="classSocket.html#a55b6a988853d81f7812f3604e7dfc4c0">Socket::shutdown</a></div><div class="ttdeci">void shutdown(const int how)</div><div class="ttdoc">Shut down a socket via shutdown(2)</div><div class="ttdef"><b>Definition:</b> <a href="socket_8cc_source.html#l00069">socket.cc:69</a></div></div>
+<div class="ttc" id="aclassBufferViewList_html_ad3e793bc8cd723ff74c584778b851697"><div class="ttname"><a href="classBufferViewList.html#ad3e793bc8cd723ff74c584778b851697">BufferViewList::as_iovecs</a></div><div class="ttdeci">std::vector&lt; iovec &gt; as_iovecs() const</div><div class="ttdoc">Convert to a vector of iovec structures</div><div class="ttdef"><b>Definition:</b> <a href="buffer_8cc_source.html#l00097">buffer.cc:97</a></div></div>
+<div class="ttc" id="aclassSocket_html_ac84bc70e67e9a156c79052e410e6bfa3"><div class="ttname"><a href="classSocket.html#ac84bc70e67e9a156c79052e410e6bfa3">Socket::peer_address</a></div><div class="ttdeci">Address peer_address() const</div><div class="ttdoc">Get peer address of socket with getpeername(2)</div><div class="ttdef"><b>Definition:</b> <a href="socket_8cc_source.html#l00057">socket.cc:57</a></div></div>
+<div class="ttc" id="aclassSocket_html_aaed9784f0b69e899124fe1f5c0ac1065"><div class="ttname"><a href="classSocket.html#aaed9784f0b69e899124fe1f5c0ac1065">Socket::setsockopt</a></div><div class="ttdeci">void setsockopt(const int level, const int option, const option_type &amp;option_value)</div><div class="ttdoc">Wrapper around setsockopt(2)</div><div class="ttdef"><b>Definition:</b> <a href="socket_8cc_source.html#l00162">socket.cc:162</a></div></div>
+<div class="ttc" id="aclassSocket_html_a37018cb0609cd98256bd2d2739e7d3c5"><div class="ttname"><a href="classSocket.html#a37018cb0609cd98256bd2d2739e7d3c5">Socket::connect</a></div><div class="ttdeci">void connect(const Address &amp;address)</div><div class="ttdoc">Connect a socket to a specified peer address with connect(2)</div><div class="ttdef"><b>Definition:</b> <a href="socket_8cc_source.html#l00065">socket.cc:65</a></div></div>
+<div class="ttc" id="aclassSocket_html_afc6ed565fddaa9d7ee4904ecc96bb6c0"><div class="ttname"><a href="classSocket.html#afc6ed565fddaa9d7ee4904ecc96bb6c0">Socket::set_reuseaddr</a></div><div class="ttdeci">void set_reuseaddr()</div><div class="ttdoc">Allow local address to be reused sooner via SO_REUSEADDR</div><div class="ttdef"><b>Definition:</b> <a href="socket_8cc_source.html#l00168">socket.cc:168</a></div></div>
+<div class="ttc" id="aclassUDPSocket_html_a0c8db40dac1297323912b698618a0467"><div class="ttname"><a href="classUDPSocket.html#a0c8db40dac1297323912b698618a0467">UDPSocket::recv</a></div><div class="ttdeci">received_datagram recv(const size_t mtu=65536)</div><div class="ttdoc">Receive a datagram and the Address of its sender</div><div class="ttdef"><b>Definition:</b> <a href="socket_8cc_source.html#l00109">socket.cc:109</a></div></div>
+<div class="ttc" id="aclassSocket_html_ac4abb7c7d50f79e7b358f0c8b9e36872"><div class="ttname"><a href="classSocket.html#ac4abb7c7d50f79e7b358f0c8b9e36872">Socket::local_address</a></div><div class="ttdeci">Address local_address() const</div><div class="ttdoc">Get local address of socket with getsockname(2)</div><div class="ttdef"><b>Definition:</b> <a href="socket_8cc_source.html#l00054">socket.cc:54</a></div></div>
+<div class="ttc" id="aclassSocket_html_ab45c9389663bd9cbd02afdd87c9611dc"><div class="ttname"><a href="classSocket.html#ab45c9389663bd9cbd02afdd87c9611dc">Socket::bind</a></div><div class="ttdeci">void bind(const Address &amp;address)</div><div class="ttdoc">Bind a socket to a specified address with bind(2), usually for listen/accept</div><div class="ttdef"><b>Definition:</b> <a href="socket_8cc_source.html#l00061">socket.cc:61</a></div></div>
+<div class="ttc" id="aclassAddress_html_a616505289b7760a728bb673604f44faa"><div class="ttname"><a href="classAddress.html#a616505289b7760a728bb673604f44faa">Address::size</a></div><div class="ttdeci">socklen_t size() const</div><div class="ttdoc">Size of the underlying address storage.</div><div class="ttdef"><b>Definition:</b> <a href="address_8hh_source.html#l00064">address.hh:64</a></div></div>
+<div class="ttc" id="astructUDPSocket_1_1received__datagram_html_a6905c642c13757c5a6f087046e85904a"><div class="ttname"><a href="structUDPSocket_1_1received__datagram.html#a6905c642c13757c5a6f087046e85904a">UDPSocket::received_datagram::source_address</a></div><div class="ttdeci">Address source_address</div><div class="ttdoc">Address from which this datagram was received</div><div class="ttdef"><b>Definition:</b> <a href="socket_8hh_source.html#l00063">socket.hh:63</a></div></div>
+<div class="ttc" id="astructUDPSocket_1_1received__datagram_html"><div class="ttname"><a href="structUDPSocket_1_1received__datagram.html">UDPSocket::received_datagram</a></div><div class="ttdoc">Returned by UDPSocket::recv; carries received data and information about the sender</div><div class="ttdef"><b>Definition:</b> <a href="socket_8hh_source.html#l00062">socket.hh:62</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_a868e0737c1dbe1c3c951bed6f449e3c.html">libsponge</a></li><li class="navelem"><a class="el" href="dir_7b11b67c1e7407c5ca91f13d9d8459e4.html">util</a></li><li class="navelem"><b>socket.cc</b></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+\hypertarget{classByteStream}{}\doxysection{Byte\+Stream类 参考}
+\label{classByteStream}\index{ByteStream@{ByteStream}}
+
+
+An in-\/order byte stream.  
+
+
+
+
+{\ttfamily \#include $<$byte\+\_\+stream.\+hh$>$}
+
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classByteStream_a6a344e7b329f769ecd44d337323cb599}\label{classByteStream_a6a344e7b329f769ecd44d337323cb599}} 
+\mbox{\hyperlink{classByteStream_a6a344e7b329f769ecd44d337323cb599}{Byte\+Stream}} (const size\+\_\+t capacity)
+\begin{DoxyCompactList}\small\item\em Construct a stream with room for {\ttfamily capacity} bytes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ \char`\"{}\+Input\char`\"{} interface for the writer}\par
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{classByteStream_a449f69921c565304b92b38d43b059500}{write}} (const std\+::string \&data)
+\item 
+size\+\_\+t \mbox{\hyperlink{classByteStream_aa14145f1e6c963f8e010fd6df7c758f2}{remaining\+\_\+capacity}} () const
+\item 
+\mbox{\Hypertarget{classByteStream_aef2c209ade239e09b336589d40f31150}\label{classByteStream_aef2c209ade239e09b336589d40f31150}} 
+void \mbox{\hyperlink{classByteStream_aef2c209ade239e09b336589d40f31150}{end\+\_\+input}} ()
+\begin{DoxyCompactList}\small\item\em Signal that the byte stream has reached its ending \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classByteStream_a816938c16b076aac391eaf239794254f}\label{classByteStream_a816938c16b076aac391eaf239794254f}} 
+void \mbox{\hyperlink{classByteStream_a816938c16b076aac391eaf239794254f}{set\+\_\+error}} ()
+\begin{DoxyCompactList}\small\item\em Indicate that the stream suffered an error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ \char`\"{}\+Output\char`\"{} interface for the reader}\par
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classByteStream_aeb60af8552d0410933556235a457f725}{peek\+\_\+output}} (const size\+\_\+t len) const
+\item 
+void \mbox{\hyperlink{classByteStream_ae62172814cd4ed0314c1772d931eaed2}{pop\+\_\+output}} (const size\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Remove bytes from the buffer \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classByteStream_a682c7b2501245dd98385789c2deb0bdf}{read}} (const size\+\_\+t len)
+\item 
+bool \mbox{\hyperlink{classByteStream_a4a4a5050f50476e40535dbdbbfccfad1}{input\+\_\+ended}} () const
+\item 
+bool \mbox{\hyperlink{classByteStream_ac38189e3b81bf6b3eab5b6feab91272a}{error}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classByteStream_ab654cd52ea3d99c72cbc716ebac41118}{buffer\+\_\+size}} () const
+\item 
+bool \mbox{\hyperlink{classByteStream_af017091c7be77b4df190f03284899af4}{buffer\+\_\+empty}} () const
+\item 
+bool \mbox{\hyperlink{classByteStream_a7c2ddd9f4f4c0ac2bb88b4625e32c86a}{eof}} () const
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ General accounting}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classByteStream_a3ec6c5ae2cd07b542946074196d0e930}\label{classByteStream_a3ec6c5ae2cd07b542946074196d0e930}} 
+size\+\_\+t \mbox{\hyperlink{classByteStream_a3ec6c5ae2cd07b542946074196d0e930}{bytes\+\_\+written}} () const
+\begin{DoxyCompactList}\small\item\em Total number of bytes written \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classByteStream_a2f0985ed739d369795deb8e12619b362}\label{classByteStream_a2f0985ed739d369795deb8e12619b362}} 
+size\+\_\+t \mbox{\hyperlink{classByteStream_a2f0985ed739d369795deb8e12619b362}{bytes\+\_\+read}} () const
+\begin{DoxyCompactList}\small\item\em Total number of bytes popped \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{详细描述}
+An in-\/order byte stream. 
+
+Bytes are written on the \char`\"{}input\char`\"{} side and read from the \char`\"{}output\char`\"{} side. The byte stream is finite\+: the writer can end the input, and then no more bytes can be written. 
+
+在文件 byte\+\_\+stream.\+hh 第 16 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classByteStream_af017091c7be77b4df190f03284899af4}\label{classByteStream_af017091c7be77b4df190f03284899af4}} 
+\index{ByteStream@{ByteStream}!buffer\_empty@{buffer\_empty}}
+\index{buffer\_empty@{buffer\_empty}!ByteStream@{ByteStream}}
+\doxysubsubsection{\texorpdfstring{buffer\_empty()}{buffer\_empty()}}
+{\footnotesize\ttfamily bool Byte\+Stream\+::buffer\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{返回}
+{\ttfamily true} if the buffer is empty 
+\end{DoxyReturn}
+
+
+在文件 byte\+\_\+stream.\+cc 第 41 行定义.
+
+\mbox{\Hypertarget{classByteStream_ab654cd52ea3d99c72cbc716ebac41118}\label{classByteStream_ab654cd52ea3d99c72cbc716ebac41118}} 
+\index{ByteStream@{ByteStream}!buffer\_size@{buffer\_size}}
+\index{buffer\_size@{buffer\_size}!ByteStream@{ByteStream}}
+\doxysubsubsection{\texorpdfstring{buffer\_size()}{buffer\_size()}}
+{\footnotesize\ttfamily size\+\_\+t Byte\+Stream\+::buffer\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{返回}
+the maximum amount that can currently be read from the stream 
+\end{DoxyReturn}
+
+
+在文件 byte\+\_\+stream.\+cc 第 39 行定义.
+
+\mbox{\Hypertarget{classByteStream_a7c2ddd9f4f4c0ac2bb88b4625e32c86a}\label{classByteStream_a7c2ddd9f4f4c0ac2bb88b4625e32c86a}} 
+\index{ByteStream@{ByteStream}!eof@{eof}}
+\index{eof@{eof}!ByteStream@{ByteStream}}
+\doxysubsubsection{\texorpdfstring{eof()}{eof()}}
+{\footnotesize\ttfamily bool Byte\+Stream\+::eof (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{返回}
+{\ttfamily true} if the output has reached the ending 
+\end{DoxyReturn}
+
+
+在文件 byte\+\_\+stream.\+cc 第 43 行定义.
+
+\mbox{\Hypertarget{classByteStream_ac38189e3b81bf6b3eab5b6feab91272a}\label{classByteStream_ac38189e3b81bf6b3eab5b6feab91272a}} 
+\index{ByteStream@{ByteStream}!error@{error}}
+\index{error@{error}!ByteStream@{ByteStream}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily bool Byte\+Stream\+::error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{返回}
+{\ttfamily true} if the stream has suffered an error 
+\end{DoxyReturn}
+
+
+在文件 byte\+\_\+stream.\+hh 第 66 行定义.
+
+\mbox{\Hypertarget{classByteStream_a4a4a5050f50476e40535dbdbbfccfad1}\label{classByteStream_a4a4a5050f50476e40535dbdbbfccfad1}} 
+\index{ByteStream@{ByteStream}!input\_ended@{input\_ended}}
+\index{input\_ended@{input\_ended}!ByteStream@{ByteStream}}
+\doxysubsubsection{\texorpdfstring{input\_ended()}{input\_ended()}}
+{\footnotesize\ttfamily bool Byte\+Stream\+::input\+\_\+ended (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{返回}
+{\ttfamily true} if the stream input has ended 
+\end{DoxyReturn}
+
+
+在文件 byte\+\_\+stream.\+cc 第 37 行定义.
+
+\mbox{\Hypertarget{classByteStream_aeb60af8552d0410933556235a457f725}\label{classByteStream_aeb60af8552d0410933556235a457f725}} 
+\index{ByteStream@{ByteStream}!peek\_output@{peek\_output}}
+\index{peek\_output@{peek\_output}!ByteStream@{ByteStream}}
+\doxysubsubsection{\texorpdfstring{peek\_output()}{peek\_output()}}
+{\footnotesize\ttfamily string Byte\+Stream\+::peek\+\_\+output (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{len }\end{DoxyParamCaption}) const}
+
+\mbox{\hyperlink{structPeek}{Peek}} at next \char`\"{}len\char`\"{} bytes of the stream \begin{DoxyReturn}{返回}
+a string
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em len} & bytes will be copied from the output side of the buffer \\
+\hline
+\end{DoxyParams}
+
+
+在文件 byte\+\_\+stream.\+cc 第 27 行定义.
+
+\mbox{\Hypertarget{classByteStream_ae62172814cd4ed0314c1772d931eaed2}\label{classByteStream_ae62172814cd4ed0314c1772d931eaed2}} 
+\index{ByteStream@{ByteStream}!pop\_output@{pop\_output}}
+\index{pop\_output@{pop\_output}!ByteStream@{ByteStream}}
+\doxysubsubsection{\texorpdfstring{pop\_output()}{pop\_output()}}
+{\footnotesize\ttfamily void Byte\+Stream\+::pop\+\_\+output (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+
+
+Remove bytes from the buffer 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em len} & bytes will be removed from the output side of the buffer \\
+\hline
+\end{DoxyParams}
+
+
+在文件 byte\+\_\+stream.\+cc 第 33 行定义.
+
+\mbox{\Hypertarget{classByteStream_a682c7b2501245dd98385789c2deb0bdf}\label{classByteStream_a682c7b2501245dd98385789c2deb0bdf}} 
+\index{ByteStream@{ByteStream}!read@{read}}
+\index{read@{read}!ByteStream@{ByteStream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily std\+::string Byte\+Stream\+::read (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Read (i.\+e., copy and then pop) the next \char`\"{}len\char`\"{} bytes of the stream \begin{DoxyReturn}{返回}
+a vector of bytes read 
+\end{DoxyReturn}
+
+
+在文件 byte\+\_\+stream.\+hh 第 56 行定义.
+
+\mbox{\Hypertarget{classByteStream_aa14145f1e6c963f8e010fd6df7c758f2}\label{classByteStream_aa14145f1e6c963f8e010fd6df7c758f2}} 
+\index{ByteStream@{ByteStream}!remaining\_capacity@{remaining\_capacity}}
+\index{remaining\_capacity@{remaining\_capacity}!ByteStream@{ByteStream}}
+\doxysubsubsection{\texorpdfstring{remaining\_capacity()}{remaining\_capacity()}}
+{\footnotesize\ttfamily size\+\_\+t Byte\+Stream\+::remaining\+\_\+capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{返回}
+the number of additional bytes that the stream has space for 
+\end{DoxyReturn}
+
+
+在文件 byte\+\_\+stream.\+cc 第 49 行定义.
+
+\mbox{\Hypertarget{classByteStream_a449f69921c565304b92b38d43b059500}\label{classByteStream_a449f69921c565304b92b38d43b059500}} 
+\index{ByteStream@{ByteStream}!write@{write}}
+\index{write@{write}!ByteStream@{ByteStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily size\+\_\+t Byte\+Stream\+::write (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{structWrite}{Write}} a string of bytes into the stream. \mbox{\hyperlink{structWrite}{Write}} as many as will fit, and return how many were written. \begin{DoxyReturn}{返回}
+the number of bytes accepted into the stream 
+\end{DoxyReturn}
+
+
+在文件 byte\+\_\+stream.\+cc 第 21 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+libsponge/byte\+\_\+stream.\+hh\item 
+libsponge/byte\+\_\+stream.\+cc\end{DoxyCompactItemize}

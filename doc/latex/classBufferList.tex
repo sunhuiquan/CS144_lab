@@ -1,0 +1,85 @@
+\hypertarget{classBufferList}{}\doxysection{Buffer\+List类 参考}
+\label{classBufferList}\index{BufferList@{BufferList}}
+
+
+A reference-\/counted discontiguous string that can discard bytes from the front  
+
+
+
+
+{\ttfamily \#include $<$buffer.\+hh$>$}
+
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBufferList_a207363e83f8d373295200fa50ce53476}\label{classBufferList_a207363e83f8d373295200fa50ce53476}} 
+const std\+::deque$<$ \mbox{\hyperlink{classBuffer}{Buffer}} $>$ \& \mbox{\hyperlink{classBufferList_a207363e83f8d373295200fa50ce53476}{buffers}} () const
+\begin{DoxyCompactList}\small\item\em Access the underlying queue of Buffers \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBufferList_a24c3f8901c2ce418d1480979def29c25}\label{classBufferList_a24c3f8901c2ce418d1480979def29c25}} 
+void \mbox{\hyperlink{classBufferList_a24c3f8901c2ce418d1480979def29c25}{append}} (const \mbox{\hyperlink{classBufferList}{Buffer\+List}} \&other)
+\begin{DoxyCompactList}\small\item\em Append a \mbox{\hyperlink{classBufferList}{Buffer\+List}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBufferList_a6f926a21cc81438ddba75b92cd6e5838}{operator Buffer}} () const
+\begin{DoxyCompactList}\small\item\em Transform to a \mbox{\hyperlink{classBuffer}{Buffer}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBufferList_ab1af42aebab1d04f2b92d55b9b929570}\label{classBufferList_ab1af42aebab1d04f2b92d55b9b929570}} 
+void \mbox{\hyperlink{classBufferList_ab1af42aebab1d04f2b92d55b9b929570}{remove\+\_\+prefix}} (size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Discard the first {\ttfamily n} bytes of the string (does not require a copy or move) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBufferList_ae6f1821f9fdd390b90cfaf090487ff69}\label{classBufferList_ae6f1821f9fdd390b90cfaf090487ff69}} 
+size\+\_\+t \mbox{\hyperlink{classBufferList_ae6f1821f9fdd390b90cfaf090487ff69}{size}} () const
+\begin{DoxyCompactList}\small\item\em Size of the string \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBufferList_a9cb30f7feffa896bd37e86eb8ec6ffcc}\label{classBufferList_a9cb30f7feffa896bd37e86eb8ec6ffcc}} 
+std\+::string \mbox{\hyperlink{classBufferList_a9cb30f7feffa896bd37e86eb8ec6ffcc}{concatenate}} () const
+\begin{DoxyCompactList}\small\item\em Make a copy to a new std\+::string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Constructors}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBufferList_a5a8f7b7a565bb8b717a182729bafebf5}\label{classBufferList_a5a8f7b7a565bb8b717a182729bafebf5}} 
+{\bfseries Buffer\+List} ()=default
+\item 
+\mbox{\Hypertarget{classBufferList_aa67a82729af55fdf9ebd82fcedbf234b}\label{classBufferList_aa67a82729af55fdf9ebd82fcedbf234b}} 
+\mbox{\hyperlink{classBufferList_aa67a82729af55fdf9ebd82fcedbf234b}{Buffer\+List}} (\mbox{\hyperlink{classBuffer}{Buffer}} buffer)
+\begin{DoxyCompactList}\small\item\em Construct from a \mbox{\hyperlink{classBuffer}{Buffer}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBufferList_a56f2ee632e5b16f0f20fe0e975cbe47f}\label{classBufferList_a56f2ee632e5b16f0f20fe0e975cbe47f}} 
+\mbox{\hyperlink{classBufferList_a56f2ee632e5b16f0f20fe0e975cbe47f}{Buffer\+List}} (std\+::string \&\&str) noexcept
+\begin{DoxyCompactList}\small\item\em Construct by taking ownership of a std\+::string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{详细描述}
+A reference-\/counted discontiguous string that can discard bytes from the front 
+
+\begin{DoxyNote}{注解}
+Used to model packets that contain multiple sets of headers
+\begin{DoxyItemize}
+\item a payload. This allows us to prepend headers (e.\+g., to encapsulate a T\+CP payload in a T\+C\+P\+Segment, and then encapsulate the T\+C\+P\+Segment in an I\+Pv4\+Datagram) without copying the payload. 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+
+在文件 buffer.\+hh 第 56 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classBufferList_a6f926a21cc81438ddba75b92cd6e5838}\label{classBufferList_a6f926a21cc81438ddba75b92cd6e5838}} 
+\index{BufferList@{BufferList}!operator Buffer@{operator Buffer}}
+\index{operator Buffer@{operator Buffer}!BufferList@{BufferList}}
+\doxysubsubsection{\texorpdfstring{operator Buffer()}{operator Buffer()}}
+{\footnotesize\ttfamily Buffer\+List\+::operator \mbox{\hyperlink{classBuffer}{Buffer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Transform to a \mbox{\hyperlink{classBuffer}{Buffer}} 
+
+\begin{DoxyNote}{注解}
+Throws an exception unless \mbox{\hyperlink{classBufferList}{Buffer\+List}} is contiguous 
+\end{DoxyNote}
+
+
+在文件 buffer.\+cc 第 21 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+libsponge/util/buffer.\+hh\item 
+libsponge/util/buffer.\+cc\end{DoxyCompactItemize}

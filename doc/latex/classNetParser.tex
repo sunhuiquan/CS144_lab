@@ -1,0 +1,66 @@
+\hypertarget{classNetParser}{}\doxysection{Net\+Parser类 参考}
+\label{classNetParser}\index{NetParser@{NetParser}}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNetParser_a6e0c0f6f2668ec58e640310dff7b201b}\label{classNetParser_a6e0c0f6f2668ec58e640310dff7b201b}} 
+{\bfseries Net\+Parser} (\mbox{\hyperlink{classBuffer}{Buffer}} buffer)
+\item 
+\mbox{\Hypertarget{classNetParser_ab2a67bf9891b25e328760451c976c6ab}\label{classNetParser_ab2a67bf9891b25e328760451c976c6ab}} 
+\mbox{\hyperlink{classBuffer}{Buffer}} {\bfseries buffer} () const
+\item 
+\mbox{\Hypertarget{classNetParser_a487d69e2533622a4aa126091b557eeea}\label{classNetParser_a487d69e2533622a4aa126091b557eeea}} 
+Parse\+Result \mbox{\hyperlink{classNetParser_a487d69e2533622a4aa126091b557eeea}{get\+\_\+error}} () const
+\begin{DoxyCompactList}\small\item\em Get the current value stored in Base\+Parser\+::\+\_\+error \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetParser_a502192ff9fde65cfb712e55cc31e222b}{set\+\_\+error}} (Parse\+Result res)
+\begin{DoxyCompactList}\small\item\em Set Base\+Parser\+::\+\_\+error \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetParser_aaf825172b3ddb6d2a5ce3fb619ed1bdb}\label{classNetParser_aaf825172b3ddb6d2a5ce3fb619ed1bdb}} 
+bool \mbox{\hyperlink{classNetParser_aaf825172b3ddb6d2a5ce3fb619ed1bdb}{error}} () const
+\begin{DoxyCompactList}\small\item\em Returns {\ttfamily true} if there has been an error \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetParser_a061060453c84160f58754e898bcf1a35}\label{classNetParser_a061060453c84160f58754e898bcf1a35}} 
+uint32\+\_\+t \mbox{\hyperlink{classNetParser_a061060453c84160f58754e898bcf1a35}{u32}} ()
+\begin{DoxyCompactList}\small\item\em Parse a 32-\/bit integer in network byte order from the data stream \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetParser_a3e7861cb8c89b9edfa06c2fa83581a22}\label{classNetParser_a3e7861cb8c89b9edfa06c2fa83581a22}} 
+uint16\+\_\+t \mbox{\hyperlink{classNetParser_a3e7861cb8c89b9edfa06c2fa83581a22}{u16}} ()
+\begin{DoxyCompactList}\small\item\em Parse a 16-\/bit integer in network byte order from the data stream \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetParser_af6d65b0aadd0785e8b177915c4b77575}\label{classNetParser_af6d65b0aadd0785e8b177915c4b77575}} 
+uint8\+\_\+t \mbox{\hyperlink{classNetParser_af6d65b0aadd0785e8b177915c4b77575}{u8}} ()
+\begin{DoxyCompactList}\small\item\em Parse an 8-\/bit integer in network byte order from the data stream \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetParser_a75f5397008ee84a3378412268a87f366}\label{classNetParser_a75f5397008ee84a3378412268a87f366}} 
+void \mbox{\hyperlink{classNetParser_a75f5397008ee84a3378412268a87f366}{remove\+\_\+prefix}} (const size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Remove n bytes from the buffer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 parser.\+hh 第 24 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classNetParser_a502192ff9fde65cfb712e55cc31e222b}\label{classNetParser_a502192ff9fde65cfb712e55cc31e222b}} 
+\index{NetParser@{NetParser}!set\_error@{set\_error}}
+\index{set\_error@{set\_error}!NetParser@{NetParser}}
+\doxysubsubsection{\texorpdfstring{set\_error()}{set\_error()}}
+{\footnotesize\ttfamily void Net\+Parser\+::set\+\_\+error (\begin{DoxyParamCaption}\item[{Parse\+Result}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set Base\+Parser\+::\+\_\+error 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em res} & is the value to store in Base\+Parser\+::\+\_\+error \\
+\hline
+\end{DoxyParams}
+
+
+在文件 parser.\+hh 第 46 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+libsponge/util/parser.\+hh\item 
+libsponge/util/parser.\+cc\end{DoxyCompactItemize}

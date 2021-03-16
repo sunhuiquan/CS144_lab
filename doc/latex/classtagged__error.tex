@@ -1,0 +1,65 @@
+\hypertarget{classtagged__error}{}\doxysection{tagged\+\_\+error类 参考}
+\label{classtagged__error}\index{tagged\_error@{tagged\_error}}
+
+
+std\+::system\+\_\+error plus the name of what was being attempted  
+
+
+
+
+{\ttfamily \#include $<$util.\+hh$>$}
+
+
+
+类 tagged\+\_\+error 继承关系图\+:
+% FIG 0
+
+
+tagged\+\_\+error 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtagged__error_a8c7d3c0f87f6faaaffd88cee89b0a90c}{tagged\+\_\+error}} (const std\+::error\+\_\+category \&category, const std\+::string \&attempt, const int error\+\_\+code)
+\begin{DoxyCompactList}\small\item\em Construct from a category, an attempt, and an error code \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtagged__error_a2239294d3b9626b52204d59f6f5d2714}\label{classtagged__error_a2239294d3b9626b52204d59f6f5d2714}} 
+const char $\ast$ \mbox{\hyperlink{classtagged__error_a2239294d3b9626b52204d59f6f5d2714}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Returns a C string describing the error \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+std\+::system\+\_\+error plus the name of what was being attempted 
+
+在文件 util.\+hh 第 16 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classtagged__error_a8c7d3c0f87f6faaaffd88cee89b0a90c}\label{classtagged__error_a8c7d3c0f87f6faaaffd88cee89b0a90c}} 
+\index{tagged\_error@{tagged\_error}!tagged\_error@{tagged\_error}}
+\index{tagged\_error@{tagged\_error}!tagged\_error@{tagged\_error}}
+\doxysubsubsection{\texorpdfstring{tagged\_error()}{tagged\_error()}}
+{\footnotesize\ttfamily tagged\+\_\+error\+::tagged\+\_\+error (\begin{DoxyParamCaption}\item[{const std\+::error\+\_\+category \&}]{category,  }\item[{const std\+::string \&}]{attempt,  }\item[{const int}]{error\+\_\+code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct from a category, an attempt, and an error code 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em category} & is the category of error \\
+\hline
+\mbox{\texttt{ in}}  & {\em attempt} & is what was supposed to happen \\
+\hline
+\mbox{\texttt{ in}}  & {\em error\+\_\+code} & is the resulting error \\
+\hline
+\end{DoxyParams}
+
+
+在文件 util.\+hh 第 25 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+libsponge/util/util.\+hh\end{DoxyCompactItemize}

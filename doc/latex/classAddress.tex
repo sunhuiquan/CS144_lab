@@ -1,0 +1,97 @@
+\hypertarget{classAddress}{}\doxysection{Address类 参考}
+\label{classAddress}\index{Address@{Address}}
+
+
+Wrapper around I\+Pv4 addresses and D\+NS operations.  
+
+
+
+
+{\ttfamily \#include $<$address.\+hh$>$}
+
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classAddress_1_1Raw}{Raw}}
+\begin{DoxyCompactList}\small\item\em Wrapper around sockaddr\+\_\+storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAddress_a62346bbd3e185a7b102cab9574be26eb}\label{classAddress_a62346bbd3e185a7b102cab9574be26eb}} 
+\mbox{\hyperlink{classAddress_a62346bbd3e185a7b102cab9574be26eb}{Address}} (const std\+::string \&hostname, const std\+::string \&service)
+\begin{DoxyCompactList}\small\item\em Construct by resolving a hostname and servicename. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAddress_a2db43a867b6a7a9b20ba21b13eeed263}\label{classAddress_a2db43a867b6a7a9b20ba21b13eeed263}} 
+\mbox{\hyperlink{classAddress_a2db43a867b6a7a9b20ba21b13eeed263}{Address}} (const std\+::string \&\mbox{\hyperlink{classAddress_ad6bb9947da74feac256fb3d85e1a13d0}{ip}}, const std\+::uint16\+\_\+t \mbox{\hyperlink{classAddress_ac55e561a5acaf897f592ebf6d2fb4ec7}{port}})
+\begin{DoxyCompactList}\small\item\em Construct from dotted-\/quad string (\char`\"{}18.\+243.\+0.\+1\char`\"{}) and numeric port. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAddress_a05f9af41381d22e7df2fb4073b590c53}\label{classAddress_a05f9af41381d22e7df2fb4073b590c53}} 
+\mbox{\hyperlink{classAddress_a05f9af41381d22e7df2fb4073b590c53}{Address}} (const sockaddr $\ast$addr, const std\+::size\+\_\+t \mbox{\hyperlink{classAddress_a616505289b7760a728bb673604f44faa}{size}})
+\begin{DoxyCompactList}\small\item\em Construct from a sockaddr $\ast$. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAddress_a69c16bf4ed6bc8e502a6a65f88ece8a1}\label{classAddress_a69c16bf4ed6bc8e502a6a65f88ece8a1}} 
+bool \mbox{\hyperlink{classAddress_a69c16bf4ed6bc8e502a6a65f88ece8a1}{operator==}} (const \mbox{\hyperlink{classAddress}{Address}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality comparison. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAddress_af640fd0a1d34b5b72c6a9a6f5fbf2b5c}\label{classAddress_af640fd0a1d34b5b72c6a9a6f5fbf2b5c}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classAddress}{Address}} \&other) const
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Conversions}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAddress_a22d6e18c92ad6c819629c5f9b9839daf}\label{classAddress_a22d6e18c92ad6c819629c5f9b9839daf}} 
+std\+::pair$<$ std\+::string, uint16\+\_\+t $>$ \mbox{\hyperlink{classAddress_a22d6e18c92ad6c819629c5f9b9839daf}{ip\+\_\+port}} () const
+\begin{DoxyCompactList}\small\item\em Dotted-\/quad IP address string (\char`\"{}18.\+243.\+0.\+1\char`\"{}) and numeric port. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAddress_ad6bb9947da74feac256fb3d85e1a13d0}\label{classAddress_ad6bb9947da74feac256fb3d85e1a13d0}} 
+std\+::string \mbox{\hyperlink{classAddress_ad6bb9947da74feac256fb3d85e1a13d0}{ip}} () const
+\begin{DoxyCompactList}\small\item\em Dotted-\/quad IP address string (\char`\"{}18.\+243.\+0.\+1\char`\"{}). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAddress_ac55e561a5acaf897f592ebf6d2fb4ec7}\label{classAddress_ac55e561a5acaf897f592ebf6d2fb4ec7}} 
+uint16\+\_\+t \mbox{\hyperlink{classAddress_ac55e561a5acaf897f592ebf6d2fb4ec7}{port}} () const
+\begin{DoxyCompactList}\small\item\em Numeric port (host byte order). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAddress_a838b463e2919fd5fa43cdad946fbc924}\label{classAddress_a838b463e2919fd5fa43cdad946fbc924}} 
+uint32\+\_\+t \mbox{\hyperlink{classAddress_a838b463e2919fd5fa43cdad946fbc924}{ipv4\+\_\+numeric}} () const
+\begin{DoxyCompactList}\small\item\em Numeric IP address as an integer (i.\+e., in host byte order). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAddress_a81293a8b94c69fd86fc025e57ce89121}\label{classAddress_a81293a8b94c69fd86fc025e57ce89121}} 
+std\+::string \mbox{\hyperlink{classAddress_a81293a8b94c69fd86fc025e57ce89121}{to\+\_\+string}} () const
+\begin{DoxyCompactList}\small\item\em Human-\/readable string, e.\+g., \char`\"{}8.\+8.\+8.\+8\+:53\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Low-\/level operations}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAddress_a616505289b7760a728bb673604f44faa}\label{classAddress_a616505289b7760a728bb673604f44faa}} 
+socklen\+\_\+t \mbox{\hyperlink{classAddress_a616505289b7760a728bb673604f44faa}{size}} () const
+\begin{DoxyCompactList}\small\item\em Size of the underlying address storage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAddress_a32a354ca80a40b3779ba87d6622290e8}\label{classAddress_a32a354ca80a40b3779ba87d6622290e8}} 
+\mbox{\hyperlink{classAddress_a32a354ca80a40b3779ba87d6622290e8}{operator const sockaddr $\ast$}} () const
+\begin{DoxyCompactList}\small\item\em Const pointer to the underlying socket address storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{详细描述}
+Wrapper around I\+Pv4 addresses and D\+NS operations. 
+
+For example, you can do D\+NS lookups\+:
+
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+
+or you can specify an IP address and port number\+:
+
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+
+Once you have an address, you can convert it to other useful representations, e.\+g.,
+
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+在文件 address.\+hh 第 13 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+libsponge/util/address.\+hh\item 
+libsponge/util/address.\+cc\end{DoxyCompactItemize}

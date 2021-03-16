@@ -1,0 +1,64 @@
+\hypertarget{classTestFD}{}\doxysection{Test\+F\+D类 参考}
+\label{classTestFD}\index{TestFD@{TestFD}}
+
+
+A wrapper class for a S\+O\+C\+K\+\_\+\+S\+E\+Q\+P\+A\+C\+K\+ET Unix-\/domain socket, for use by \mbox{\hyperlink{classTCPTestHarness}{T\+C\+P\+Test\+Harness}}  
+
+
+
+
+{\ttfamily \#include $<$tcp\+\_\+fsm\+\_\+test\+\_\+harness.\+hh$>$}
+
+
+
+类 Test\+FD 继承关系图\+:
+% FIG 0
+
+
+Test\+FD 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTestFD_ad6813f83fa93129b1d11d054000dc3e3}\label{classTestFD_ad6813f83fa93129b1d11d054000dc3e3}} 
+\mbox{\hyperlink{classTestFD_ad6813f83fa93129b1d11d054000dc3e3}{Test\+FD}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor invokes \mbox{\hyperlink{classTestFD}{Test\+F\+D(std\+::pair$<$\+File\+Descriptor, Test\+R\+F\+D$>$ fd\+\_\+pair)}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTestFD_abfc468134727b0a47e5f90239cce2534}{write}} (const \mbox{\hyperlink{classBufferViewList}{Buffer\+View\+List}} \&buffer)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structWrite}{Write}} a buffer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+A wrapper class for a S\+O\+C\+K\+\_\+\+S\+E\+Q\+P\+A\+C\+K\+ET Unix-\/domain socket, for use by \mbox{\hyperlink{classTCPTestHarness}{T\+C\+P\+Test\+Harness}} 
+
+A \mbox{\hyperlink{classTestFD}{Test\+FD}} comprises the two endpoints of a Unix-\/domain socket connection. The contents of a \mbox{\hyperlink{classTestFD_abfc468134727b0a47e5f90239cce2534}{write()}} to this object can subsequently be \mbox{\hyperlink{classFileDescriptor_a78855a48fc15ec7ae673c56b652de915}{read()}} from it. 
+
+在文件 tcp\+\_\+fsm\+\_\+test\+\_\+harness.\+hh 第 20 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classTestFD_abfc468134727b0a47e5f90239cce2534}\label{classTestFD_abfc468134727b0a47e5f90239cce2534}} 
+\index{TestFD@{TestFD}!write@{write}}
+\index{write@{write}!TestFD@{TestFD}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Test\+F\+D\+::write (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBufferViewList}{Buffer\+View\+List}} \&}]{buffer }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{structWrite}{Write}} a buffer 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em buffer} & is the content to write to the \mbox{\hyperlink{classTestFD}{Test\+FD}} \\
+\hline
+\end{DoxyParams}
+
+
+在文件 tcp\+\_\+fsm\+\_\+test\+\_\+harness.\+cc 第 29 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+tests/tcp\+\_\+fsm\+\_\+test\+\_\+harness.\+hh\item 
+tests/tcp\+\_\+fsm\+\_\+test\+\_\+harness.\+cc\end{DoxyCompactItemize}

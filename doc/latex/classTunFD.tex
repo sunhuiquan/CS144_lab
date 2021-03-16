@@ -1,0 +1,63 @@
+\hypertarget{classTunFD}{}\doxysection{Tun\+F\+D类 参考}
+\label{classTunFD}\index{TunFD@{TunFD}}
+
+
+A \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} to a \href{https://www.kernel.org/doc/Documentation/networking/tuntap.txt}{\texttt{ Linux T\+UN}} device  
+
+
+
+
+{\ttfamily \#include $<$tun.\+hh$>$}
+
+
+
+类 Tun\+FD 继承关系图\+:
+% FIG 0
+
+
+Tun\+FD 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTunFD_a0e4128da57d4853c78887f12f7531cde}{Tun\+FD}} (const std\+::string \&devname)
+\begin{DoxyCompactList}\small\item\em Open an existing persistent \href{https://www.kernel.org/doc/Documentation/networking/tuntap.txt}{\texttt{ T\+UN device}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+A \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} to a \href{https://www.kernel.org/doc/Documentation/networking/tuntap.txt}{\texttt{ Linux T\+UN}} device 
+
+在文件 tun.\+hh 第 9 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classTunFD_a0e4128da57d4853c78887f12f7531cde}\label{classTunFD_a0e4128da57d4853c78887f12f7531cde}} 
+\index{TunFD@{TunFD}!TunFD@{TunFD}}
+\index{TunFD@{TunFD}!TunFD@{TunFD}}
+\doxysubsubsection{\texorpdfstring{TunFD()}{TunFD()}}
+{\footnotesize\ttfamily Tun\+F\+D\+::\+Tun\+FD (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{devname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Open an existing persistent \href{https://www.kernel.org/doc/Documentation/networking/tuntap.txt}{\texttt{ T\+UN device}}. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em devname} & is the name of the T\+UN device, specified at its creation.\\
+\hline
+\end{DoxyParams}
+To create a T\+UN device, you should already have run \begin{DoxyVerb}ip tuntap add mode tun user `username` name `devname`
+\end{DoxyVerb}
+
+
+as root before calling this function. 
+
+在文件 tun.\+cc 第 23 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+libsponge/util/tun.\+hh\item 
+libsponge/util/tun.\+cc\end{DoxyCompactItemize}

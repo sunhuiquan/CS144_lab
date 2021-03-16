@@ -5,6 +5,8 @@
 
 3.Lab本身很普通，也不难，但出了个非常让我预料不到的bug，当我开了代理的时候，vscode单步调试正常出结果，而vscode直接运行和bash直接执行都没有输出，简直玄幻。后来意外关掉代理后结果正常，我被整吐了🤮。
 
+4.发现Sponge那个代码文档是自动生成的，发现了注释生成文档工具的强大。。。自己试了试生成了个文档，Doxygen很赞！
+
 ***
 
 # This is the initial README.md with the lab0.

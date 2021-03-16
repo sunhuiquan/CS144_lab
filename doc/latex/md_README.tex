@@ -1,0 +1,76 @@
+1.环境我用的是自己搭建的\+Ubuntu虚拟机，版本20，工具链搭建十分简单，比当时我搭建xv6的工具舒服了多少倍，不过也可能是我踩坑踩出来了。
+
+2.除了lab的pdf之外，一定要看sponge的documentary，在里头可以找到要用的\+T\+C\+Psocket。
+
+3.\+Lab本身很普通，也不难，但出了个非常让我预料不到的bug，当我开了代理的时候，vscode单步调试正常出结果，而vscode直接运行和bash直接执行都没有输出，简直玄幻。后来意外关掉代理后结果正常，我被整吐了🤮。
+
+\DoxyHorRuler{0}
+\hypertarget{md_README_autotoc_md1}{}\doxysection{This is the initial R\+E\+A\+D\+M\+E.\+md with the lab0.}\label{md_README_autotoc_md1}
+For build prereqs, see \href{https://web.stanford.edu/class/cs144/vm_howto}{\texttt{ the C\+S144 VM setup instructions}}.\hypertarget{md_README_autotoc_md2}{}\doxysubsection{Sponge quickstart}\label{md_README_autotoc_md2}
+To set up your build directory\+: \begin{DoxyVerb}$ mkdir -p <path/to/sponge>/build
+$ cd <path/to/sponge>/build
+$ cmake ..
+\end{DoxyVerb}
+
+
+{\bfseries{Note\+:}} all further commands listed below should be run from the {\ttfamily build} dir.
+
+To build\+: \begin{DoxyVerb}$ make
+\end{DoxyVerb}
+
+
+You can use the {\ttfamily -\/j} switch to build in parallel, e.\+g., \begin{DoxyVerb}$ make -j$(nproc)
+\end{DoxyVerb}
+
+
+To test (after building; make sure you\textquotesingle{}ve got the \href{https://web.stanford.edu/class/cs144/vm_howto}{\texttt{ build prereqs}} installed!) \begin{DoxyVerb}$ make check
+\end{DoxyVerb}
+
+
+The first time you run {\ttfamily make check}, it will run {\ttfamily sudo} to configure two \href{https://www.kernel.org/doc/Documentation/networking/tuntap.txt}{\texttt{ T\+UN}} devices for use during testing.\hypertarget{md_README_autotoc_md3}{}\doxysubsubsection{build options}\label{md_README_autotoc_md3}
+You can specify a different compiler when you run cmake\+: \begin{DoxyVerb}$ CC=clang CXX=clang++ cmake ..
+\end{DoxyVerb}
+
+
+You can also specify {\ttfamily C\+L\+A\+N\+G\+\_\+\+T\+I\+DY=} or {\ttfamily C\+L\+A\+N\+G\+\_\+\+F\+O\+R\+M\+AT=} (see \char`\"{}other useful targets\char`\"{}, below).
+
+Sponge\textquotesingle{}s build system supports several different build targets. By default, cmake chooses the {\ttfamily Release} target, which enables the usual optimizations. The {\ttfamily Debug} target enables debugging and reduces the level of optimization. To choose the {\ttfamily Debug} target\+: \begin{DoxyVerb}$ cmake .. -DCMAKE_BUILD_TYPE=Debug
+\end{DoxyVerb}
+
+
+The following targets are supported\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily Release} -\/ optimizations
+\item {\ttfamily Debug} -\/ debug symbols and {\ttfamily -\/Og}
+\item {\ttfamily Rel\+A\+San} -\/ release build with \href{https://en.wikipedia.org/wiki/AddressSanitizer}{\texttt{ A\+San}} and \href{https://developers.redhat.com/blog/2014/10/16/gcc-undefined-behavior-sanitizer-ubsan/}{\texttt{ U\+B\+San}}
+\item {\ttfamily Rel\+T\+San} -\/ release build with \href{https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Thread_Sanitizer}{\texttt{ Thread\+San}}
+\item {\ttfamily Debug\+A\+San} -\/ debug build with A\+San and U\+B\+San
+\item {\ttfamily Debug\+T\+San} -\/ debug build with Thread\+San
+\end{DoxyItemize}
+
+Of course, you can combine all of the above, e.\+g., \begin{DoxyVerb}$ CLANG_TIDY=clang-tidy-6.0 CXX=clang++-6.0 .. -DCMAKE_BUILD_TYPE=Debug
+\end{DoxyVerb}
+
+
+{\bfseries{Note\+:}} if you want to change {\ttfamily CC}, {\ttfamily C\+XX}, {\ttfamily C\+L\+A\+N\+G\+\_\+\+T\+I\+DY}, or {\ttfamily C\+L\+A\+N\+G\+\_\+\+F\+O\+R\+M\+AT}, you need to remove {\ttfamily build/\+C\+Make\+Cache.\+txt} and re-\/run cmake. (This isn\textquotesingle{}t necessary for {\ttfamily C\+M\+A\+K\+E\+\_\+\+B\+U\+I\+L\+D\+\_\+\+T\+Y\+PE}.)\hypertarget{md_README_autotoc_md4}{}\doxysubsubsection{other useful targets}\label{md_README_autotoc_md4}
+To generate documentation (you\textquotesingle{}ll need {\ttfamily doxygen}; output will be in {\ttfamily build/doc/})\+: \begin{DoxyVerb}$ make doc
+\end{DoxyVerb}
+
+
+To lint (you\textquotesingle{}ll need {\ttfamily clang-\/tidy})\+: \begin{DoxyVerb}$ make -j$(nproc) tidy
+\end{DoxyVerb}
+
+
+To run cppcheck (you\textquotesingle{}ll need {\ttfamily cppcheck})\+: \begin{DoxyVerb}$ make cppcheck
+\end{DoxyVerb}
+
+
+To format (you\textquotesingle{}ll need {\ttfamily clang-\/format})\+: \begin{DoxyVerb}$ make format
+\end{DoxyVerb}
+
+
+To see all available targets, \begin{DoxyVerb}$ make help
+\end{DoxyVerb}
+ 

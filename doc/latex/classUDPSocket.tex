@@ -1,0 +1,110 @@
+\hypertarget{classUDPSocket}{}\doxysection{U\+D\+P\+Socket类 参考}
+\label{classUDPSocket}\index{UDPSocket@{UDPSocket}}
+
+
+A wrapper around U\+DP sockets  
+
+
+
+
+{\ttfamily \#include $<$socket.\+hh$>$}
+
+
+
+类 U\+D\+P\+Socket 继承关系图\+:
+% FIG 0
+
+
+U\+D\+P\+Socket 的协作图\+:
+% FIG 1
+\doxysubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structUDPSocket_1_1received__datagram}{received\+\_\+datagram}}
+\begin{DoxyCompactList}\small\item\em Returned by \mbox{\hyperlink{classUDPSocket_a0c8db40dac1297323912b698618a0467}{U\+D\+P\+Socket\+::recv}}; carries received data and information about the sender \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUDPSocket_a4f86f3023f5a08f6355802599a10e100}\label{classUDPSocket_a4f86f3023f5a08f6355802599a10e100}} 
+\mbox{\hyperlink{classUDPSocket_a4f86f3023f5a08f6355802599a10e100}{U\+D\+P\+Socket}} ()
+\begin{DoxyCompactList}\small\item\em Default\+: construct an unbound, unconnected U\+DP socket \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUDPSocket_a0c8db40dac1297323912b698618a0467}\label{classUDPSocket_a0c8db40dac1297323912b698618a0467}} 
+\mbox{\hyperlink{structUDPSocket_1_1received__datagram}{received\+\_\+datagram}} \mbox{\hyperlink{classUDPSocket_a0c8db40dac1297323912b698618a0467}{recv}} (const size\+\_\+t mtu=65536)
+\begin{DoxyCompactList}\small\item\em Receive a datagram and the \mbox{\hyperlink{classAddress}{Address}} of its sender \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUDPSocket_afc369f97e9714ddc527770c4e1228e24}{recv}} (\mbox{\hyperlink{structUDPSocket_1_1received__datagram}{received\+\_\+datagram}} \&datagram, const size\+\_\+t mtu=65536)
+\begin{DoxyCompactList}\small\item\em Receive a datagram and the \mbox{\hyperlink{classAddress}{Address}} of its sender (caller can allocate storage) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUDPSocket_af8c3554c3102b93a56eee18f30485078}\label{classUDPSocket_af8c3554c3102b93a56eee18f30485078}} 
+void \mbox{\hyperlink{classUDPSocket_af8c3554c3102b93a56eee18f30485078}{sendto}} (const \mbox{\hyperlink{classAddress}{Address}} \&destination, const \mbox{\hyperlink{classBufferViewList}{Buffer\+View\+List}} \&payload)
+\begin{DoxyCompactList}\small\item\em Send a datagram to specified \mbox{\hyperlink{classAddress}{Address}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUDPSocket_a72727325869a92bf1df91ab99f72daf9}\label{classUDPSocket_a72727325869a92bf1df91ab99f72daf9}} 
+void \mbox{\hyperlink{classUDPSocket_a72727325869a92bf1df91ab99f72daf9}{send}} (const \mbox{\hyperlink{classBufferViewList}{Buffer\+View\+List}} \&payload)
+\begin{DoxyCompactList}\small\item\em Send datagram to the socket\textquotesingle{}s connected address (must call \mbox{\hyperlink{classSocket_a37018cb0609cd98256bd2d2739e7d3c5}{connect()}} first) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUDPSocket_af9378c75a9def37da7f4a270c998ba14}{U\+D\+P\+Socket}} (\mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} \&\&fd)
+\begin{DoxyCompactList}\small\item\em Construct from \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} (used by T\+C\+P\+Over\+U\+D\+P\+Socket\+Adapter) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+A wrapper around U\+DP sockets 
+
+Functions in this class are essentially wrappers over their P\+O\+S\+IX eponyms.
+
+Example\+:
+
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+在文件 socket.\+hh 第 51 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{classUDPSocket_af9378c75a9def37da7f4a270c998ba14}\label{classUDPSocket_af9378c75a9def37da7f4a270c998ba14}} 
+\index{UDPSocket@{UDPSocket}!UDPSocket@{UDPSocket}}
+\index{UDPSocket@{UDPSocket}!UDPSocket@{UDPSocket}}
+\doxysubsubsection{\texorpdfstring{UDPSocket()}{UDPSocket()}}
+{\footnotesize\ttfamily U\+D\+P\+Socket\+::\+U\+D\+P\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} \&\&}]{fd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [protected]}}
+
+
+
+Construct from \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} (used by T\+C\+P\+Over\+U\+D\+P\+Socket\+Adapter) 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em fd} & is the \mbox{\hyperlink{classFileDescriptor}{File\+Descriptor}} from which to construct \\
+\hline
+\end{DoxyParams}
+
+
+在文件 socket.\+hh 第 55 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classUDPSocket_afc369f97e9714ddc527770c4e1228e24}\label{classUDPSocket_afc369f97e9714ddc527770c4e1228e24}} 
+\index{UDPSocket@{UDPSocket}!recv@{recv}}
+\index{recv@{recv}!UDPSocket@{UDPSocket}}
+\doxysubsubsection{\texorpdfstring{recv()}{recv()}}
+{\footnotesize\ttfamily void U\+D\+P\+Socket\+::recv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structUDPSocket_1_1received__datagram}{received\+\_\+datagram}} \&}]{datagram,  }\item[{const size\+\_\+t}]{mtu = {\ttfamily 65536} }\end{DoxyParamCaption})}
+
+
+
+Receive a datagram and the \mbox{\hyperlink{classAddress}{Address}} of its sender (caller can allocate storage) 
+
+\begin{DoxyNote}{注解}
+If {\ttfamily mtu} is too small to hold the received datagram, this method throws a std\+::runtime\+\_\+error 
+\end{DoxyNote}
+
+
+在文件 socket.\+cc 第 88 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+libsponge/util/socket.\+hh\item 
+libsponge/util/socket.\+cc\end{DoxyCompactItemize}

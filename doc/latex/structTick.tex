@@ -1,0 +1,59 @@
+\hypertarget{structTick}{}\doxysection{Tick结构体 参考}
+\label{structTick}\index{Tick@{Tick}}
+
+
+类 Tick 继承关系图\+:
+% FIG 0
+
+
+Tick 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTick_a1e9ebdae5840fe1bbe953e7c2e7c58cc}\label{structTick_a1e9ebdae5840fe1bbe953e7c2e7c58cc}} 
+{\bfseries Tick} (size\+\_\+t ms)
+\item 
+\mbox{\Hypertarget{structTick_a072adcfefd7273ccaae5bec29739df78}\label{structTick_a072adcfefd7273ccaae5bec29739df78}} 
+\mbox{\hyperlink{structTick}{Tick}} \& {\bfseries with\+\_\+max\+\_\+retx\+\_\+exceeded} (bool max\+\_\+retx\+\_\+exceeded\+\_\+)
+\item 
+\mbox{\Hypertarget{structTick_ad39e90884ab0d2cc0b4a4761d362be99}\label{structTick_ad39e90884ab0d2cc0b4a4761d362be99}} 
+std\+::string {\bfseries description} () const
+\item 
+\mbox{\Hypertarget{structTick_a9ff3c5324ccc302376101d2111ab3cc8}\label{structTick_a9ff3c5324ccc302376101d2111ab3cc8}} 
+void {\bfseries execute} (T\+C\+P\+Sender \&sender, std\+::deque$<$ T\+C\+P\+Segment $>$ \&) const
+\item 
+\mbox{\Hypertarget{structTick_a392b85e5fcf5cafb51a0e8badfc738c8}\label{structTick_a392b85e5fcf5cafb51a0e8badfc738c8}} 
+{\bfseries Tick} (size\+\_\+t ms\+\_\+)
+\item 
+\mbox{\Hypertarget{structTick_ad39e90884ab0d2cc0b4a4761d362be99}\label{structTick_ad39e90884ab0d2cc0b4a4761d362be99}} 
+std\+::string {\bfseries description} () const
+\item 
+\mbox{\Hypertarget{structTick_a87d34a1f5f66d647eece50abf487db89}\label{structTick_a87d34a1f5f66d647eece50abf487db89}} 
+void {\bfseries execute} (\mbox{\hyperlink{classTCPTestHarness}{T\+C\+P\+Test\+Harness}} \&harness) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTick_add4a84aaadb07615ad5c56a5b91e9c97}\label{structTick_add4a84aaadb07615ad5c56a5b91e9c97}} 
+size\+\_\+t {\bfseries \+\_\+ms}
+\item 
+\mbox{\Hypertarget{structTick_a73ecb734df1d003afed826f7cb2b683b}\label{structTick_a73ecb734df1d003afed826f7cb2b683b}} 
+std\+::optional$<$ bool $>$ {\bfseries max\+\_\+retx\+\_\+exceeded} \{\}
+\item 
+\mbox{\Hypertarget{structTick_a2f19ee4b1de9be0327f7697fc1b15f85}\label{structTick_a2f19ee4b1de9be0327f7697fc1b15f85}} 
+size\+\_\+t {\bfseries ms\+\_\+since\+\_\+last\+\_\+tick}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 sender\+\_\+harness.\+hh 第 141 行定义.
+
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+tests/sender\+\_\+harness.\+hh\item 
+tests/tcp\+\_\+expectation.\+hh\end{DoxyCompactItemize}

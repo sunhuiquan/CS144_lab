@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Doc Lab 0: EventLoop类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Doc Lab 0
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classEventLoop.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classEventLoop-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">EventLoop类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Waits for events on file descriptors and executes corresponding callbacks.  
+ <a href="classEventLoop.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="eventloop_8hh_source.html">eventloop.hh</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aacf9274eb319e0828ecb4f6760b7ab9b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventLoop.html#aacf9274eb319e0828ecb4f6760b7ab9b">Direction</a> : short { <a class="el" href="classEventLoop.html#aacf9274eb319e0828ecb4f6760b7ab9baefeb369cccbd560588a756610865664c">Direction::In</a> = POLLIN, 
+<a class="el" href="classEventLoop.html#aacf9274eb319e0828ecb4f6760b7ab9ba7c147cda9e49590f6abe83d118b7353b">Direction::Out</a> = POLLOUT
+ }</td></tr>
+<tr class="memdesc:aacf9274eb319e0828ecb4f6760b7ab9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates interest in reading (In) or writing (Out) a polled fd.  <a href="classEventLoop.html#aacf9274eb319e0828ecb4f6760b7ab9b">更多...</a><br /></td></tr>
+<tr class="separator:aacf9274eb319e0828ecb4f6760b7ab9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a546fea46598ab3b00e5959bc42bb11ef"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventLoop.html#a546fea46598ab3b00e5959bc42bb11ef">Result</a> { <a class="el" href="classEventLoop.html#a546fea46598ab3b00e5959bc42bb11efa505a83f220c02df2f85c3810cd9ceb38">Result::Success</a>, 
+<a class="el" href="classEventLoop.html#a546fea46598ab3b00e5959bc42bb11efac85a251cc457840f1e032f1b733e9398">Result::Timeout</a>, 
+<a class="el" href="classEventLoop.html#a546fea46598ab3b00e5959bc42bb11efafef46e5063ce3dc78b8ae64fa474241d">Result::Exit</a>
+ }</td></tr>
+<tr class="memdesc:a546fea46598ab3b00e5959bc42bb11ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returned by each call to <a class="el" href="classEventLoop.html#a90ab8455d37b682d5b8b8bad5ae96daf" title="Calls poll(2) and then executes callback for each ready fd.">EventLoop::wait_next_event</a>.  <a href="classEventLoop.html#a546fea46598ab3b00e5959bc42bb11ef">更多...</a><br /></td></tr>
+<tr class="separator:a546fea46598ab3b00e5959bc42bb11ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5692e0e50828af7b80f4b9f1e480ba2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventLoop.html#a5692e0e50828af7b80f4b9f1e480ba2c">add_rule</a> (const <a class="el" href="classFileDescriptor.html">FileDescriptor</a> &amp;fd, const <a class="el" href="classEventLoop.html#aacf9274eb319e0828ecb4f6760b7ab9b">Direction</a> direction, const CallbackT &amp;callback, const InterestT &amp;interest=[] { return true;}, const CallbackT &amp;cancel=[] {})</td></tr>
+<tr class="memdesc:a5692e0e50828af7b80f4b9f1e480ba2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a rule whose callback will be called when <code>fd</code> is ready in the specified Direction.  <a href="classEventLoop.html#a5692e0e50828af7b80f4b9f1e480ba2c">更多...</a><br /></td></tr>
+<tr class="separator:a5692e0e50828af7b80f4b9f1e480ba2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ab8455d37b682d5b8b8bad5ae96daf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classEventLoop.html#a546fea46598ab3b00e5959bc42bb11ef">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventLoop.html#a90ab8455d37b682d5b8b8bad5ae96daf">wait_next_event</a> (const int timeout_ms)</td></tr>
+<tr class="memdesc:a90ab8455d37b682d5b8b8bad5ae96daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls poll(2) and then executes callback for each ready fd.  <a href="classEventLoop.html#a90ab8455d37b682d5b8b8bad5ae96daf">更多...</a><br /></td></tr>
+<tr class="separator:a90ab8455d37b682d5b8b8bad5ae96daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Waits for events on file descriptors and executes corresponding callbacks. </p>
+<p>An <a class="el" href="classEventLoop.html" title="Waits for events on file descriptors and executes corresponding callbacks.">EventLoop</a> holds a std::list of Rule objects. Each time <a class="el" href="classEventLoop.html#a90ab8455d37b682d5b8b8bad5ae96daf" title="Calls poll(2) and then executes callback for each ready fd.">EventLoop::wait_next_event</a> is executed, the <a class="el" href="classEventLoop.html" title="Waits for events on file descriptors and executes corresponding callbacks.">EventLoop</a> uses the Rule objects to construct a call to poll(2).</p>
+<p>When a Rule is installed using <a class="el" href="classEventLoop.html#a5692e0e50828af7b80f4b9f1e480ba2c" title="Add a rule whose callback will be called when fd is ready in the specified Direction.">EventLoop::add_rule</a>, it will be polled for the specified Rule::direction whenver the Rule::interest callback returns <code>true</code>, until Rule::fd is no longer readable (for Rule::direction == <a class="el" href="classEventLoop.html#aacf9274eb319e0828ecb4f6760b7ab9baefeb369cccbd560588a756610865664c" title="Callback will be triggered when Rule::fd is readable.">Direction::In</a>) or writable (for Rule::direction == <a class="el" href="classEventLoop.html#aacf9274eb319e0828ecb4f6760b7ab9ba7c147cda9e49590f6abe83d118b7353b" title="Callback will be triggered when Rule::fd is writable.">Direction::Out</a>). Once this occurs, the Rule is canceled, i.e., the <a class="el" href="classEventLoop.html" title="Waits for events on file descriptors and executes corresponding callbacks.">EventLoop</a> deletes it.</p>
+<p>A Rule installed using EventLoop::add_cancelable_rule will be polled and canceled under the same conditions, with the additional condition that if Rule::callback returns <code>true</code>, the Rule will be canceled. </p>
+
+<p class="definition">在文件 <a class="el" href="eventloop_8hh_source.html">eventloop.hh</a> 第 <a class="el" href="eventloop_8hh_source.html#l00012">12</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="aacf9274eb319e0828ecb4f6760b7ab9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf9274eb319e0828ecb4f6760b7ab9b">&#9670;&nbsp;</a></span>Direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classEventLoop.html#aacf9274eb319e0828ecb4f6760b7ab9b">EventLoop::Direction</a> : short</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates interest in reading (In) or writing (Out) a polled fd. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="aacf9274eb319e0828ecb4f6760b7ab9baefeb369cccbd560588a756610865664c"></a>In&#160;</td><td class="fielddoc"><p>Callback will be triggered when Rule::fd is readable. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aacf9274eb319e0828ecb4f6760b7ab9ba7c147cda9e49590f6abe83d118b7353b"></a>Out&#160;</td><td class="fielddoc"><p>Callback will be triggered when Rule::fd is writable. </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="eventloop_8hh_source.html">eventloop.hh</a> 第 <a class="el" href="eventloop_8hh_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a546fea46598ab3b00e5959bc42bb11ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a546fea46598ab3b00e5959bc42bb11ef">&#9670;&nbsp;</a></span>Result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classEventLoop.html#a546fea46598ab3b00e5959bc42bb11ef">EventLoop::Result</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returned by each call to <a class="el" href="classEventLoop.html#a90ab8455d37b682d5b8b8bad5ae96daf" title="Calls poll(2) and then executes callback for each ready fd.">EventLoop::wait_next_event</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a546fea46598ab3b00e5959bc42bb11efa505a83f220c02df2f85c3810cd9ceb38"></a>Success&#160;</td><td class="fielddoc"><p>At least one Rule was triggered. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a546fea46598ab3b00e5959bc42bb11efac85a251cc457840f1e032f1b733e9398"></a>Timeout&#160;</td><td class="fielddoc"><p>No rules were triggered before timeout. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a546fea46598ab3b00e5959bc42bb11efafef46e5063ce3dc78b8ae64fa474241d"></a>Exit&#160;</td><td class="fielddoc"><p>All rules have been canceled or were uninterested; make no further calls to <a class="el" href="classEventLoop.html#a90ab8455d37b682d5b8b8bad5ae96daf" title="Calls poll(2) and then executes callback for each ready fd.">EventLoop::wait_next_event</a>. </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="eventloop_8hh_source.html">eventloop.hh</a> 第 <a class="el" href="eventloop_8hh_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a5692e0e50828af7b80f4b9f1e480ba2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5692e0e50828af7b80f4b9f1e480ba2c">&#9670;&nbsp;</a></span>add_rule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EventLoop::add_rule </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classFileDescriptor.html">FileDescriptor</a> &amp;&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classEventLoop.html#aacf9274eb319e0828ecb4f6760b7ab9b">Direction</a>&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CallbackT &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const InterestT &amp;&#160;</td>
+          <td class="paramname"><em>interest</em> = <code>[]&#160;{&#160;return&#160;true;&#160;}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CallbackT &amp;&#160;</td>
+          <td class="paramname"><em>cancel</em> = <code>[]&#160;{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a rule whose callback will be called when <code>fd</code> is ready in the specified Direction. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fd</td><td>is the <a class="el" href="classFileDescriptor.html" title="A reference-counted handle to a file descriptor">FileDescriptor</a> to be polled </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">direction</td><td>indicates whether to poll for reading (<a class="el" href="classEventLoop.html#aacf9274eb319e0828ecb4f6760b7ab9baefeb369cccbd560588a756610865664c" title="Callback will be triggered when Rule::fd is readable.">Direction::In</a>) or writing (<a class="el" href="classEventLoop.html#aacf9274eb319e0828ecb4f6760b7ab9ba7c147cda9e49590f6abe83d118b7353b" title="Callback will be triggered when Rule::fd is writable.">Direction::Out</a>) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>is called when <code>fd</code> is ready. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interest</td><td>is called by <a class="el" href="classEventLoop.html#a90ab8455d37b682d5b8b8bad5ae96daf" title="Calls poll(2) and then executes callback for each ready fd.">EventLoop::wait_next_event</a>. If it returns <code>true</code>, <code>fd</code> will be polled, otherwise <code>fd</code> will be ignored only for this execution of `wait_next_event. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cancel</td><td>is called when the rule is cancelled (e.g. on hangup, EOF, or closure). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="eventloop_8cc_source.html">eventloop.cc</a> 第 <a class="el" href="eventloop_8cc_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a90ab8455d37b682d5b8b8bad5ae96daf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90ab8455d37b682d5b8b8bad5ae96daf">&#9670;&nbsp;</a></span>wait_next_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classEventLoop.html#a546fea46598ab3b00e5959bc42bb11ef">EventLoop::Result</a> EventLoop::wait_next_event </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls poll(2) and then executes callback for each ready fd. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>is the timeout value passed to poll(2); <code>wait_next_event</code> returns <a class="el" href="classEventLoop.html#a546fea46598ab3b00e5959bc42bb11efac85a251cc457840f1e032f1b733e9398" title="No rules were triggered before timeout.">Result::Timeout</a> if no fd is ready after the timeout expires. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Eventloop::Result indicating success, timeout, or no more Rule objects to poll.</dd></dl>
+<p>For each Rule, this function first calls Rule::interest; if <code>true</code>, Rule::fd is added to the list of file descriptors to be polled for readability (if Rule::direction == <a class="el" href="classEventLoop.html#aacf9274eb319e0828ecb4f6760b7ab9baefeb369cccbd560588a756610865664c" title="Callback will be triggered when Rule::fd is readable.">Direction::In</a>) or writability (if Rule::direction == <a class="el" href="classEventLoop.html#aacf9274eb319e0828ecb4f6760b7ab9ba7c147cda9e49590f6abe83d118b7353b" title="Callback will be triggered when Rule::fd is writable.">Direction::Out</a>) unless Rule::fd has reached EOF, in which case the Rule is canceled (i.e., deleted from EventLoop::_rules).</p>
+<p>Next, this function calls poll(2) with timeout value <code>timeout_ms</code>.</p>
+<p>Then, for each ready file descriptor, this function calls Rule::callback. If fd reaches EOF or if the Rule was registered using EventLoop::add_cancelable_rule and Rule::callback returns true, this Rule is canceled.</p>
+<p>If an error occurs during polling, this function throws a std::runtime_error.</p>
+<p>If a signal(7) was caught during polling or if EventLoop::_rules becomes empty, this function returns <a class="el" href="classEventLoop.html#a546fea46598ab3b00e5959bc42bb11efafef46e5063ce3dc78b8ae64fa474241d" title="All rules have been canceled or were uninterested; make no further calls to EventLoop::wait_next_even...">Result::Exit</a>.</p>
+<p>If a timeout occurred while polling (i.e., no fd became ready), this function returns <a class="el" href="classEventLoop.html#a546fea46598ab3b00e5959bc42bb11efac85a251cc457840f1e032f1b733e9398" title="No rules were triggered before timeout.">Result::Timeout</a>.</p>
+<p>Otherwise, this function returns <a class="el" href="classEventLoop.html#a546fea46598ab3b00e5959bc42bb11efa505a83f220c02df2f85c3810cd9ceb38" title="At least one Rule was triggered.">Result::Success</a>.</p>
+<p><b>IMPORTANT:</b> every call to Rule::callback must read from or write to Rule::fd, or the <code>interest</code> callback must stop returning true after the callback completes. If none of these conditions occur, <a class="el" href="classEventLoop.html#a90ab8455d37b682d5b8b8bad5ae96daf" title="Calls poll(2) and then executes callback for each ready fd.">EventLoop::wait_next_event</a> will throw std::runtime_error. This is because poll(2) is level triggered, so failing to act on a ready file descriptor will result in a busy loop (poll returns on a ready file descriptor; file descriptor is not read or written, so it is still ready; the next call to poll will immediately return). </p>
+
+<p class="definition">在文件 <a class="el" href="eventloop_8cc_source.html">eventloop.cc</a> 第 <a class="el" href="eventloop_8cc_source.html#l00061">61</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>libsponge/util/<a class="el" href="eventloop_8hh_source.html">eventloop.hh</a></li>
+<li>libsponge/util/<a class="el" href="eventloop_8cc_source.html">eventloop.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classEventLoop.html">EventLoop</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

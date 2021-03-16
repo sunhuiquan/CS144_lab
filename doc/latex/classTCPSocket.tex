@@ -1,0 +1,94 @@
+\hypertarget{classTCPSocket}{}\doxysection{T\+C\+P\+Socket类 参考}
+\label{classTCPSocket}\index{TCPSocket@{TCPSocket}}
+
+
+A wrapper around T\+CP sockets  
+
+
+
+
+{\ttfamily \#include $<$socket.\+hh$>$}
+
+
+
+类 T\+C\+P\+Socket 继承关系图\+:
+% FIG 0
+
+
+T\+C\+P\+Socket 的协作图\+:
+% FIG 1
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTCPSocket_a7a50427a401d1a6f3209d51818bad901}\label{classTCPSocket_a7a50427a401d1a6f3209d51818bad901}} 
+\mbox{\hyperlink{classTCPSocket_a7a50427a401d1a6f3209d51818bad901}{T\+C\+P\+Socket}} ()
+\begin{DoxyCompactList}\small\item\em Default\+: construct an unbound, unconnected T\+CP socket \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTCPSocket_abbcc8052062ef85830da9864fe023e80}{listen}} (const int backlog=16)
+\begin{DoxyCompactList}\small\item\em Mark a socket as listening for incoming connections \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTCPSocket}{T\+C\+P\+Socket}} \mbox{\hyperlink{classTCPSocket_a45d4ff72e1f0c755225e60f89326085c}{accept}} ()
+\begin{DoxyCompactList}\small\item\em Accept a new incoming connection \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{额外继承的成员函数}
+
+
+\doxysubsection{详细描述}
+A wrapper around T\+CP sockets 
+
+Functions in this class are essentially wrappers over their P\+O\+S\+IX eponyms.
+
+Example\+:
+
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+在文件 socket.\+hh 第 88 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{classTCPSocket_a45d4ff72e1f0c755225e60f89326085c}\label{classTCPSocket_a45d4ff72e1f0c755225e60f89326085c}} 
+\index{TCPSocket@{TCPSocket}!accept@{accept}}
+\index{accept@{accept}!TCPSocket@{TCPSocket}}
+\doxysubsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTCPSocket}{T\+C\+P\+Socket}} T\+C\+P\+Socket\+::accept (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Accept a new incoming connection 
+
+\begin{DoxyReturn}{返回}
+a new \mbox{\hyperlink{classTCPSocket}{T\+C\+P\+Socket}} connected to the peer. 
+\end{DoxyReturn}
+\begin{DoxyNote}{注解}
+This function blocks until a new connection is available 
+\end{DoxyNote}
+
+
+在文件 socket.\+cc 第 151 行定义.
+
+\mbox{\Hypertarget{classTCPSocket_abbcc8052062ef85830da9864fe023e80}\label{classTCPSocket_abbcc8052062ef85830da9864fe023e80}} 
+\index{TCPSocket@{TCPSocket}!listen@{listen}}
+\index{listen@{listen}!TCPSocket@{TCPSocket}}
+\doxysubsubsection{\texorpdfstring{listen()}{listen()}}
+{\footnotesize\ttfamily void T\+C\+P\+Socket\+::listen (\begin{DoxyParamCaption}\item[{const int}]{backlog = {\ttfamily 16} }\end{DoxyParamCaption})}
+
+
+
+Mark a socket as listening for incoming connections 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\texttt{ in}}  & {\em backlog} & is the number of waiting connections to queue (see listen(2)) \\
+\hline
+\end{DoxyParams}
+
+
+在文件 socket.\+cc 第 146 行定义.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+libsponge/util/socket.\+hh\item 
+libsponge/util/socket.\+cc\end{DoxyCompactItemize}

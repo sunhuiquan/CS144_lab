@@ -10,8 +10,8 @@
             "request": "launch",
             "program": "${workspaceFolder}/build/apps/webget",
             "args": [
-                "cs144.keithw.org",
-                "/hello"
+                // "cs144.keithw.org",
+                // "/hello"
             ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

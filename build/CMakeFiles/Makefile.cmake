@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "../doctests/CMakeLists.txt"
+  "../etc/Doxyfile.in"
   "../etc/build_defs.cmake"
   "../etc/build_type.cmake"
   "../etc/cflags.cmake"
@@ -55,6 +56,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "Doxyfile"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "libsponge/CMakeFiles/CMakeDirectoryInformation.cmake"
   "apps/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -72,6 +74,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/check_lab0.dir/DependInfo.cmake"
   "CMakeFiles/check_webget.dir/DependInfo.cmake"
   "CMakeFiles/format.dir/DependInfo.cmake"
+  "CMakeFiles/doc.dir/DependInfo.cmake"
   "libsponge/CMakeFiles/sponge.dir/DependInfo.cmake"
   "apps/CMakeFiles/webget.dir/DependInfo.cmake"
   "tests/CMakeFiles/byte_stream_many_writes.dir/DependInfo.cmake"

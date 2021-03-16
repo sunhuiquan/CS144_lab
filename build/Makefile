@@ -226,6 +226,19 @@ format/fast:
 .PHONY : format/fast
 
 #=============================================================================
+# Target rules for targets named doc
+
+# Build rule for target.
+doc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doc
+.PHONY : doc
+
+# fast build rule for target.
+doc/fast:
+	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
+.PHONY : doc/fast
+
+#=============================================================================
 # Target rules for targets named sponge
 
 # Build rule for target.
@@ -385,6 +398,7 @@ help:
 	@echo "... check_lab0"
 	@echo "... check_webget"
 	@echo "... format"
+	@echo "... doc"
 	@echo "... sponge"
 	@echo "... webget"
 	@echo "... byte_stream_many_writes"

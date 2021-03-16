@@ -9,6 +9,7 @@
 /home/suen/Work/CS144_lab/build/CMakeFiles/check_lab0.dir
 /home/suen/Work/CS144_lab/build/CMakeFiles/check_webget.dir
 /home/suen/Work/CS144_lab/build/CMakeFiles/format.dir
+/home/suen/Work/CS144_lab/build/CMakeFiles/doc.dir
 /home/suen/Work/CS144_lab/build/libsponge/CMakeFiles/rebuild_cache.dir
 /home/suen/Work/CS144_lab/build/libsponge/CMakeFiles/edit_cache.dir
 /home/suen/Work/CS144_lab/build/libsponge/CMakeFiles/test.dir

@@ -1,0 +1,42 @@
+Start testing: Mar 16 11:40 CST
+----------------------------------------------------------
+22/163 Testing: t_byte_stream_construction
+22/163 Test: t_byte_stream_construction
+Command: "/home/suen/Work/CS144_lab/build/tests/byte_stream_construction"
+Directory: /home/suen/Work/CS144_lab/build
+"t_byte_stream_construction" start time: Mar 16 11:40 CST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Expectation: input_ended: 0
+
+Failure message:
+	The ByteStream should have had input_ended equal to 0 but instead it was 1
+
+List of steps that executed successfully:
+	Initialized with (capacity=15)
+
+Exception: The test "construction" failed
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_byte_stream_construction" end time: Mar 16 11:40 CST
+"t_byte_stream_construction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/163 Testing: t_byte_stream_one_write
+23/163 Test: t_byte_stream_one_write
+Command: "/home/suen/Work/CS144_lab/build/tests/byte_stream_one_write"
+Directory: /home/suen/Work/CS144_lab/build
+"t_byte_stream_one_write" start time: Mar 16 11:40 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   5.62 sec
+----------------------------------------------------------
+Test Failed.
+"t_byte_stream_one_write" end time: Mar 16 11:40 CST
+"t_byte_stream_one_write" time elapsed: 00:00:05
+----------------------------------------------------------
+

@@ -8,6 +8,8 @@
 #include <string>
 #include <utility>
 
+using std::deque;
+
 //! \brief An in-order byte stream.
 
 //! Bytes are written on the "input" side and read from the "output"
@@ -17,12 +19,12 @@ class ByteStream
 {
 private:
   // Your code here -- add private members as necessary.
-  deque<char> container_;
-  size_t buffer_size_;
-  size_t buffer_capacity_;
-  bool end_write_;
-  size_t total_size_write_;
-  size_t total_size_read_;
+  deque<char> container_{};
+  size_t buffer_size_{};
+  size_t buffer_capacity_{};
+  bool end_write_{};
+  size_t total_size_write_{};
+  size_t total_size_read_{};
 
   bool _error{}; //!< Flag indicating that the stream suffered an error.
 

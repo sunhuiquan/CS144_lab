@@ -5,14 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++ - 生成和调试活动文件",
+            "name": "g++ Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/apps/webget",
-            "args": [
-                // "cs144.keithw.org",
-                // "/hello"
-            ],
+            // "program": "${workspaceFolder}/build/apps/webget",
+            "program": "${workspaceFolder}/build/tests/byte_stream_construction",
+            "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

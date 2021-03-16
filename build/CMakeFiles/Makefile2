@@ -77,6 +77,7 @@ clean: CMakeFiles/check_lab1.dir/clean
 clean: CMakeFiles/check_lab0.dir/clean
 clean: CMakeFiles/check_webget.dir/clean
 clean: CMakeFiles/format.dir/clean
+clean: CMakeFiles/doc.dir/clean
 clean: libsponge/clean
 clean: apps/clean
 clean: tests/clean
@@ -387,13 +388,40 @@ CMakeFiles/format.dir/clean:
 .PHONY : CMakeFiles/format.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/doc.dir
+
+# All Build rule for target.
+CMakeFiles/doc.dir/all:
+	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/depend
+	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suen/Work/CS144_lab/build/CMakeFiles --progress-num=20 "Built target doc"
+.PHONY : CMakeFiles/doc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/doc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suen/Work/CS144_lab/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/doc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suen/Work/CS144_lab/build/CMakeFiles 0
+.PHONY : CMakeFiles/doc.dir/rule
+
+# Convenience name for target.
+doc: CMakeFiles/doc.dir/rule
+
+.PHONY : doc
+
+# clean rule for target.
+CMakeFiles/doc.dir/clean:
+	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/clean
+.PHONY : CMakeFiles/doc.dir/clean
+
+#=============================================================================
 # Target rules for target libsponge/CMakeFiles/sponge.dir
 
 # All Build rule for target.
 libsponge/CMakeFiles/sponge.dir/all:
 	$(MAKE) -f libsponge/CMakeFiles/sponge.dir/build.make libsponge/CMakeFiles/sponge.dir/depend
 	$(MAKE) -f libsponge/CMakeFiles/sponge.dir/build.make libsponge/CMakeFiles/sponge.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suen/Work/CS144_lab/build/CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33 "Built target sponge"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suen/Work/CS144_lab/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34 "Built target sponge"
 .PHONY : libsponge/CMakeFiles/sponge.dir/all
 
 # Build rule for subdir invocation for target.
@@ -420,7 +448,7 @@ libsponge/CMakeFiles/sponge.dir/clean:
 apps/CMakeFiles/webget.dir/all: libsponge/CMakeFiles/sponge.dir/all
 	$(MAKE) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/depend
 	$(MAKE) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suen/Work/CS144_lab/build/CMakeFiles --progress-num=36,37 "Built target webget"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suen/Work/CS144_lab/build/CMakeFiles --progress-num=37,38 "Built target webget"
 .PHONY : apps/CMakeFiles/webget.dir/all
 
 # Build rule for subdir invocation for target.
@@ -587,7 +615,7 @@ tests/CMakeFiles/byte_stream_construction.dir/clean:
 tests/CMakeFiles/spongechecks.dir/all:
 	$(MAKE) -f tests/CMakeFiles/spongechecks.dir/build.make tests/CMakeFiles/spongechecks.dir/depend
 	$(MAKE) -f tests/CMakeFiles/spongechecks.dir/build.make tests/CMakeFiles/spongechecks.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suen/Work/CS144_lab/build/CMakeFiles --progress-num=34,35 "Built target spongechecks"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suen/Work/CS144_lab/build/CMakeFiles --progress-num=35,36 "Built target spongechecks"
 .PHONY : tests/CMakeFiles/spongechecks.dir/all
 
 # Build rule for subdir invocation for target.
@@ -614,7 +642,7 @@ tests/CMakeFiles/spongechecks.dir/clean:
 doctests/CMakeFiles/parser_dt.dir/all: libsponge/CMakeFiles/sponge.dir/all
 	$(MAKE) -f doctests/CMakeFiles/parser_dt.dir/build.make doctests/CMakeFiles/parser_dt.dir/depend
 	$(MAKE) -f doctests/CMakeFiles/parser_dt.dir/build.make doctests/CMakeFiles/parser_dt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suen/Work/CS144_lab/build/CMakeFiles --progress-num=20,21 "Built target parser_dt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suen/Work/CS144_lab/build/CMakeFiles --progress-num=21,22 "Built target parser_dt"
 .PHONY : doctests/CMakeFiles/parser_dt.dir/all
 
 # Build rule for subdir invocation for target.
@@ -641,7 +669,7 @@ doctests/CMakeFiles/parser_dt.dir/clean:
 doctests/CMakeFiles/socket_dt.dir/all: libsponge/CMakeFiles/sponge.dir/all
 	$(MAKE) -f doctests/CMakeFiles/socket_dt.dir/build.make doctests/CMakeFiles/socket_dt.dir/depend
 	$(MAKE) -f doctests/CMakeFiles/socket_dt.dir/build.make doctests/CMakeFiles/socket_dt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suen/Work/CS144_lab/build/CMakeFiles --progress-num=22,23 "Built target socket_dt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suen/Work/CS144_lab/build/CMakeFiles --progress-num=23,24 "Built target socket_dt"
 .PHONY : doctests/CMakeFiles/socket_dt.dir/all
 
 # Build rule for subdir invocation for target.

@@ -9,8 +9,8 @@
             "label": "cmake",
             "command": "cmake",
             "args": [
-                ".."
-                //  , "-DCMAKE_BUILD_TYPE=Debug"
+                "..",
+                "-DCMAKE_BUILD_TYPE=Debug"
             ]
         },
         {
@@ -20,7 +20,9 @@
                 "isDefault": true
             },
             "command": "make",
-            "args": []
+            "args": [
+                "-j8"
+            ]
         },
         {
             "label": "Build",

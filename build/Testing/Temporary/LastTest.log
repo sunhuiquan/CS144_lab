@@ -1,27 +1,17 @@
-Start testing: Mar 17 13:39 CST
+Start testing: Mar 17 14:42 CST
 ----------------------------------------------------------
 22/163 Testing: t_byte_stream_construction
 22/163 Test: t_byte_stream_construction
 Command: "/home/suen/Work/CS144_lab/build/tests/byte_stream_construction"
 Directory: /home/suen/Work/CS144_lab/build
-"t_byte_stream_construction" start time: Mar 17 13:39 CST
+"t_byte_stream_construction" start time: Mar 17 14:42 CST
 Output:
 ----------------------------------------------------------
-Test Failure on expectation:
-	Expectation: input_ended: 0
-
-Failure message:
-	The ByteStream should have had input_ended equal to 0 but instead it was 1
-
-List of steps that executed successfully:
-	Initialized with (capacity=15)
-
-Exception: The test "construction" failed
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
-Test Failed.
-"t_byte_stream_construction" end time: Mar 17 13:39 CST
+Test Passed.
+"t_byte_stream_construction" end time: Mar 17 14:42 CST
 "t_byte_stream_construction" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -29,32 +19,14 @@ Test Failed.
 23/163 Test: t_byte_stream_one_write
 Command: "/home/suen/Work/CS144_lab/build/tests/byte_stream_one_write"
 Directory: /home/suen/Work/CS144_lab/build
-"t_byte_stream_one_write" start time: Mar 17 13:39 CST
+"t_byte_stream_one_write" start time: Mar 17 14:42 CST
 Output:
 ----------------------------------------------------------
-Test Failure on expectation:
-	Expectation: "cat" at the front of the stream
-
-Failure message:
-	Expected "cat" at the front of the stream, but found "cat
-
-List of steps that executed successfully:
-	Initialized with (capacity=15)
-	     Action: write "cat" to the stream
-	Expectation: input_ended: 0
-	Expectation: buffer_empty: 0
-	Expectation: eof: 0
-	Expectation: bytes_read: 0
-	Expectation: bytes_written: 3
-	Expectation: remaining_capacity: 12
-	Expectation: buffer_size: 3
-
-Exception: The test "write-end-pop" failed
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
-Test Failed.
-"t_byte_stream_one_write" end time: Mar 17 13:39 CST
+Test Passed.
+"t_byte_stream_one_write" end time: Mar 17 14:42 CST
 "t_byte_stream_one_write" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -62,32 +34,14 @@ Test Failed.
 24/163 Test: t_byte_stream_two_writes
 Command: "/home/suen/Work/CS144_lab/build/tests/byte_stream_two_writes"
 Directory: /home/suen/Work/CS144_lab/build
-"t_byte_stream_two_writes" start time: Mar 17 13:39 CST
+"t_byte_stream_two_writes" start time: Mar 17 14:42 CST
 Output:
 ----------------------------------------------------------
-Test Failure on expectation:
-	Expectation: "cat" at the front of the stream
-
-Failure message:
-	Expected "cat" at the front of the stream, but found "cat
-
-List of steps that executed successfully:
-	Initialized with (capacity=15)
-	     Action: write "cat" to the stream
-	Expectation: input_ended: 0
-	Expectation: buffer_empty: 0
-	Expectation: eof: 0
-	Expectation: bytes_read: 0
-	Expectation: bytes_written: 3
-	Expectation: remaining_capacity: 12
-	Expectation: buffer_size: 3
-
-Exception: The test "write-write-end-pop-pop" failed
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
-Test Failed.
-"t_byte_stream_two_writes" end time: Mar 17 13:39 CST
+Test Passed.
+"t_byte_stream_two_writes" end time: Mar 17 14:42 CST
 "t_byte_stream_two_writes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -95,24 +49,14 @@ Test Failed.
 25/163 Test: t_byte_stream_capacity
 Command: "/home/suen/Work/CS144_lab/build/tests/byte_stream_capacity"
 Directory: /home/suen/Work/CS144_lab/build
-"t_byte_stream_capacity" start time: Mar 17 13:39 CST
+"t_byte_stream_capacity" start time: Mar 17 14:42 CST
 Output:
 ----------------------------------------------------------
-Test Failure on expectation:
-	     Action: write "cat" to the stream
-
-Failure message:
-	The ByteStream should have had bytes_written equal to 2 but instead it was 3
-
-List of steps that executed successfully:
-	Initialized with (capacity=2)
-
-Exception: The test "overwrite" failed
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
-Test Failed.
-"t_byte_stream_capacity" end time: Mar 17 13:39 CST
+Test Passed.
+"t_byte_stream_capacity" end time: Mar 17 14:42 CST
 "t_byte_stream_capacity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -120,14 +64,14 @@ Test Failed.
 26/163 Test: t_byte_stream_many_writes
 Command: "/home/suen/Work/CS144_lab/build/tests/byte_stream_many_writes"
 Directory: /home/suen/Work/CS144_lab/build
-"t_byte_stream_many_writes" start time: Mar 17 13:39 CST
+"t_byte_stream_many_writes" start time: Mar 17 14:42 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_many_writes" end time: Mar 17 13:39 CST
+"t_byte_stream_many_writes" end time: Mar 17 14:42 CST
 "t_byte_stream_many_writes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -135,21 +79,15 @@ Test Passed.
 27/163 Test: t_webget
 Command: "/home/suen/Work/CS144_lab/tests/webget_t.sh"
 Directory: /home/suen/Work/CS144_lab/build
-"t_webget" start time: Mar 17 13:39 CST
+"t_webget" start time: Mar 17 14:42 CST
 Output:
 ----------------------------------------------------------
-HTTP/1.1 200 OK
-Date: Wed, 17 Mar 2021 05:40:24 GMT
-Server: Apache
-Content-Length: 44
-Content-Type: text/plain
-
-QWx0NhMPkoM/bJr/ohvHXlviFhOyYrYb+qqdOnwLYo4
+ERROR: webget returned output that did not match the test's expectations
 <end of output>
-Test time =   0.66 sec
+Test time =   0.79 sec
 ----------------------------------------------------------
-Test Passed.
-"t_webget" end time: Mar 17 13:39 CST
+Test Failed.
+"t_webget" end time: Mar 17 14:42 CST
 "t_webget" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -157,14 +95,14 @@ Test Passed.
 47/163 Test: t_address_dt
 Command: "/home/suen/Work/CS144_lab/build/doctests/address_dt"
 Directory: /home/suen/Work/CS144_lab/build
-"t_address_dt" start time: Mar 17 13:39 CST
+"t_address_dt" start time: Mar 17 14:42 CST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.01 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"t_address_dt" end time: Mar 17 13:39 CST
+"t_address_dt" end time: Mar 17 14:42 CST
 "t_address_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -172,14 +110,14 @@ Test Passed.
 48/163 Test: t_parser_dt
 Command: "/home/suen/Work/CS144_lab/build/doctests/parser_dt"
 Directory: /home/suen/Work/CS144_lab/build
-"t_parser_dt" start time: Mar 17 13:39 CST
+"t_parser_dt" start time: Mar 17 14:42 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_parser_dt" end time: Mar 17 13:39 CST
+"t_parser_dt" end time: Mar 17 14:42 CST
 "t_parser_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -187,15 +125,15 @@ Test Passed.
 49/163 Test: t_socket_dt
 Command: "/home/suen/Work/CS144_lab/build/doctests/socket_dt"
 Directory: /home/suen/Work/CS144_lab/build
-"t_socket_dt" start time: Mar 17 13:39 CST
+"t_socket_dt" start time: Mar 17 14:42 CST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.01 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"t_socket_dt" end time: Mar 17 13:39 CST
+"t_socket_dt" end time: Mar 17 14:42 CST
 "t_socket_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Mar 17 13:39 CST
+End testing: Mar 17 14:42 CST

@@ -18,23 +18,22 @@ using namespace std;
 
 ByteStream::ByteStream(const size_t capacity) : _buffer_capacity(capacity) {}
 
+// #include <iostream>
+
 size_t ByteStream::write(const string &data)
 {
-    /* Can be terminate by end_write(). */
-    _end_write = false;
-    /* Input-end can write container char by char. */
-    size_t char_num = 0;
-    for (const auto &it : data)
+    // std::cout << data << std::endl;
+    size_t len = data.size();
+    if (len > remaining_capacity())
     {
-        if (remaining_capacity())
-        {
-            _container.push_back(it);
-            char_num++;
-        }
+        len = remaining_capacity();
     }
-    _buffer_size += char_num;
-    _total_size_write += char_num;
-    return char_num;
+    _total_size_write += len;
+    for (size_t i = 0; i < len; ++i)
+    {
+        _container.push_back(data[i]);
+    }
+    return len;
 }
 
 //! \param[in] len bytes will be copied from the output side of the buffer
@@ -45,7 +44,13 @@ string ByteStream::peek_output(const size_t len) const
     {
         sz = buffer_size();
     }
-    return string().assign(_container.cbegin(), _container.cend() + sz);
+    // string s;
+    // for (size_t i = 0; i < sz; ++i)
+    // {
+    //     s.push_back(_container.at(i));
+    // }
+    // return 0;
+    return string().assign(_container.cbegin(), _container.cbegin() + sz);
 }
 
 //! \param[in] len bytes will be removed from the output side of the buffer
@@ -61,7 +66,6 @@ void ByteStream::pop_output(const size_t len)
         _container.pop_front();
     }
     _total_size_read += sz;
-    _buffer_size -= sz;
 }
 
 void ByteStream::end_input()
@@ -76,12 +80,12 @@ bool ByteStream::input_ended() const
 
 size_t ByteStream::buffer_size() const
 {
-    return _buffer_size;
+    return _container.size();
 }
 
 bool ByteStream::buffer_empty() const
 {
-    return _buffer_size == 0;
+    return buffer_size() == 0;
 }
 
 bool ByteStream::eof() const

@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             // "program": "${workspaceFolder}/build/apps/webget",
-            "program": "${workspaceFolder}/build/tests/byte_stream_construction",
+            "program": "${workspaceFolder}/build/tests/byte_stream_one_write",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

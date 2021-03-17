@@ -20,9 +20,8 @@ class ByteStream
 private:
   // Your code here -- add private members as necessary.
   deque<char> _container = {};
-  size_t _buffer_size = 0;
   size_t _buffer_capacity = 0;
-  bool _end_write = true;
+  bool _end_write = false;
   size_t _total_size_write = 0;
   size_t _total_size_read = 0;
   bool _error = false; //!< Flag indicating that the stream suffered an error.

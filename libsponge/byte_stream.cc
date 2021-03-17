@@ -11,104 +11,95 @@
 
 // You will need to add private members to the class declaration in `byte_stream.hh`
 
-template <typename... Targs>
-void DUMMY_CODE(Targs &&.../* unused */) {}
+// template <typename... Targs>
+// void DUMMY_CODE(Targs &&.../* unused */) {}
 
 using namespace std;
 
-ByteStream::ByteStream(const size_t capacity)
-{
-    buffer_size_ = 0;
-    buffer_capacity_ = capacity;
-    end_write_ = true;
-    total_size_write_ = 0;
-    total_size_read_ = 0;
-    _error = false;
-}
+ByteStream::ByteStream(const size_t capacity) : _buffer_capacity(capacity) {}
 
 size_t ByteStream::write(const string &data)
 {
     /* Can be terminate by end_write(). */
-    end_write_ = false;
+    _end_write = false;
     /* Input-end can write container char by char. */
     size_t char_num = 0;
     for (const auto &it : data)
     {
-        while (remaining_capacity())
+        if (remaining_capacity())
         {
-            container_.push_back(it);
+            _container.push_back(it);
             char_num++;
         }
     }
-    total_size_write_ += char_num;
+    _buffer_size += char_num;
+    _total_size_write += char_num;
     return char_num;
 }
 
 //! \param[in] len bytes will be copied from the output side of the buffer
 string ByteStream::peek_output(const size_t len) const
 {
-    std::string output_str;
-    for (size_t i = 0; i < len; i++)
+    size_t sz = len;
+    if (sz > buffer_size())
     {
-        output_str.push_back(container_.at(i));
+        sz = buffer_size();
     }
-    return output_str;
+    return string().assign(_container.cbegin(), _container.cend() + sz);
 }
 
 //! \param[in] len bytes will be removed from the output side of the buffer
 void ByteStream::pop_output(const size_t len)
 {
-    for (size_t i = 0; i < len; i++)
+    size_t sz = len;
+    if (sz > buffer_size())
     {
-        container_.pop_front();
+        sz = buffer_size();
     }
-    total_size_read_ += len;
+    for (size_t i = 0; i < sz; ++i)
+    {
+        _container.pop_front();
+    }
+    _total_size_read += sz;
+    _buffer_size -= sz;
 }
 
 void ByteStream::end_input()
 {
-    end_write_ = true;
+    _end_write = true;
 }
 
 bool ByteStream::input_ended() const
 {
-    if (end_write_ == true)
-    {
-        return true;
-    }
-    return false;
+    return _end_write;
 }
 
 size_t ByteStream::buffer_size() const
 {
-    return buffer_size_;
+    return _buffer_size;
 }
 
 bool ByteStream::buffer_empty() const
 {
-    if (buffer_size() == 0)
-    {
-        return true;
-    }
-    return false;
+    return _buffer_size == 0;
 }
 
 bool ByteStream::eof() const
 {
-    return false;
+    return (buffer_empty() && input_ended());
 }
 
 size_t ByteStream::bytes_written() const
 {
-    return total_size_write_;
+    return _total_size_write;
 }
 
 size_t ByteStream::bytes_read() const
 {
-    return total_size_read_;
+    return _total_size_read;
 }
 
 size_t ByteStream::remaining_capacity() const
 {
-    return buffer_capacity_ - buffer_size();
+    return _buffer_capacity - buffer_size();
 }

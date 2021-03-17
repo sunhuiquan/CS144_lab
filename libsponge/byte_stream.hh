@@ -19,14 +19,13 @@ class ByteStream
 {
 private:
   // Your code here -- add private members as necessary.
-  deque<char> container_{};
-  size_t buffer_size_{};
-  size_t buffer_capacity_{};
-  bool end_write_{};
-  size_t total_size_write_{};
-  size_t total_size_read_{};
-
-  bool _error{}; //!< Flag indicating that the stream suffered an error.
+  deque<char> _container = {};
+  size_t _buffer_size = 0;
+  size_t _buffer_capacity = 0;
+  bool _end_write = true;
+  size_t _total_size_write = 0;
+  size_t _total_size_read = 0;
+  bool _error = false; //!< Flag indicating that the stream suffered an error.
 
 public:
   //! Construct a stream with room for `capacity` bytes.

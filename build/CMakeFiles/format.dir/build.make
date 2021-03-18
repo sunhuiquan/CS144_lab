@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/suen/Work/CS144_lab
+CMAKE_SOURCE_DIR = /home/Work/CS144_lab
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/suen/Work/CS144_lab/build
+CMAKE_BINARY_DIR = /home/Work/CS144_lab/build
 
 # Utility rule file for format.
 
@@ -71,6 +71,6 @@ CMakeFiles/format.dir/clean:
 .PHONY : CMakeFiles/format.dir/clean
 
 CMakeFiles/format.dir/depend:
-	cd /home/suen/Work/CS144_lab/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/suen/Work/CS144_lab /home/suen/Work/CS144_lab /home/suen/Work/CS144_lab/build /home/suen/Work/CS144_lab/build /home/suen/Work/CS144_lab/build/CMakeFiles/format.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/Work/CS144_lab/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/Work/CS144_lab /home/Work/CS144_lab /home/Work/CS144_lab/build /home/Work/CS144_lab/build /home/Work/CS144_lab/build/CMakeFiles/format.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/format.dir/depend
 

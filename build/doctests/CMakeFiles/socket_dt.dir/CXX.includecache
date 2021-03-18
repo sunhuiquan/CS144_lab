@@ -88,13 +88,13 @@ system_error
 vector
 -
 
-/home/suen/Work/CS144_lab/doctests/socket_dt.cc
+/home/Work/CS144_lab/doctests/socket_dt.cc
 socket.hh
-/home/suen/Work/CS144_lab/doctests/socket.hh
+/home/Work/CS144_lab/doctests/socket.hh
 address.hh
-/home/suen/Work/CS144_lab/doctests/address.hh
+/home/Work/CS144_lab/doctests/address.hh
 util.hh
-/home/suen/Work/CS144_lab/doctests/util.hh
+/home/Work/CS144_lab/doctests/util.hh
 array
 -
 cstdlib
@@ -108,15 +108,15 @@ sys/socket.h
 vector
 -
 socket_example_1.cc
-/home/suen/Work/CS144_lab/doctests/socket_example_1.cc
+/home/Work/CS144_lab/doctests/socket_example_1.cc
 socket_example_2.cc
-/home/suen/Work/CS144_lab/doctests/socket_example_2.cc
+/home/Work/CS144_lab/doctests/socket_example_2.cc
 socket_example_3.cc
-/home/suen/Work/CS144_lab/doctests/socket_example_3.cc
+/home/Work/CS144_lab/doctests/socket_example_3.cc
 
-/home/suen/Work/CS144_lab/doctests/socket_example_1.cc
+/home/Work/CS144_lab/doctests/socket_example_1.cc
 
-/home/suen/Work/CS144_lab/doctests/socket_example_2.cc
+/home/Work/CS144_lab/doctests/socket_example_2.cc
 
-/home/suen/Work/CS144_lab/doctests/socket_example_3.cc
+/home/Work/CS144_lab/doctests/socket_example_3.cc
 

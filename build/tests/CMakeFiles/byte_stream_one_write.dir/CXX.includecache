@@ -42,21 +42,21 @@ system_error
 vector
 -
 
-/home/suen/Work/CS144_lab/tests/byte_stream_one_write.cc
+/home/Work/CS144_lab/tests/byte_stream_one_write.cc
 byte_stream.hh
-/home/suen/Work/CS144_lab/tests/byte_stream.hh
+/home/Work/CS144_lab/tests/byte_stream.hh
 byte_stream_test_harness.hh
-/home/suen/Work/CS144_lab/tests/byte_stream_test_harness.hh
+/home/Work/CS144_lab/tests/byte_stream_test_harness.hh
 exception
 -
 iostream
 -
 
-/home/suen/Work/CS144_lab/tests/byte_stream_test_harness.hh
+/home/Work/CS144_lab/tests/byte_stream_test_harness.hh
 byte_stream.hh
-/home/suen/Work/CS144_lab/tests/byte_stream.hh
+/home/Work/CS144_lab/tests/byte_stream.hh
 util.hh
-/home/suen/Work/CS144_lab/tests/util.hh
+/home/Work/CS144_lab/tests/util.hh
 exception
 -
 initializer_list

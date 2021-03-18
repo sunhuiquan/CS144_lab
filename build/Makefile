@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/suen/Work/CS144_lab
+CMAKE_SOURCE_DIR = /home/Work/CS144_lab
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/suen/Work/CS144_lab/build
+CMAKE_BINARY_DIR = /home/Work/CS144_lab/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,9 +91,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suen/Work/CS144_lab/build/CMakeFiles /home/suen/Work/CS144_lab/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/Work/CS144_lab/build/CMakeFiles /home/Work/CS144_lab/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suen/Work/CS144_lab/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/Work/CS144_lab/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -224,19 +224,6 @@ format: cmake_check_build_system
 format/fast:
 	$(MAKE) -f CMakeFiles/format.dir/build.make CMakeFiles/format.dir/build
 .PHONY : format/fast
-
-#=============================================================================
-# Target rules for targets named doc
-
-# Build rule for target.
-doc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 doc
-.PHONY : doc
-
-# fast build rule for target.
-doc/fast:
-	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
-.PHONY : doc/fast
 
 #=============================================================================
 # Target rules for targets named sponge
@@ -398,7 +385,6 @@ help:
 	@echo "... check_lab0"
 	@echo "... check_webget"
 	@echo "... format"
-	@echo "... doc"
 	@echo "... sponge"
 	@echo "... webget"
 	@echo "... byte_stream_many_writes"

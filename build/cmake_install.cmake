@@ -1,4 +1,4 @@
-# Install script for directory: /home/suen/Work/CS144_lab
+# Install script for directory: /home/Work/CS144_lab
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -39,10 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/suen/Work/CS144_lab/build/libsponge/cmake_install.cmake")
-  include("/home/suen/Work/CS144_lab/build/apps/cmake_install.cmake")
-  include("/home/suen/Work/CS144_lab/build/tests/cmake_install.cmake")
-  include("/home/suen/Work/CS144_lab/build/doctests/cmake_install.cmake")
+  include("/home/Work/CS144_lab/build/libsponge/cmake_install.cmake")
+  include("/home/Work/CS144_lab/build/apps/cmake_install.cmake")
+  include("/home/Work/CS144_lab/build/tests/cmake_install.cmake")
+  include("/home/Work/CS144_lab/build/doctests/cmake_install.cmake")
 
 endif()
 
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/suen/Work/CS144_lab/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/Work/CS144_lab/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -50,13 +50,13 @@ system_error
 vector
 -
 
-/home/suen/Work/CS144_lab/tests/fsm_stream_reassembler_harness.hh
+/home/Work/CS144_lab/tests/fsm_stream_reassembler_harness.hh
 byte_stream.hh
-/home/suen/Work/CS144_lab/tests/byte_stream.hh
+/home/Work/CS144_lab/tests/byte_stream.hh
 stream_reassembler.hh
-/home/suen/Work/CS144_lab/tests/stream_reassembler.hh
+/home/Work/CS144_lab/tests/stream_reassembler.hh
 util.hh
-/home/suen/Work/CS144_lab/tests/util.hh
+/home/Work/CS144_lab/tests/util.hh
 exception
 -
 iostream
@@ -68,15 +68,15 @@ string
 utility
 -
 
-/home/suen/Work/CS144_lab/tests/fsm_stream_reassembler_overlapping.cc
+/home/Work/CS144_lab/tests/fsm_stream_reassembler_overlapping.cc
 byte_stream.hh
-/home/suen/Work/CS144_lab/tests/byte_stream.hh
+/home/Work/CS144_lab/tests/byte_stream.hh
 fsm_stream_reassembler_harness.hh
-/home/suen/Work/CS144_lab/tests/fsm_stream_reassembler_harness.hh
+/home/Work/CS144_lab/tests/fsm_stream_reassembler_harness.hh
 stream_reassembler.hh
-/home/suen/Work/CS144_lab/tests/stream_reassembler.hh
+/home/Work/CS144_lab/tests/stream_reassembler.hh
 util.hh
-/home/suen/Work/CS144_lab/tests/util.hh
+/home/Work/CS144_lab/tests/util.hh
 exception
 -
 iostream

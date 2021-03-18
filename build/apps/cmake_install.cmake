@@ -1,4 +1,4 @@
-# Install script for directory: /home/suen/Work/CS144_lab/apps
+# Install script for directory: /home/Work/CS144_lab/apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/suen/Work/CS144_lab
+CMAKE_SOURCE_DIR = /home/Work/CS144_lab
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/suen/Work/CS144_lab/build
+CMAKE_BINARY_DIR = /home/Work/CS144_lab/build
 
 # Utility rule file for check_lab3.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/suen/Work/CS144_lab/build
 include CMakeFiles/check_lab3.dir/progress.make
 
 CMakeFiles/check_lab3:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/suen/Work/CS144_lab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing the TCP sender..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/Work/CS144_lab/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing the TCP sender..."
 	/usr/bin/ctest --output-on-failure --timeout 10 -R 't_send_|t_recv_|t_wrapping_|t_strm_reassem_|t_webget|t_byte_stream|_dt'
 
 check_lab3: CMakeFiles/check_lab3
@@ -72,6 +72,6 @@ CMakeFiles/check_lab3.dir/clean:
 .PHONY : CMakeFiles/check_lab3.dir/clean
 
 CMakeFiles/check_lab3.dir/depend:
-	cd /home/suen/Work/CS144_lab/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/suen/Work/CS144_lab /home/suen/Work/CS144_lab /home/suen/Work/CS144_lab/build /home/suen/Work/CS144_lab/build /home/suen/Work/CS144_lab/build/CMakeFiles/check_lab3.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/Work/CS144_lab/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/Work/CS144_lab /home/Work/CS144_lab /home/Work/CS144_lab/build /home/Work/CS144_lab/build /home/Work/CS144_lab/build/CMakeFiles/check_lab3.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check_lab3.dir/depend
 

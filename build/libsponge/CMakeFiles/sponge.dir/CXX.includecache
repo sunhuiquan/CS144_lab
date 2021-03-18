@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/suen/Work/CS144_lab/libsponge/byte_stream.cc
+/home/Work/CS144_lab/libsponge/byte_stream.cc
 byte_stream.hh
-/home/suen/Work/CS144_lab/libsponge/byte_stream.hh
+/home/Work/CS144_lab/libsponge/byte_stream.hh
 algorithm
 -
 iterator
@@ -16,7 +16,7 @@ iterator
 stdexcept
 -
 
-/home/suen/Work/CS144_lab/libsponge/byte_stream.hh
+/home/Work/CS144_lab/libsponge/byte_stream.hh
 cstddef
 -
 cstdint
@@ -30,23 +30,23 @@ string
 utility
 -
 
-/home/suen/Work/CS144_lab/libsponge/stream_reassembler.cc
+/home/Work/CS144_lab/libsponge/stream_reassembler.cc
 stream_reassembler.hh
-/home/suen/Work/CS144_lab/libsponge/stream_reassembler.hh
+/home/Work/CS144_lab/libsponge/stream_reassembler.hh
 
-/home/suen/Work/CS144_lab/libsponge/stream_reassembler.hh
+/home/Work/CS144_lab/libsponge/stream_reassembler.hh
 byte_stream.hh
-/home/suen/Work/CS144_lab/libsponge/byte_stream.hh
+/home/Work/CS144_lab/libsponge/byte_stream.hh
 cstdint
 -
 string
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/address.cc
+/home/Work/CS144_lab/libsponge/util/address.cc
 address.hh
-/home/suen/Work/CS144_lab/libsponge/util/address.hh
+/home/Work/CS144_lab/libsponge/util/address.hh
 util.hh
-/home/suen/Work/CS144_lab/libsponge/util/util.hh
+/home/Work/CS144_lab/libsponge/util/util.hh
 arpa/inet.h
 -
 cstring
@@ -60,7 +60,7 @@ stdexcept
 system_error
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/address.hh
+/home/Work/CS144_lab/libsponge/util/address.hh
 cstddef
 -
 cstdint
@@ -76,11 +76,11 @@ sys/socket.h
 utility
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/buffer.cc
+/home/Work/CS144_lab/libsponge/util/buffer.cc
 buffer.hh
-/home/suen/Work/CS144_lab/libsponge/util/buffer.hh
+/home/Work/CS144_lab/libsponge/util/buffer.hh
 
-/home/suen/Work/CS144_lab/libsponge/util/buffer.hh
+/home/Work/CS144_lab/libsponge/util/buffer.hh
 algorithm
 -
 deque
@@ -98,11 +98,11 @@ sys/uio.h
 vector
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/eventloop.cc
+/home/Work/CS144_lab/libsponge/util/eventloop.cc
 eventloop.hh
-/home/suen/Work/CS144_lab/libsponge/util/eventloop.hh
+/home/Work/CS144_lab/libsponge/util/eventloop.hh
 util.hh
-/home/suen/Work/CS144_lab/libsponge/util/util.hh
+/home/Work/CS144_lab/libsponge/util/util.hh
 cerrno
 -
 stdexcept
@@ -114,9 +114,9 @@ utility
 vector
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/eventloop.hh
+/home/Work/CS144_lab/libsponge/util/eventloop.hh
 file_descriptor.hh
-/home/suen/Work/CS144_lab/libsponge/util/file_descriptor.hh
+/home/Work/CS144_lab/libsponge/util/file_descriptor.hh
 cstdlib
 -
 functional
@@ -126,11 +126,11 @@ list
 poll.h
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/file_descriptor.cc
+/home/Work/CS144_lab/libsponge/util/file_descriptor.cc
 file_descriptor.hh
-/home/suen/Work/CS144_lab/libsponge/util/file_descriptor.hh
+/home/Work/CS144_lab/libsponge/util/file_descriptor.hh
 util.hh
-/home/suen/Work/CS144_lab/libsponge/util/util.hh
+/home/Work/CS144_lab/libsponge/util/util.hh
 algorithm
 -
 fcntl.h
@@ -144,9 +144,9 @@ sys/uio.h
 unistd.h
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/file_descriptor.hh
+/home/Work/CS144_lab/libsponge/util/file_descriptor.hh
 buffer.hh
-/home/suen/Work/CS144_lab/libsponge/util/buffer.hh
+/home/Work/CS144_lab/libsponge/util/buffer.hh
 array
 -
 cstddef
@@ -156,13 +156,13 @@ limits
 memory
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/parser.cc
+/home/Work/CS144_lab/libsponge/util/parser.cc
 parser.hh
-/home/suen/Work/CS144_lab/libsponge/util/parser.hh
+/home/Work/CS144_lab/libsponge/util/parser.hh
 
-/home/suen/Work/CS144_lab/libsponge/util/parser.hh
+/home/Work/CS144_lab/libsponge/util/parser.hh
 buffer.hh
-/home/suen/Work/CS144_lab/libsponge/util/buffer.hh
+/home/Work/CS144_lab/libsponge/util/buffer.hh
 cstdint
 -
 cstdlib
@@ -172,11 +172,11 @@ string
 utility
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/socket.cc
+/home/Work/CS144_lab/libsponge/util/socket.cc
 socket.hh
-/home/suen/Work/CS144_lab/libsponge/util/socket.hh
+/home/Work/CS144_lab/libsponge/util/socket.hh
 util.hh
-/home/suen/Work/CS144_lab/libsponge/util/util.hh
+/home/Work/CS144_lab/libsponge/util/util.hh
 cstddef
 -
 stdexcept
@@ -184,11 +184,11 @@ stdexcept
 unistd.h
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/socket.hh
+/home/Work/CS144_lab/libsponge/util/socket.hh
 address.hh
-/home/suen/Work/CS144_lab/libsponge/util/address.hh
+/home/Work/CS144_lab/libsponge/util/address.hh
 file_descriptor.hh
-/home/suen/Work/CS144_lab/libsponge/util/file_descriptor.hh
+/home/Work/CS144_lab/libsponge/util/file_descriptor.hh
 cstdint
 -
 functional
@@ -198,11 +198,11 @@ string
 sys/socket.h
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/tun.cc
+/home/Work/CS144_lab/libsponge/util/tun.cc
 tun.hh
-/home/suen/Work/CS144_lab/libsponge/util/tun.hh
+/home/Work/CS144_lab/libsponge/util/tun.hh
 util.hh
-/home/suen/Work/CS144_lab/libsponge/util/util.hh
+/home/Work/CS144_lab/libsponge/util/util.hh
 cstring
 -
 fcntl.h
@@ -214,15 +214,15 @@ linux/if_tun.h
 sys/ioctl.h
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/tun.hh
+/home/Work/CS144_lab/libsponge/util/tun.hh
 file_descriptor.hh
-/home/suen/Work/CS144_lab/libsponge/util/file_descriptor.hh
+/home/Work/CS144_lab/libsponge/util/file_descriptor.hh
 string
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/util.cc
+/home/Work/CS144_lab/libsponge/util/util.cc
 util.hh
-/home/suen/Work/CS144_lab/libsponge/util/util.hh
+/home/Work/CS144_lab/libsponge/util/util.hh
 array
 -
 cctype
@@ -238,7 +238,7 @@ sstream
 sys/socket.h
 -
 
-/home/suen/Work/CS144_lab/libsponge/util/util.hh
+/home/Work/CS144_lab/libsponge/util/util.hh
 algorithm
 -
 cerrno

@@ -5,5 +5,5 @@ tests/CMakeFiles/fsm_stream_reassembler_holes.dir/fsm_stream_reassembler_holes.c
  ../libsponge/byte_stream.hh
  ../libsponge/stream_reassembler.hh
  ../libsponge/util/util.hh
- /home/suen/Work/CS144_lab/tests/fsm_stream_reassembler_harness.hh
- /home/suen/Work/CS144_lab/tests/fsm_stream_reassembler_holes.cc
+ /home/Work/CS144_lab/tests/fsm_stream_reassembler_harness.hh
+ /home/Work/CS144_lab/tests/fsm_stream_reassembler_holes.cc

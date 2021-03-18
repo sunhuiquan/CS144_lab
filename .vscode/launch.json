@@ -1,0 +1,30 @@
+{
+    // 浣跨敤 IntelliSense 浜嗚В鐩稿叧灞炴€с€� 
+    // 鎮�鍋滀互鏌ョ湅鐜版湁灞炴€х殑鎻忚堪銆�
+    // 娆蹭簡瑙ｆ洿澶氫俊鎭�锛岃�疯�块棶: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "g++ Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            // "program": "${workspaceFolder}/build/apps/webget",
+            "program": "${workspaceFolder}/build/tests/fsm_stream_reassembler_single",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "涓� gdb 鍚�鐢ㄦ暣榻愭墦鍗�",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}

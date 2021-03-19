@@ -14,14 +14,13 @@ class StreamReassembler
 private:
     std::set<std::pair<uint64_t, std::string>> _reassemble_cache = {};
     uint64_t _unreceived = 0;
-    uint64_t _unassembled = 0;
     uint64_t _unacceptable;
     ByteStream _output; //!< The reassembled in-order byte stream
     size_t _capacity;   //!< The maximum number of bytes
 
-    void handle_right_edge(std::pair<uint64_t, std::string>);
-    void handle_left_edge(std::pair<uint64_t, std::string>);
-    void handle_middle(std::pair<uint64_t, std::string>);
+    void handle_right_edge(std::pair<uint64_t, std::string> &new_seg);
+    void handle_left_edge(std::pair<uint64_t, std::string> &new_seg);
+    void handle_middle(std::pair<uint64_t, std::string> &new_seg);
 
 public:
     //! \brief Construct a `StreamReassembler` that will store up to `capacity` bytes.
@@ -43,8 +42,14 @@ public:
 
     //! \name Access the reassembled byte stream
     //!@{
-    const ByteStream &stream_out() const { return _output; }
-    ByteStream &stream_out() { return _output; }
+    const ByteStream &stream_out() const
+    {
+        return _output;
+    }
+    ByteStream &stream_out()
+    {
+        return _output;
+    }
     //!@}
 
     //! The number of bytes in the substrings stored but not yet reassembled

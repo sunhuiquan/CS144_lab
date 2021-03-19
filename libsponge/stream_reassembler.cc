@@ -9,7 +9,7 @@
 
 using namespace std;
 
-StreamReassembler::StreamReassembler(const size_t capacity) : _output(capacity), _capacity(capacity), _unacceptable(capacity) {}
+StreamReassembler::StreamReassembler(const size_t capacity) : _unacceptable(capacity), _output(capacity), _capacity(capacity) {}
 
 void StreamReassembler::handle_right_edge(std::pair<uint64_t, std::string> &new_seg)
 {
@@ -29,6 +29,7 @@ void StreamReassembler::handle_left_edge(std::pair<uint64_t, std::string> &new_s
     }
     _output.write(new_seg.second);
     _unreceived = new_seg.first + new_seg.second.size();
+    _unacceptable = _unreceived + _capacity;
 
     for (const auto &it : _reassemble_cache)
     {
@@ -49,7 +50,8 @@ void StreamReassembler::handle_left_edge(std::pair<uint64_t, std::string> &new_s
             }
 
             _output.write(temp.second);
-            _unacceptable = temp.first + temp.second.size();
+            _unreceived = temp.first + temp.second.size();
+            _unacceptable = _unreceived + _capacity;
         }
     }
 }
@@ -71,8 +73,10 @@ void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
         }
     }
 
-    pair<uint64_t, std::string> left_merge(-1, "");
-    pair<uint64_t, std::string> right_merge(-1, "");
+    pair<uint64_t, std::string> left_merge;
+    bool left_can_merge = false;
+    pair<uint64_t, std::string> right_merge;
+    bool right_can_merge = false;
 
     auto right = _reassemble_cache.lower_bound(new_seg);
     for (; right != _reassemble_cache.end(); right = _reassemble_cache.lower_bound(*right))
@@ -86,6 +90,7 @@ void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
             else
             {
                 right_merge = *right;
+                right_can_merge = true;
                 _reassemble_cache.erase(*right);
             }
         }
@@ -109,6 +114,7 @@ void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
         else
         {
             left_merge = *left;
+            left_can_merge = true;
             _reassemble_cache.erase(*left);
         }
 
@@ -118,12 +124,12 @@ void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
         }
     }
 
-    if (left_merge.first != -1)
+    if (left_can_merge == true)
     {
         new_seg.first = left_merge.first;
         new_seg.second = left_merge.second + new_seg.second.substr(left_merge.first + left_merge.second.size());
     }
-    if (right_merge.first != -1)
+    if (right_can_merge = true)
     {
         new_seg.second = new_seg.second + right_merge.second.substr(new_seg.first + new_seg.second.size());
     }

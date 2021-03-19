@@ -14,9 +14,9 @@ class StreamReassembler
 private:
     std::set<std::pair<uint64_t, std::string>> _reassemble_cache = {};
     uint64_t _unreceived = 0;
-    uint64_t _unacceptable;
-    ByteStream _output; //!< The reassembled in-order byte stream
-    size_t _capacity;   //!< The maximum number of bytes
+    uint64_t _unacceptable = 0;
+    ByteStream _output;   //!< The reassembled in-order byte stream
+    size_t _capacity = 0; //!< The maximum number of bytes
 
     void handle_right_edge(std::pair<uint64_t, std::string> &new_seg);
     void handle_left_edge(std::pair<uint64_t, std::string> &new_seg);

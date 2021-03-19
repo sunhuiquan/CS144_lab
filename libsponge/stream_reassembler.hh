@@ -12,13 +12,16 @@
 class StreamReassembler
 {
 private:
-    // Your code here -- add private members as necessary.
-    std::set<pair<uint64_t, std::string>> _slices = {};
-    size_t _unassembled_bytes = 0;
-    bool _eof = false;
-
+    std::set<std::pair<uint64_t, std::string>> _reassemble_cache = {};
+    uint64_t _unreceived = 0;
+    uint64_t _unassembled = 0;
+    uint64_t _unacceptable;
     ByteStream _output; //!< The reassembled in-order byte stream
     size_t _capacity;   //!< The maximum number of bytes
+
+    void handle_right_edge(std::pair<uint64_t, std::string>);
+    void handle_left_edge(std::pair<uint64_t, std::string>);
+    void handle_middle(std::pair<uint64_t, std::string>);
 
 public:
     //! \brief Construct a `StreamReassembler` that will store up to `capacity` bytes.

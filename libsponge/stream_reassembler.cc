@@ -56,6 +56,78 @@ void StreamReassembler::handle_left_edge(std::pair<uint64_t, std::string> &new_s
 
 void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
 {
+    for (const auto &it : _reassemble_cache)
+    {
+        if (it.first == new_seg.first)
+        {
+            if (it.second.size() >= new_seg.second.size())
+            {
+                return;
+            }
+            else
+            {
+                _reassemble_cache.erase(it);
+            }
+        }
+    }
+
+    pair<uint64_t, std::string> left_merge(-1, "");
+    pair<uint64_t, std::string> right_merge(-1, "");
+
+    auto right = _reassemble_cache.lower_bound(new_seg);
+    for (; right != _reassemble_cache.end(); right = _reassemble_cache.lower_bound(*right))
+    {
+        if (right->first <= new_seg.first + new_seg.second.size())
+        {
+            if (right->first + right->second.size() <= new_seg.first + new_seg.second.size())
+            {
+                _reassemble_cache.erase(*right);
+            }
+            else
+            {
+                right_merge = *right;
+                _reassemble_cache.erase(*right);
+            }
+        }
+        else
+        {
+            break;
+        }
+    }
+
+    auto left = _reassemble_cache.upper_bound(new_seg);
+    for (;; left = _reassemble_cache.upper_bound(*left))
+    {
+        if (left->first + left->second.size() < new_seg.first)
+        {
+            break;
+        }
+        else if (left->first + left->second.size() >= new_seg.first + new_seg.second.size())
+        {
+            return;
+        }
+        else
+        {
+            left_merge = *left;
+            _reassemble_cache.erase(*left);
+        }
+
+        if (left == _reassemble_cache.begin())
+        {
+            break;
+        }
+    }
+
+    if (left_merge.first != -1)
+    {
+        new_seg.first = left_merge.first;
+        new_seg.second = left_merge.second + new_seg.second.substr(left_merge.first + left_merge.second.size());
+    }
+    if (right_merge.first != -1)
+    {
+        new_seg.second = new_seg.second + right_merge.second.substr(new_seg.first + new_seg.second.size());
+    }
+    _reassemble_cache.insert(new_seg);
 }
 
 //! \details This function accepts a substring (aka a segment) of bytes,

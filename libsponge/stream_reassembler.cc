@@ -129,7 +129,7 @@ void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
         new_seg.first = left_merge.first;
         new_seg.second = left_merge.second + new_seg.second.substr(left_merge.first + left_merge.second.size());
     }
-    if (right_can_merge = true)
+    if (right_can_merge == true)
     {
         new_seg.second = new_seg.second + right_merge.second.substr(new_seg.first + new_seg.second.size());
     }
@@ -150,6 +150,11 @@ void StreamReassembler::push_substring(const string &data, const size_t index, c
     else
     {
         handle_middle(new_seg);
+    }
+
+    if (eof == true && empty())
+    {
+        _output.end_input();
     }
 }
 

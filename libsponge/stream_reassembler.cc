@@ -7,6 +7,8 @@
 
 // You will need to add private members to the class declaration in `stream_reassembler.hh`
 
+#include <iostream>
+
 using namespace std;
 
 StreamReassembler::StreamReassembler(const size_t capacity) : _unacceptable(capacity), _output(capacity), _capacity(capacity) {}
@@ -92,20 +94,18 @@ void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
     bool right_can_merge = false;
 
     auto right = _reassemble_cache.upper_bound(new_seg);
-    for (; right != _reassemble_cache.end(); right = _reassemble_cache.upper_bound(*right))
+    while (right != _reassemble_cache.end())
     {
         if (right->first <= new_seg.first + new_seg.second.size())
         {
-            if (right->first + right->second.size() <= new_seg.first + new_seg.second.size())
-            {
-                _reassemble_cache.erase(*right);
-            }
-            else
+            if (right->first + right->second.size() > new_seg.first + new_seg.second.size())
             {
                 right_merge = *right;
                 right_can_merge = true;
-                _reassemble_cache.erase(right);
             }
+            auto temp = right;
+            right = _reassemble_cache.upper_bound(*right);
+            _reassemble_cache.erase(temp);
         }
         else
         {
@@ -113,7 +113,7 @@ void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
         }
     }
 
-    for (auto left = _reassemble_cache.begin(); left != _reassemble_cache.end() && left->first < new_seg.first;)
+    for (auto left = _reassemble_cache.begin(); left != _reassemble_cache.end() && left->first < new_seg.first; ++left)
     {
         if (left->first + left->second.size() >= new_seg.first + new_seg.second.size())
         {
@@ -124,17 +124,18 @@ void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
             left_merge = *left;
             left_can_merge = true;
             _reassemble_cache.erase(left);
+            break;
         }
     }
 
     if (left_can_merge == true)
     {
+        new_seg.second = left_merge.second + new_seg.second.substr(left_merge.first + left_merge.second.size() - new_seg.first);
         new_seg.first = left_merge.first;
-        new_seg.second = left_merge.second + new_seg.second.substr(left_merge.first + left_merge.second.size());
     }
     if (right_can_merge == true)
     {
-        new_seg.second = new_seg.second + right_merge.second.substr(new_seg.first + new_seg.second.size());
+        new_seg.second = new_seg.second + right_merge.second.substr(new_seg.first + new_seg.second.size() - right_merge.first);
     }
     _reassemble_cache.insert(new_seg);
 }
@@ -144,6 +145,8 @@ void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
 //! contiguous substrings and writes them into the output stream in order.
 void StreamReassembler::push_substring(const string &data, const size_t index, const bool eof)
 {
+    // try
+    // {
     pair<uint64_t, string> new_seg(index, data);
     handle_right_edge(new_seg);
     if (new_seg.first <= _unreceived)
@@ -164,6 +167,11 @@ void StreamReassembler::push_substring(const string &data, const size_t index, c
     {
         _output.end_input();
     }
+    // }
+    // catch (...)
+    // {
+    //     cout << "e.what()" << endl;
+    // }
 }
 
 size_t StreamReassembler::unassembled_bytes() const

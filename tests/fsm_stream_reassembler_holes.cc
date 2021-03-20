@@ -8,8 +8,10 @@
 
 using namespace std;
 
-int main() {
-    try {
+int main()
+{
+    try
+    {
         {
             ReassemblerTestHarness test{65000};
 
@@ -131,7 +133,9 @@ int main() {
             test.execute(BytesAvailable(""));
             test.execute(AtEof{});
         }
-    } catch (const exception &e) {
+    }
+    catch (const exception &e)
+    {
         cerr << "Exception: " << e.what() << endl;
         return EXIT_FAILURE;
     }

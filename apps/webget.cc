@@ -6,35 +6,49 @@
 
 using namespace std;
 
-void get_URL(const string &host, const string &path) {
-    // Your code here.
+void get_URL(const string &host, const string &path)
+{
+    TCPSocket client_socket{};
+    // uint16_t port_num = 80; // This is a HTTP request, so it's 80.
+    // client_socket.connect(Address(host, port_num));
+    client_socket.connect(Address(host, "http"));
 
-    // You will need to connect to the "http" service on
-    // the computer whose name is in the "host" string,
-    // then request the URL path given in the "path" string.
+    client_socket.write("GET " + path + " HTTP/1.1\r\n");
+    client_socket.write("Host:" + host + "\r\n");
+    client_socket.write("\r\n"); // end the request
 
-    // Then you'll need to print out everything the server sends back,
-    // (not just one call to read() -- everything) until you reach
-    // the "eof" (end of file).
+    client_socket.shutdown(SHUT_WR);
 
-    cerr << "Function called: get_URL(" << host << ", " << path << ").\n";
-    cerr << "Warning: get_URL() has not been implemented yet.\n";
+    while (!client_socket.eof())
+    {
+        cout << client_socket.read();
+    }
+
+    client_socket.close();
 }
 
-int main(int argc, char *argv[]) {
-    try {
-        if (argc <= 0) {
-            abort();  // For sticklers: don't try to access argv[0] if argc <= 0.
+int main(int argc, char *argv[])
+{
+    try
+    {
+        if (argc <= 0)
+        {
+            abort(); // For sticklers: don't try to access argv[0] if argc <= 0.
         }
 
         // The program takes two command-line arguments: the hostname and "path" part of the URL.
         // Print the usage message unless there are these two arguments (plus the program name
         // itself, so arg count = 3 in total).
-        if (argc != 3) {
+        if (argc != 3)
+        {
             cerr << "Usage: " << argv[0] << " HOST PATH\n";
             cerr << "\tExample: " << argv[0] << " stanford.edu /class/cs144\n";
             return EXIT_FAILURE;
         }
+
+        // cout << argv[0] << "\n"
+        //      << argv[1] << "\n"
+        //      << argv[2] << endl;
 
         // Get the command-line arguments.
         const string host = argv[1];
@@ -42,7 +56,9 @@ int main(int argc, char *argv[]) {
 
         // Call the student-written function.
         get_URL(host, path);
-    } catch (const exception &e) {
+    }
+    catch (const exception &e)
+    {
         cerr << e.what() << "\n";
         return EXIT_FAILURE;
     }

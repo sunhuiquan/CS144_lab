@@ -1,18 +1,17 @@
-t_strm_reassem_single 15 0.00012292
-t_strm_reassem_seq 15 0.000166493
-t_strm_reassem_dup 15 0.0002895
-t_strm_reassem_holes 6 0.000298002
-t_strm_reassem_many 2 0.0351024
-t_strm_reassem_overlapping 8 0.000305455
-t_strm_reassem_win 2 0.0349364
-t_byte_stream_construction 26 6.8938e-05
-t_byte_stream_one_write 26 7.5238e-05
-t_byte_stream_two_writes 26 6.79564e-05
-t_byte_stream_capacity 26 6.40611e-05
-t_byte_stream_many_writes 26 0.000212423
-t_webget 0 0
-t_address_dt 26 0.000100571
-t_parser_dt 26 8.43457e-05
-t_socket_dt 26 0.000154149
+t_strm_reassem_single 16 0.000118923
+t_strm_reassem_seq 16 0.000137916
+t_strm_reassem_dup 16 0.000292784
+t_strm_reassem_holes 7 0.000269681
+t_strm_reassem_many 3 0.0229078
+t_strm_reassem_overlapping 9 0.000323857
+t_strm_reassem_win 3 0.023507
+t_byte_stream_construction 28 9.76288e-05
+t_byte_stream_one_write 28 9.82116e-05
+t_byte_stream_two_writes 28 7.24637e-05
+t_byte_stream_capacity 28 6.62554e-05
+t_byte_stream_many_writes 28 0.000211884
+t_webget 2 0.273833
+t_address_dt 28 8.49968e-05
+t_parser_dt 28 5.8536e-05
+t_socket_dt 28 0.000150201
 ---
-t_webget

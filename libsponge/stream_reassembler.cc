@@ -46,19 +46,20 @@ void StreamReassembler::handle_left_edge(std::pair<uint64_t, std::string> &new_s
                 it = _reassemble_cache.erase(it);
                 continue;
             }
-
-            pair<uint64_t, string> temp(*it);
-            it = _reassemble_cache.erase(it);
-            if (temp.first < _unreceived)
+            else
             {
-                temp.first = _unacceptable;
-                temp.second = temp.second.substr(_unreceived - temp.first);
+                pair<uint64_t, string> temp(*it);
+                it = _reassemble_cache.erase(it);
+                if (temp.first < _unreceived)
+                {
+                    temp.second = temp.second.substr(_unreceived - temp.first);
+                    temp.first = _unreceived;
+                }
+                _output.write(temp.second);
+                _unreceived = temp.first + temp.second.size();
+                _unacceptable = _unreceived + _capacity;
+                break;
             }
-
-            _output.write(temp.second);
-            _unreceived = temp.first + temp.second.size();
-            _unacceptable = _unreceived + _capacity;
-            break;
         }
         else
         {
@@ -145,8 +146,6 @@ void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
 //! contiguous substrings and writes them into the output stream in order.
 void StreamReassembler::push_substring(const string &data, const size_t index, const bool eof)
 {
-    // try
-    // {
     pair<uint64_t, string> new_seg(index, data);
     handle_right_edge(new_seg);
     if (new_seg.first <= _unreceived)
@@ -167,11 +166,6 @@ void StreamReassembler::push_substring(const string &data, const size_t index, c
     {
         _output.end_input();
     }
-    // }
-    // catch (...)
-    // {
-    //     cout << "e.what()" << endl;
-    // }
 }
 
 size_t StreamReassembler::unassembled_bytes() const

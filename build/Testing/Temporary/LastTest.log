@@ -1,17 +1,17 @@
-Start testing: Mar 18 19:15 CST
+Start testing: Mar 20 17:08 CST
 ----------------------------------------------------------
 22/163 Testing: t_byte_stream_construction
 22/163 Test: t_byte_stream_construction
 Command: "/home/Work/CS144_lab/build/tests/byte_stream_construction"
 Directory: /home/Work/CS144_lab/build
-"t_byte_stream_construction" start time: Mar 18 19:15 CST
+"t_byte_stream_construction" start time: Mar 20 17:08 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_construction" end time: Mar 18 19:15 CST
+"t_byte_stream_construction" end time: Mar 20 17:08 CST
 "t_byte_stream_construction" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -19,14 +19,14 @@ Test Passed.
 23/163 Test: t_byte_stream_one_write
 Command: "/home/Work/CS144_lab/build/tests/byte_stream_one_write"
 Directory: /home/Work/CS144_lab/build
-"t_byte_stream_one_write" start time: Mar 18 19:15 CST
+"t_byte_stream_one_write" start time: Mar 20 17:08 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_one_write" end time: Mar 18 19:15 CST
+"t_byte_stream_one_write" end time: Mar 20 17:08 CST
 "t_byte_stream_one_write" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -34,14 +34,14 @@ Test Passed.
 24/163 Test: t_byte_stream_two_writes
 Command: "/home/Work/CS144_lab/build/tests/byte_stream_two_writes"
 Directory: /home/Work/CS144_lab/build
-"t_byte_stream_two_writes" start time: Mar 18 19:15 CST
+"t_byte_stream_two_writes" start time: Mar 20 17:08 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_two_writes" end time: Mar 18 19:15 CST
+"t_byte_stream_two_writes" end time: Mar 20 17:08 CST
 "t_byte_stream_two_writes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -49,14 +49,14 @@ Test Passed.
 25/163 Test: t_byte_stream_capacity
 Command: "/home/Work/CS144_lab/build/tests/byte_stream_capacity"
 Directory: /home/Work/CS144_lab/build
-"t_byte_stream_capacity" start time: Mar 18 19:15 CST
+"t_byte_stream_capacity" start time: Mar 20 17:08 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_capacity" end time: Mar 18 19:15 CST
+"t_byte_stream_capacity" end time: Mar 20 17:08 CST
 "t_byte_stream_capacity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -64,14 +64,14 @@ Test Passed.
 26/163 Test: t_byte_stream_many_writes
 Command: "/home/Work/CS144_lab/build/tests/byte_stream_many_writes"
 Directory: /home/Work/CS144_lab/build
-"t_byte_stream_many_writes" start time: Mar 18 19:15 CST
+"t_byte_stream_many_writes" start time: Mar 20 17:08 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_many_writes" end time: Mar 18 19:15 CST
+"t_byte_stream_many_writes" end time: Mar 20 17:08 CST
 "t_byte_stream_many_writes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -79,36 +79,36 @@ Test Passed.
 27/163 Test: t_webget
 Command: "/home/Work/CS144_lab/tests/webget_t.sh"
 Directory: /home/Work/CS144_lab/build
-"t_webget" start time: Mar 18 19:15 CST
+"t_webget" start time: Mar 20 17:08 CST
 Output:
 ----------------------------------------------------------
 HTTP/1.1 200 OK
-Date: Thu, 18 Mar 2021 11:16:21 GMT
+Date: Sat, 20 Mar 2021 09:09:49 GMT
 Server: Apache
 Content-Length: 44
 Content-Type: text/plain
 
 QWx0NhMPkoM/bJr/ohvHXlviFhOyYrYb+qqdOnwLYo4
 <end of output>
-Test time =   0.59 sec
+Test time =   1.67 sec
 ----------------------------------------------------------
 Test Passed.
-"t_webget" end time: Mar 18 19:15 CST
-"t_webget" time elapsed: 00:00:00
+"t_webget" end time: Mar 20 17:08 CST
+"t_webget" time elapsed: 00:00:01
 ----------------------------------------------------------
 
 47/163 Testing: t_address_dt
 47/163 Test: t_address_dt
 Command: "/home/Work/CS144_lab/build/doctests/address_dt"
 Directory: /home/Work/CS144_lab/build
-"t_address_dt" start time: Mar 18 19:15 CST
+"t_address_dt" start time: Mar 20 17:08 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_address_dt" end time: Mar 18 19:15 CST
+"t_address_dt" end time: Mar 20 17:08 CST
 "t_address_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -116,14 +116,14 @@ Test Passed.
 48/163 Test: t_parser_dt
 Command: "/home/Work/CS144_lab/build/doctests/parser_dt"
 Directory: /home/Work/CS144_lab/build
-"t_parser_dt" start time: Mar 18 19:15 CST
+"t_parser_dt" start time: Mar 20 17:08 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_parser_dt" end time: Mar 18 19:15 CST
+"t_parser_dt" end time: Mar 20 17:08 CST
 "t_parser_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -131,15 +131,15 @@ Test Passed.
 49/163 Test: t_socket_dt
 Command: "/home/Work/CS144_lab/build/doctests/socket_dt"
 Directory: /home/Work/CS144_lab/build
-"t_socket_dt" start time: Mar 18 19:15 CST
+"t_socket_dt" start time: Mar 20 17:08 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_socket_dt" end time: Mar 18 19:15 CST
+"t_socket_dt" end time: Mar 20 17:08 CST
 "t_socket_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Mar 18 19:15 CST
+End testing: Mar 20 17:08 CST

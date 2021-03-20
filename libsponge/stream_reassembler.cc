@@ -35,18 +35,18 @@ void StreamReassembler::handle_left_edge(std::pair<uint64_t, std::string> &new_s
     _unreceived = new_seg.first + new_seg.second.size();
     _unacceptable = _unreceived + _capacity;
 
-    for (const auto &it : _reassemble_cache)
+    for (auto it = _reassemble_cache.begin(); it != _reassemble_cache.end();)
     {
-        if (it.first <= _unreceived)
+        if (it->first <= _unreceived)
         {
-            if (it.first + it.second.size() <= _unreceived)
+            if (it->first + it->second.size() <= _unreceived)
             {
-                _reassemble_cache.erase(it);
+                it = _reassemble_cache.erase(it);
                 continue;
             }
 
-            pair<uint64_t, string> temp(it);
-            _reassemble_cache.erase(it);
+            pair<uint64_t, string> temp(*it);
+            it = _reassemble_cache.erase(it);
             if (temp.first < _unreceived)
             {
                 temp.first = _unacceptable;
@@ -56,24 +56,33 @@ void StreamReassembler::handle_left_edge(std::pair<uint64_t, std::string> &new_s
             _output.write(temp.second);
             _unreceived = temp.first + temp.second.size();
             _unacceptable = _unreceived + _capacity;
+            break;
+        }
+        else
+        {
+            ++it;
         }
     }
 }
 
 void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
 {
-    for (const auto &it : _reassemble_cache)
+    for (auto it = _reassemble_cache.begin(); it != _reassemble_cache.end();)
     {
-        if (it.first == new_seg.first)
+        if (it->first == new_seg.first)
         {
-            if (it.second.size() >= new_seg.second.size())
+            if (it->second.size() >= new_seg.second.size())
             {
                 return;
             }
             else
             {
-                _reassemble_cache.erase(it);
+                it = _reassemble_cache.erase(it);
             }
+        }
+        else
+        {
+            ++it;
         }
     }
 
@@ -82,8 +91,8 @@ void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
     pair<uint64_t, std::string> right_merge;
     bool right_can_merge = false;
 
-    auto right = _reassemble_cache.lower_bound(new_seg);
-    for (; right != _reassemble_cache.end(); right = _reassemble_cache.lower_bound(*right))
+    auto right = _reassemble_cache.upper_bound(new_seg);
+    for (; right != _reassemble_cache.end(); right = _reassemble_cache.upper_bound(*right))
     {
         if (right->first <= new_seg.first + new_seg.second.size())
         {
@@ -104,8 +113,8 @@ void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
         }
     }
 
-    auto left = _reassemble_cache.upper_bound(new_seg);
-    for (;; left = _reassemble_cache.upper_bound(*left))
+    auto left = _reassemble_cache.lower_bound(new_seg);
+    for (; left != _reassemble_cache.end(); left = _reassemble_cache.lower_bound(*left))
     {
         if (left->first + left->second.size() < new_seg.first)
         {
@@ -120,11 +129,6 @@ void StreamReassembler::handle_middle(std::pair<uint64_t, std::string> &new_seg)
             left_merge = *left;
             left_can_merge = true;
             _reassemble_cache.erase(*left);
-        }
-
-        if (left == _reassemble_cache.begin())
-        {
-            break;
         }
     }
 
@@ -156,7 +160,12 @@ void StreamReassembler::push_substring(const string &data, const size_t index, c
         handle_middle(new_seg);
     }
 
-    if (eof == true && empty())
+    if (eof == true)
+    {
+        _eof = true;
+    }
+
+    if (_eof == true && empty())
     {
         _output.end_input();
     }

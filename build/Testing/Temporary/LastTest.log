@@ -1,17 +1,17 @@
-Start testing: Mar 20 09:18 CST
+Start testing: Mar 20 15:04 CST
 ----------------------------------------------------------
 15/163 Testing: t_strm_reassem_single
 15/163 Test: t_strm_reassem_single
 Command: "/home/Work/CS144_lab/build/tests/fsm_stream_reassembler_single"
 Directory: /home/Work/CS144_lab/build
-"t_strm_reassem_single" start time: Mar 20 09:18 CST
+"t_strm_reassem_single" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_strm_reassem_single" end time: Mar 20 09:18 CST
+"t_strm_reassem_single" end time: Mar 20 15:04 CST
 "t_strm_reassem_single" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -19,14 +19,14 @@ Test Passed.
 16/163 Test: t_strm_reassem_seq
 Command: "/home/Work/CS144_lab/build/tests/fsm_stream_reassembler_seq"
 Directory: /home/Work/CS144_lab/build
-"t_strm_reassem_seq" start time: Mar 20 09:18 CST
+"t_strm_reassem_seq" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_strm_reassem_seq" end time: Mar 20 09:18 CST
+"t_strm_reassem_seq" end time: Mar 20 15:04 CST
 "t_strm_reassem_seq" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -34,14 +34,14 @@ Test Passed.
 17/163 Test: t_strm_reassem_dup
 Command: "/home/Work/CS144_lab/build/tests/fsm_stream_reassembler_dup"
 Directory: /home/Work/CS144_lab/build
-"t_strm_reassem_dup" start time: Mar 20 09:18 CST
+"t_strm_reassem_dup" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_strm_reassem_dup" end time: Mar 20 09:18 CST
+"t_strm_reassem_dup" end time: Mar 20 15:04 CST
 "t_strm_reassem_dup" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -49,26 +49,32 @@ Test Passed.
 18/163 Test: t_strm_reassem_holes
 Command: "/home/Work/CS144_lab/build/tests/fsm_stream_reassembler_holes"
 Directory: /home/Work/CS144_lab/build
-"t_strm_reassem_holes" start time: Mar 20 09:18 CST
+"t_strm_reassem_holes" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
 Test Failure on expectation:
-	Expectation: net bytes assembled = 2
+	Action:      substring submitted with data "c", index `2`, eof `0`
 
 Failure message:
-	The reassembler was expected to have `2` total bytes assembled, but there were `1`
+	basic_string::substr: __pos (which is 3) > this->size() (which is 1)
 
 List of steps that executed successfully:
 	Initialized
 	Action:      substring submitted with data "b", index `1`, eof `0`
-	Action:      substring submitted with data "a", index `0`, eof `0`
+	Expectation: net bytes assembled = 0
+	Expectation: bytes in stream = ""
+	Expectation: not at EOF
+	Action:      substring submitted with data "d", index `3`, eof `0`
+	Expectation: net bytes assembled = 0
+	Expectation: bytes in stream = ""
+	Expectation: not at EOF
 
-Exception: The reassembler was expected to have `2` total bytes assembled, but there were `1`
+Exception: The test caused your implementation to throw an exception!
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"t_strm_reassem_holes" end time: Mar 20 09:18 CST
+"t_strm_reassem_holes" end time: Mar 20 15:04 CST
 "t_strm_reassem_holes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -76,15 +82,15 @@ Test Failed.
 19/163 Test: t_strm_reassem_many
 Command: "/home/Work/CS144_lab/build/tests/fsm_stream_reassembler_many"
 Directory: /home/Work/CS144_lab/build
-"t_strm_reassem_many" start time: Mar 20 09:18 CST
+"t_strm_reassem_many" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
-Exception: test 1 - number of bytes RX is incorrect
+Exception: basic_string::substr: __pos (which is 121547) > this->size() (which is 646)
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"t_strm_reassem_many" end time: Mar 20 09:18 CST
+"t_strm_reassem_many" end time: Mar 20 15:04 CST
 "t_strm_reassem_many" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -92,28 +98,14 @@ Test Failed.
 20/163 Test: t_strm_reassem_overlapping
 Command: "/home/Work/CS144_lab/build/tests/fsm_stream_reassembler_overlapping"
 Directory: /home/Work/CS144_lab/build
-"t_strm_reassem_overlapping" start time: Mar 20 09:18 CST
+"t_strm_reassem_overlapping" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
-Test Failure on expectation:
-	Expectation: bytes not assembled = 2
-
-Failure message:
-	The reassembler was expected to have `2` bytes not assembled, but there were `0`
-
-List of steps that executed successfully:
-	Initialized
-	Action:      substring submitted with data "b", index `1`, eof `0`
-	Expectation: bytes in stream = ""
-	Action:      substring submitted with data "bc", index `1`, eof `0`
-	Expectation: bytes in stream = ""
-
-Exception: The reassembler was expected to have `2` bytes not assembled, but there were `0`
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"t_strm_reassem_overlapping" end time: Mar 20 09:18 CST
+"t_strm_reassem_overlapping" end time: Mar 20 15:04 CST
 "t_strm_reassem_overlapping" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -121,15 +113,15 @@ Test Failed.
 21/163 Test: t_strm_reassem_win
 Command: "/home/Work/CS144_lab/build/tests/fsm_stream_reassembler_win"
 Directory: /home/Work/CS144_lab/build
-"t_strm_reassem_win" start time: Mar 20 09:18 CST
+"t_strm_reassem_win" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
-Exception: test 2 - number of RX bytes is incorrect
+Exception: basic_string::substr: __pos (which is 133045) > this->size() (which is 2242)
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"t_strm_reassem_win" end time: Mar 20 09:18 CST
+"t_strm_reassem_win" end time: Mar 20 15:04 CST
 "t_strm_reassem_win" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -137,14 +129,14 @@ Test Failed.
 22/163 Test: t_byte_stream_construction
 Command: "/home/Work/CS144_lab/build/tests/byte_stream_construction"
 Directory: /home/Work/CS144_lab/build
-"t_byte_stream_construction" start time: Mar 20 09:18 CST
+"t_byte_stream_construction" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_construction" end time: Mar 20 09:18 CST
+"t_byte_stream_construction" end time: Mar 20 15:04 CST
 "t_byte_stream_construction" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -152,14 +144,14 @@ Test Passed.
 23/163 Test: t_byte_stream_one_write
 Command: "/home/Work/CS144_lab/build/tests/byte_stream_one_write"
 Directory: /home/Work/CS144_lab/build
-"t_byte_stream_one_write" start time: Mar 20 09:18 CST
+"t_byte_stream_one_write" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_one_write" end time: Mar 20 09:18 CST
+"t_byte_stream_one_write" end time: Mar 20 15:04 CST
 "t_byte_stream_one_write" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -167,14 +159,14 @@ Test Passed.
 24/163 Test: t_byte_stream_two_writes
 Command: "/home/Work/CS144_lab/build/tests/byte_stream_two_writes"
 Directory: /home/Work/CS144_lab/build
-"t_byte_stream_two_writes" start time: Mar 20 09:18 CST
+"t_byte_stream_two_writes" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_two_writes" end time: Mar 20 09:18 CST
+"t_byte_stream_two_writes" end time: Mar 20 15:04 CST
 "t_byte_stream_two_writes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -182,14 +174,14 @@ Test Passed.
 25/163 Test: t_byte_stream_capacity
 Command: "/home/Work/CS144_lab/build/tests/byte_stream_capacity"
 Directory: /home/Work/CS144_lab/build
-"t_byte_stream_capacity" start time: Mar 20 09:18 CST
+"t_byte_stream_capacity" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_capacity" end time: Mar 20 09:18 CST
+"t_byte_stream_capacity" end time: Mar 20 15:04 CST
 "t_byte_stream_capacity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -197,14 +189,14 @@ Test Passed.
 26/163 Test: t_byte_stream_many_writes
 Command: "/home/Work/CS144_lab/build/tests/byte_stream_many_writes"
 Directory: /home/Work/CS144_lab/build
-"t_byte_stream_many_writes" start time: Mar 20 09:18 CST
+"t_byte_stream_many_writes" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_many_writes" end time: Mar 20 09:18 CST
+"t_byte_stream_many_writes" end time: Mar 20 15:04 CST
 "t_byte_stream_many_writes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -212,7 +204,7 @@ Test Passed.
 27/163 Test: t_webget
 Command: "/home/Work/CS144_lab/tests/webget_t.sh"
 Directory: /home/Work/CS144_lab/build
-"t_webget" start time: Mar 20 09:18 CST
+"t_webget" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
 Function called: get_URL(cs144.keithw.org, /hasher/xyzzy).
@@ -222,7 +214,7 @@ ERROR: webget returned output that did not match the test's expectations
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"t_webget" end time: Mar 20 09:18 CST
+"t_webget" end time: Mar 20 15:04 CST
 "t_webget" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -230,14 +222,14 @@ Test Failed.
 47/163 Test: t_address_dt
 Command: "/home/Work/CS144_lab/build/doctests/address_dt"
 Directory: /home/Work/CS144_lab/build
-"t_address_dt" start time: Mar 20 09:18 CST
+"t_address_dt" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_address_dt" end time: Mar 20 09:18 CST
+"t_address_dt" end time: Mar 20 15:04 CST
 "t_address_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -245,14 +237,14 @@ Test Passed.
 48/163 Test: t_parser_dt
 Command: "/home/Work/CS144_lab/build/doctests/parser_dt"
 Directory: /home/Work/CS144_lab/build
-"t_parser_dt" start time: Mar 20 09:18 CST
+"t_parser_dt" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_parser_dt" end time: Mar 20 09:18 CST
+"t_parser_dt" end time: Mar 20 15:04 CST
 "t_parser_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -260,15 +252,15 @@ Test Passed.
 49/163 Test: t_socket_dt
 Command: "/home/Work/CS144_lab/build/doctests/socket_dt"
 Directory: /home/Work/CS144_lab/build
-"t_socket_dt" start time: Mar 20 09:18 CST
+"t_socket_dt" start time: Mar 20 15:04 CST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_socket_dt" end time: Mar 20 09:18 CST
+"t_socket_dt" end time: Mar 20 15:04 CST
 "t_socket_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Mar 20 09:18 CST
+End testing: Mar 20 15:04 CST

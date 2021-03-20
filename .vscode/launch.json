@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             // "program": "${workspaceFolder}/build/apps/webget",
-            "program": "${workspaceFolder}/build/tests/fsm_stream_reassembler_single",
+            "program": "${workspaceFolder}/build/tests/fsm_stream_reassembler_holes",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

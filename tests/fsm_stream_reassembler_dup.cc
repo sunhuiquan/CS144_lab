@@ -8,8 +8,10 @@
 
 using namespace std;
 
-int main() {
-    try {
+int main()
+{
+    try
+    {
         auto rd = get_random_generator();
 
         {
@@ -59,7 +61,8 @@ int main() {
             test.execute(NotAtEof{});
             string data = "abcdefgh";
 
-            for (size_t i = 0; i < 1000; ++i) {
+            for (size_t i = 0; i < 1000; ++i)
+            {
                 size_t start_i = uniform_int_distribution<size_t>{0, 8}(rd);
                 auto start = data.begin();
                 std::advance(start, start_i);
@@ -88,8 +91,9 @@ int main() {
             test.execute(BytesAvailable("ef"));
             test.execute(NotAtEof{});
         }
-
-    } catch (const exception &e) {
+    }
+    catch (const exception &e)
+    {
         cerr << "Exception: " << e.what() << endl;
         return EXIT_FAILURE;
     }

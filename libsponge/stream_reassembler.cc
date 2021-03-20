@@ -24,8 +24,12 @@ void StreamReassembler::handle_left_edge(std::pair<uint64_t, std::string> &new_s
 {
     if (new_seg.first < _unreceived)
     {
-        new_seg.first = _unreceived;
+        if (new_seg.first + new_seg.second.size() <= _unreceived)
+        {
+            return;
+        }
         new_seg.second = new_seg.second.substr(_unreceived - new_seg.first);
+        new_seg.first = _unreceived;
     }
     _output.write(new_seg.second);
     _unreceived = new_seg.first + new_seg.second.size();

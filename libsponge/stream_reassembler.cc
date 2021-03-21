@@ -33,7 +33,11 @@ void StreamReassembler::handle_left_edge(std::pair<uint64_t, std::string> &new_s
         new_seg.second = new_seg.second.substr(_unreceived - new_seg.first);
         new_seg.first = _unreceived;
     }
-    _output.write(new_seg.second);
+    size_t write_len = _output.write(new_seg.second);
+    if (write_len == 0)
+    {
+        return;
+    }
     _unreceived = new_seg.first + new_seg.second.size();
     _unacceptable = _unreceived + _capacity;
 

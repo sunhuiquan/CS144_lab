@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstream_copy.a  CMakeFiles/stream_copy.dir/bidirectional_stream_copy.cc.o
+/usr/bin/ranlib libstream_copy.a

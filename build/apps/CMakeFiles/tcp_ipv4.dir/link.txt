@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG  -rdynamic CMakeFiles/tcp_ipv4.dir/tcp_ipv4.cc.o  -o tcp_ipv4  libstream_copy.a ../libsponge/libsponge.a -lpthread 

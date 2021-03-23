@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Weffc++ -Wold-style-cast -O3 -DNDEBUG  -rdynamic CMakeFiles/udp_tcpdump.dir/udp_tcpdump.cc.o  -o udp_tcpdump  -Wl,-rpath,/usr/local/lib /usr/local/lib/libpcap.so ../libsponge/libsponge.a -lpthread 

@@ -1,4 +1,4 @@
-Lab 0 Writeup
+Lab 3 Writeup
 =============
 
 My name: [your name here]
@@ -7,7 +7,14 @@ My SUNet ID: [your sunetid here]
 
 This lab took me about [n] hours to do.
 
-My secret code from section 2.1 was: [code here]
+Program Structure and Design of the TCPSender:
+[]
+
+Implementation Challenges:
+[]
+
+Remaining Bugs:
+[]
 
 - Optional: I had unexpected difficulty with: [describe]
 

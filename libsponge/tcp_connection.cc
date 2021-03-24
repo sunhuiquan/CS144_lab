@@ -52,9 +52,9 @@ void TCPConnection::segment_received(const TCPSegment &seg)
 
     // STATE: SYN_SENT => ESTABLISED
     // receive SYN + ACK / send ACK
-    if (!_receiver.ackno().has_value() && _sender.next_seqno_absolute() > 0)
+    if (!_receiver.ackno().has_value() && _sender.next_seqno_absolute() > 0 && _sender.next_seqno_absolute() == _sender.bytes_in_flight())
     {
-        if (seg.payload().size() != 0)
+        if (seg.payload().size())
         {
             return;
         }
@@ -81,10 +81,14 @@ void TCPConnection::segment_received(const TCPSegment &seg)
         }
     }
 
-    // SYN_SENT => ESTABLISED send ACK and usual data transmission's ACK
-    // and SYN_RECV rece ACK without SYN and others are both fine
     _receiver.segment_received(seg);
     _sender.ack_received(seg.header().ackno, seg.header().win);
+
+    // empty segment will add ACK in send_segments function
+    if (_sender.stream_in().buffer_empty() && seg.length_in_sequence_space())
+    {
+        _sender.send_empty_segment();
+    }
 
     if (seg.header().rst)
     {
@@ -170,6 +174,7 @@ TCPConnection::~TCPConnection()
 
 void TCPConnection::send_segments()
 {
+    // cout << "a" << endl;
     TCPSegment seg;
     while (!_sender.segments_out().empty())
     {
@@ -183,6 +188,8 @@ void TCPConnection::send_segments()
         }
         _segments_out.push(seg);
     }
+    // test whether the connection should close
+    clean_shutdown();
 }
 
 void TCPConnection::unclean_shutdown()
@@ -197,12 +204,28 @@ void TCPConnection::unclean_shutdown()
     if (_receiver.ackno().has_value())
     {
         seg.header().ack = true;
-        seg.header().ackno = _receiver.ackno().value();
         seg.header().win = _receiver.window_size();
+        seg.header().ackno = _receiver.ackno().value();
     }
     _segments_out.push(seg);
 }
 
 void TCPConnection::clean_shutdown()
 {
+    // receiver input_ended is enough for application may never get the data off
+    // the sender must eof to ensure all the data have been sent
+    if (_receiver.stream_out().input_ended())
+    {
+        if (!_sender.stream_in().eof())
+        {
+            _linger_after_streams_finish = false;
+        }
+        else if (_sender.bytes_in_flight() == 0)
+        {
+            if (!_linger_after_streams_finish || time_since_last_segment_received() >= 10 * _cfg.rt_timeout)
+            {
+                _active = false;
+            }
+        }
+    }
 }

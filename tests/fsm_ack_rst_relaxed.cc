@@ -16,8 +16,10 @@ using State = TCPTestHarness::State;
 static void ack_listen_test(const TCPConfig &cfg,
                             const WrappingInt32 seqno,
                             const WrappingInt32 ackno,
-                            const int lineno) {
-    try {
+                            const int lineno)
+{
+    try
+    {
         TCPTestHarness test = TCPTestHarness::in_listen(cfg);
 
         // any ACK should result in a RST
@@ -25,7 +27,9 @@ static void ack_listen_test(const TCPConfig &cfg,
 
         test.execute(ExpectState{State::LISTEN});
         test.execute(ExpectNoSegment{}, "test 3 failed: ACKs in LISTEN should be ignored");
-    } catch (const exception &e) {
+    }
+    catch (const exception &e)
+    {
         throw runtime_error(string(e.what()) + " (ack_listen_test called from line " + to_string(lineno) + ")");
     }
 }
@@ -35,21 +39,27 @@ static void ack_rst_syn_sent_test(const TCPConfig &cfg,
                                   const WrappingInt32 base_seq,
                                   const WrappingInt32 seqno,
                                   const WrappingInt32 ackno,
-                                  const int lineno) {
-    try {
+                                  const int lineno)
+{
+    try
+    {
         TCPTestHarness test = TCPTestHarness::in_syn_sent(cfg, base_seq);
 
         // unacceptable ACKs should be ignored
         test.send_ack(seqno, ackno);
         test.execute(ExpectState{State::SYN_SENT});
         test.execute(ExpectNoSegment{}, "test 3 failed: bad ACKs in SYN_SENT should be ignored");
-    } catch (const exception &e) {
+    }
+    catch (const exception &e)
+    {
         throw runtime_error(string(e.what()) + " (ack_rst_syn_sent_test called from line " + to_string(lineno) + ")");
     }
 }
 
-int main() {
-    try {
+int main()
+{
+    try
+    {
         TCPConfig cfg{};
         const WrappingInt32 base_seq(1 << 31);
 
@@ -139,7 +149,9 @@ int main() {
         cerr << "Test 5" << endl;
         ack_rst_syn_sent_test(cfg, base_seq, base_seq, base_seq, __LINE__);
         ack_rst_syn_sent_test(cfg, base_seq, base_seq, base_seq + 2, __LINE__);
-    } catch (const exception &e) {
+    }
+    catch (const exception &e)
+    {
         cerr << e.what() << endl;
         return EXIT_FAILURE;
     }

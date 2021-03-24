@@ -4,7 +4,7 @@
 
 #include <random>
 
-// #include <iostream>
+#include <iostream>
 
 // Dummy implementation of a TCP sender
 
@@ -52,26 +52,42 @@ void TCPSender::fill_window()
     // empty and non-eof can't send a empty segment, so return back
     // empty and eof can send a empty segment with fin
 
-    while (_receiver_window_free_space)
+    if (_receiver_window_size)
     {
-        TCPSegment seg;
-        size_t send_max = std::min(TCPConfig::MAX_PAYLOAD_SIZE, _receiver_window_free_space);
-        size_t rest_stream_size = _stream.buffer_size();
-        if (rest_stream_size < send_max)
+        while (_receiver_window_free_space)
         {
-            seg.payload() = _stream.read(rest_stream_size);
-            if (_stream.eof())
-
+            TCPSegment seg;
+            size_t payload_size = min({_stream.buffer_size(),
+                                       static_cast<size_t>(_receiver_window_free_space),
+                                       static_cast<size_t>(TCPConfig::MAX_PAYLOAD_SIZE)});
+            seg.payload() = Buffer{_stream.read(payload_size)};
+            if (_stream.eof() && static_cast<size_t>(_receiver_window_free_space) > payload_size)
             {
                 seg.header().fin = true;
                 _fin = true;
             }
             send_segment(seg);
-            return;
+            if (_stream.buffer_empty())
+            {
+                break;
+            }
         }
-        else
+    }
+    else if (_receiver_window_free_space == 0)
+    {
+        // zero-window detect situation
+        // else if() to avoid the _receiver_window_free_space < 0
+        TCPSegment seg;
+        if (_stream.eof())
         {
-            seg.payload() = _stream.read(send_max);
+            seg.header().fin = true;
+            _fin = true;
+            send_segment(seg);
+        }
+        else if (!_stream.buffer_empty())
+        {
+            // the traditional way, read only one byte and send it
+            seg.payload() = Buffer{_stream.read(1)};
             send_segment(seg);
         }
     }

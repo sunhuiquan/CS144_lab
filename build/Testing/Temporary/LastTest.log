@@ -1,17 +1,17 @@
-Start testing: Mar 23 19:53 CST
+Start testing: Mar 24 10:39 CST
 ----------------------------------------------------------
 1/164 Testing: t_wrapping_ints_cmp
 1/164 Test: t_wrapping_ints_cmp
 Command: "/home/water/Work/CS144_lab/build/tests/wrapping_integers_cmp"
 Directory: /home/water/Work/CS144_lab/build
-"t_wrapping_ints_cmp" start time: Mar 23 19:53 CST
+"t_wrapping_ints_cmp" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_wrapping_ints_cmp" end time: Mar 23 19:53 CST
+"t_wrapping_ints_cmp" end time: Mar 24 10:39 CST
 "t_wrapping_ints_cmp" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -19,14 +19,14 @@ Test Passed.
 2/164 Test: t_wrapping_ints_unwrap
 Command: "/home/water/Work/CS144_lab/build/tests/wrapping_integers_unwrap"
 Directory: /home/water/Work/CS144_lab/build
-"t_wrapping_ints_unwrap" start time: Mar 23 19:53 CST
+"t_wrapping_ints_unwrap" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_wrapping_ints_unwrap" end time: Mar 23 19:53 CST
+"t_wrapping_ints_unwrap" end time: Mar 24 10:39 CST
 "t_wrapping_ints_unwrap" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -34,14 +34,14 @@ Test Passed.
 3/164 Test: t_wrapping_ints_wrap
 Command: "/home/water/Work/CS144_lab/build/tests/wrapping_integers_wrap"
 Directory: /home/water/Work/CS144_lab/build
-"t_wrapping_ints_wrap" start time: Mar 23 19:53 CST
+"t_wrapping_ints_wrap" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_wrapping_ints_wrap" end time: Mar 23 19:53 CST
+"t_wrapping_ints_wrap" end time: Mar 24 10:39 CST
 "t_wrapping_ints_wrap" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -49,14 +49,14 @@ Test Passed.
 4/164 Test: t_recv_connect
 Command: "/home/water/Work/CS144_lab/build/tests/recv_connect"
 Directory: /home/water/Work/CS144_lab/build
-"t_recv_connect" start time: Mar 23 19:53 CST
+"t_recv_connect" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_recv_connect" end time: Mar 23 19:53 CST
+"t_recv_connect" end time: Mar 24 10:39 CST
 "t_recv_connect" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -64,14 +64,14 @@ Test Passed.
 5/164 Test: t_recv_transmit
 Command: "/home/water/Work/CS144_lab/build/tests/recv_transmit"
 Directory: /home/water/Work/CS144_lab/build
-"t_recv_transmit" start time: Mar 23 19:53 CST
+"t_recv_transmit" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.04 sec
+Test time =   0.05 sec
 ----------------------------------------------------------
 Test Passed.
-"t_recv_transmit" end time: Mar 23 19:53 CST
+"t_recv_transmit" end time: Mar 24 10:39 CST
 "t_recv_transmit" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -79,14 +79,14 @@ Test Passed.
 6/164 Test: t_recv_window
 Command: "/home/water/Work/CS144_lab/build/tests/recv_window"
 Directory: /home/water/Work/CS144_lab/build
-"t_recv_window" start time: Mar 23 19:53 CST
+"t_recv_window" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_recv_window" end time: Mar 23 19:53 CST
+"t_recv_window" end time: Mar 24 10:39 CST
 "t_recv_window" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -94,14 +94,14 @@ Test Passed.
 7/164 Test: t_recv_reorder
 Command: "/home/water/Work/CS144_lab/build/tests/recv_reorder"
 Directory: /home/water/Work/CS144_lab/build
-"t_recv_reorder" start time: Mar 23 19:53 CST
+"t_recv_reorder" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_recv_reorder" end time: Mar 23 19:53 CST
+"t_recv_reorder" end time: Mar 24 10:39 CST
 "t_recv_reorder" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -109,14 +109,14 @@ Test Passed.
 8/164 Test: t_recv_close
 Command: "/home/water/Work/CS144_lab/build/tests/recv_close"
 Directory: /home/water/Work/CS144_lab/build
-"t_recv_close" start time: Mar 23 19:53 CST
+"t_recv_close" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_recv_close" end time: Mar 23 19:53 CST
+"t_recv_close" end time: Mar 24 10:39 CST
 "t_recv_close" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -124,14 +124,14 @@ Test Passed.
 9/164 Test: t_send_connect
 Command: "/home/water/Work/CS144_lab/build/tests/send_connect"
 Directory: /home/water/Work/CS144_lab/build
-"t_send_connect" start time: Mar 23 19:53 CST
+"t_send_connect" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_send_connect" end time: Mar 23 19:53 CST
+"t_send_connect" end time: Mar 24 10:39 CST
 "t_send_connect" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -139,14 +139,14 @@ Test Passed.
 10/164 Test: t_send_transmit
 Command: "/home/water/Work/CS144_lab/build/tests/send_transmit"
 Directory: /home/water/Work/CS144_lab/build
-"t_send_transmit" start time: Mar 23 19:53 CST
+"t_send_transmit" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.03 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"t_send_transmit" end time: Mar 23 19:53 CST
+"t_send_transmit" end time: Mar 24 10:39 CST
 "t_send_transmit" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -154,14 +154,14 @@ Test Passed.
 11/164 Test: t_send_retx
 Command: "/home/water/Work/CS144_lab/build/tests/send_retx"
 Directory: /home/water/Work/CS144_lab/build
-"t_send_retx" start time: Mar 23 19:53 CST
+"t_send_retx" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_send_retx" end time: Mar 23 19:53 CST
+"t_send_retx" end time: Mar 24 10:39 CST
 "t_send_retx" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -169,14 +169,14 @@ Test Passed.
 12/164 Test: t_send_window
 Command: "/home/water/Work/CS144_lab/build/tests/send_window"
 Directory: /home/water/Work/CS144_lab/build
-"t_send_window" start time: Mar 23 19:53 CST
+"t_send_window" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_send_window" end time: Mar 23 19:53 CST
+"t_send_window" end time: Mar 24 10:39 CST
 "t_send_window" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -184,14 +184,14 @@ Test Passed.
 13/164 Test: t_send_ack
 Command: "/home/water/Work/CS144_lab/build/tests/send_ack"
 Directory: /home/water/Work/CS144_lab/build
-"t_send_ack" start time: Mar 23 19:53 CST
+"t_send_ack" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_send_ack" end time: Mar 23 19:53 CST
+"t_send_ack" end time: Mar 24 10:39 CST
 "t_send_ack" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -199,14 +199,14 @@ Test Passed.
 14/164 Test: t_send_close
 Command: "/home/water/Work/CS144_lab/build/tests/send_close"
 Directory: /home/water/Work/CS144_lab/build
-"t_send_close" start time: Mar 23 19:53 CST
+"t_send_close" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_send_close" end time: Mar 23 19:53 CST
+"t_send_close" end time: Mar 24 10:39 CST
 "t_send_close" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -214,14 +214,14 @@ Test Passed.
 15/164 Test: t_strm_reassem_cap
 Command: "/home/water/Work/CS144_lab/build/tests/fsm_stream_reassembler_cap"
 Directory: /home/water/Work/CS144_lab/build
-"t_strm_reassem_cap" start time: Mar 23 19:53 CST
+"t_strm_reassem_cap" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_strm_reassem_cap" end time: Mar 23 19:53 CST
+"t_strm_reassem_cap" end time: Mar 24 10:39 CST
 "t_strm_reassem_cap" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -229,14 +229,14 @@ Test Passed.
 16/164 Test: t_strm_reassem_single
 Command: "/home/water/Work/CS144_lab/build/tests/fsm_stream_reassembler_single"
 Directory: /home/water/Work/CS144_lab/build
-"t_strm_reassem_single" start time: Mar 23 19:53 CST
+"t_strm_reassem_single" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_strm_reassem_single" end time: Mar 23 19:53 CST
+"t_strm_reassem_single" end time: Mar 24 10:39 CST
 "t_strm_reassem_single" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -244,14 +244,14 @@ Test Passed.
 17/164 Test: t_strm_reassem_seq
 Command: "/home/water/Work/CS144_lab/build/tests/fsm_stream_reassembler_seq"
 Directory: /home/water/Work/CS144_lab/build
-"t_strm_reassem_seq" start time: Mar 23 19:53 CST
+"t_strm_reassem_seq" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_strm_reassem_seq" end time: Mar 23 19:53 CST
+"t_strm_reassem_seq" end time: Mar 24 10:39 CST
 "t_strm_reassem_seq" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -259,14 +259,14 @@ Test Passed.
 18/164 Test: t_strm_reassem_dup
 Command: "/home/water/Work/CS144_lab/build/tests/fsm_stream_reassembler_dup"
 Directory: /home/water/Work/CS144_lab/build
-"t_strm_reassem_dup" start time: Mar 23 19:53 CST
+"t_strm_reassem_dup" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_strm_reassem_dup" end time: Mar 23 19:53 CST
+"t_strm_reassem_dup" end time: Mar 24 10:39 CST
 "t_strm_reassem_dup" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -274,14 +274,14 @@ Test Passed.
 19/164 Test: t_strm_reassem_holes
 Command: "/home/water/Work/CS144_lab/build/tests/fsm_stream_reassembler_holes"
 Directory: /home/water/Work/CS144_lab/build
-"t_strm_reassem_holes" start time: Mar 23 19:53 CST
+"t_strm_reassem_holes" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_strm_reassem_holes" end time: Mar 23 19:53 CST
+"t_strm_reassem_holes" end time: Mar 24 10:39 CST
 "t_strm_reassem_holes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -289,14 +289,14 @@ Test Passed.
 20/164 Test: t_strm_reassem_many
 Command: "/home/water/Work/CS144_lab/build/tests/fsm_stream_reassembler_many"
 Directory: /home/water/Work/CS144_lab/build
-"t_strm_reassem_many" start time: Mar 23 19:53 CST
+"t_strm_reassem_many" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.06 sec
 ----------------------------------------------------------
 Test Passed.
-"t_strm_reassem_many" end time: Mar 23 19:53 CST
+"t_strm_reassem_many" end time: Mar 24 10:39 CST
 "t_strm_reassem_many" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -304,14 +304,14 @@ Test Passed.
 21/164 Test: t_strm_reassem_overlapping
 Command: "/home/water/Work/CS144_lab/build/tests/fsm_stream_reassembler_overlapping"
 Directory: /home/water/Work/CS144_lab/build
-"t_strm_reassem_overlapping" start time: Mar 23 19:53 CST
+"t_strm_reassem_overlapping" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_strm_reassem_overlapping" end time: Mar 23 19:53 CST
+"t_strm_reassem_overlapping" end time: Mar 24 10:39 CST
 "t_strm_reassem_overlapping" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -319,14 +319,14 @@ Test Passed.
 22/164 Test: t_strm_reassem_win
 Command: "/home/water/Work/CS144_lab/build/tests/fsm_stream_reassembler_win"
 Directory: /home/water/Work/CS144_lab/build
-"t_strm_reassem_win" start time: Mar 23 19:53 CST
+"t_strm_reassem_win" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.05 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Passed.
-"t_strm_reassem_win" end time: Mar 23 19:53 CST
+"t_strm_reassem_win" end time: Mar 24 10:39 CST
 "t_strm_reassem_win" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -334,14 +334,14 @@ Test Passed.
 23/164 Test: t_byte_stream_construction
 Command: "/home/water/Work/CS144_lab/build/tests/byte_stream_construction"
 Directory: /home/water/Work/CS144_lab/build
-"t_byte_stream_construction" start time: Mar 23 19:53 CST
+"t_byte_stream_construction" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_construction" end time: Mar 23 19:53 CST
+"t_byte_stream_construction" end time: Mar 24 10:39 CST
 "t_byte_stream_construction" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -349,14 +349,14 @@ Test Passed.
 24/164 Test: t_byte_stream_one_write
 Command: "/home/water/Work/CS144_lab/build/tests/byte_stream_one_write"
 Directory: /home/water/Work/CS144_lab/build
-"t_byte_stream_one_write" start time: Mar 23 19:53 CST
+"t_byte_stream_one_write" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_one_write" end time: Mar 23 19:53 CST
+"t_byte_stream_one_write" end time: Mar 24 10:39 CST
 "t_byte_stream_one_write" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -364,14 +364,14 @@ Test Passed.
 25/164 Test: t_byte_stream_two_writes
 Command: "/home/water/Work/CS144_lab/build/tests/byte_stream_two_writes"
 Directory: /home/water/Work/CS144_lab/build
-"t_byte_stream_two_writes" start time: Mar 23 19:53 CST
+"t_byte_stream_two_writes" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_two_writes" end time: Mar 23 19:53 CST
+"t_byte_stream_two_writes" end time: Mar 24 10:39 CST
 "t_byte_stream_two_writes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -379,14 +379,14 @@ Test Passed.
 26/164 Test: t_byte_stream_capacity
 Command: "/home/water/Work/CS144_lab/build/tests/byte_stream_capacity"
 Directory: /home/water/Work/CS144_lab/build
-"t_byte_stream_capacity" start time: Mar 23 19:53 CST
+"t_byte_stream_capacity" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_capacity" end time: Mar 23 19:53 CST
+"t_byte_stream_capacity" end time: Mar 24 10:39 CST
 "t_byte_stream_capacity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -394,14 +394,14 @@ Test Passed.
 27/164 Test: t_byte_stream_many_writes
 Command: "/home/water/Work/CS144_lab/build/tests/byte_stream_many_writes"
 Directory: /home/water/Work/CS144_lab/build
-"t_byte_stream_many_writes" start time: Mar 23 19:53 CST
+"t_byte_stream_many_writes" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_byte_stream_many_writes" end time: Mar 23 19:53 CST
+"t_byte_stream_many_writes" end time: Mar 24 10:39 CST
 "t_byte_stream_many_writes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -409,32 +409,373 @@ Test Passed.
 28/164 Test: t_webget
 Command: "/home/water/Work/CS144_lab/tests/webget_t.sh"
 Directory: /home/water/Work/CS144_lab/build
-"t_webget" start time: Mar 23 19:53 CST
+"t_webget" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
-Function called: get_URL(cs144.keithw.org, /hasher/xyzzy).
-Warning: get_URL() has not been implemented yet.
-ERROR: webget returned output that did not match the test's expectations
+HTTP/1.1 200 OK
+Date: Wed, 24 Mar 2021 02:39:59 GMT
+Server: Apache
+Content-Length: 44
+Content-Type: text/plain
+
+QWx0NhMPkoM/bJr/ohvHXlviFhOyYrYb+qqdOnwLYo4
 <end of output>
-Test time =   0.01 sec
+Test time =   0.93 sec
 ----------------------------------------------------------
-Test Failed.
-"t_webget" end time: Mar 23 19:53 CST
+Test Passed.
+"t_webget" end time: Mar 24 10:39 CST
 "t_webget" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-48/164 Testing: t_address_dt
-48/164 Test: t_address_dt
-Command: "/home/water/Work/CS144_lab/build/doctests/address_dt"
+29/164 Testing: t_tcp_parser
+29/164 Test: t_tcp_parser
+Command: "/home/water/Work/CS144_lab/build/tests/tcp_parser" "/home/water/Work/CS144_lab/tests/ipv4_parser.data"
 Directory: /home/water/Work/CS144_lab/build
-"t_address_dt" start time: Mar 23 19:53 CST
+"t_tcp_parser" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_tcp_parser" end time: Mar 24 10:39 CST
+"t_tcp_parser" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/164 Testing: t_ipv4_parser
+30/164 Test: t_ipv4_parser
+Command: "/home/water/Work/CS144_lab/build/tests/ipv4_parser" "/home/water/Work/CS144_lab/tests/ipv4_parser.data"
+Directory: /home/water/Work/CS144_lab/build
+"t_ipv4_parser" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_address_dt" end time: Mar 23 19:53 CST
+"t_ipv4_parser" end time: Mar 24 10:39 CST
+"t_ipv4_parser" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/164 Testing: t_active_close
+31/164 Test: t_active_close
+Command: "/home/water/Work/CS144_lab/build/tests/fsm_active_close"
+Directory: /home/water/Work/CS144_lab/build
+"t_active_close" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Expectation: exactly one segment sent with (A=0,R=0,S=1,F=0,seqno=0,payload_size=0,)
+
+Failure message:
+	The TCP should have produced a segment that existed, but it did not
+
+List of steps that executed successfully:
+	Action:      connect
+
+Warning: Unclean shutdown of TCPConnection
+The TCP should have produced a segment that existed, but it did not
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_active_close" end time: Mar 24 10:39 CST
+"t_active_close" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/164 Testing: t_passive_close
+32/164 Test: t_passive_close
+Command: "/home/water/Work/CS144_lab/build/tests/fsm_passive_close"
+Directory: /home/water/Work/CS144_lab/build
+"t_passive_close" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Expectation: exactly one segment sent with (A=0,R=0,S=1,F=0,seqno=0,payload_size=0,)
+
+Failure message:
+	The TCP should have produced a segment that existed, but it did not
+
+List of steps that executed successfully:
+	Action:      connect
+
+Warning: Unclean shutdown of TCPConnection
+The TCP should have produced a segment that existed, but it did not
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_passive_close" end time: Mar 24 10:39 CST
+"t_passive_close" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/164 Testing: t_ack_rst
+34/164 Test: t_ack_rst
+Command: "/home/water/Work/CS144_lab/build/tests/fsm_ack_rst_relaxed"
+Directory: /home/water/Work/CS144_lab/build
+"t_ack_rst" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+Test 1
+Test Failure on expectation:
+	Expectation: exactly one segment sent with (A=0,R=0,S=1,F=0,seqno=2147483647,payload_size=0,)
+
+Failure message:
+	The TCP should have produced a segment that existed, but it did not
+
+List of steps that executed successfully:
+	Action:      connect
+
+Warning: Unclean shutdown of TCPConnection
+The TCP should have produced a segment that existed, but it did not
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_ack_rst" end time: Mar 24 10:39 CST
+"t_ack_rst" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/164 Testing: t_ack_rst_win
+36/164 Test: t_ack_rst_win
+Command: "/home/water/Work/CS144_lab/build/tests/fsm_ack_rst_win_relaxed"
+Directory: /home/water/Work/CS144_lab/build
+"t_ack_rst_win" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Expectation: exactly one segment sent with (A=0,R=0,S=1,F=0,seqno=2147483647,payload_size=0,)
+
+Failure message:
+	The TCP should have produced a segment that existed, but it did not
+
+List of steps that executed successfully:
+	Action:      connect
+
+Warning: Unclean shutdown of TCPConnection
+The TCP should have produced a segment that existed, but it did not
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_ack_rst_win" end time: Mar 24 10:39 CST
+"t_ack_rst_win" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/164 Testing: t_connect
+38/164 Test: t_connect
+Command: "/home/water/Work/CS144_lab/build/tests/fsm_connect_relaxed"
+Directory: /home/water/Work/CS144_lab/build
+"t_connect" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	exactly one segment sent with (A=0,S=1,)
+Failure message:
+	The TCP should have produced a segment that existed, but it did not
+Note:
+	test 1 failed: could not parse SYN segment or invalid flags
+
+Warning: Unclean shutdown of TCPConnection
+The TCP should have produced a segment that existed, but it did not
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_connect" end time: Mar 24 10:39 CST
+"t_connect" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/164 Testing: t_listen
+40/164 Test: t_listen
+Command: "/home/water/Work/CS144_lab/build/tests/fsm_listen_relaxed"
+Directory: /home/water/Work/CS144_lab/build
+"t_listen" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	exactly one segment sent with (A=1,S=1,ackno=1,)
+Failure message:
+	The TCP produced a segment with `syn = 0`, but syn was expected to be `1`
+Note:
+	test 1 failed: no SYN/ACK in response to SYN
+
+Warning: Unclean shutdown of TCPConnection
+The TCP produced a segment with `syn = 0`, but syn was expected to be `1`
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_listen" end time: Mar 24 10:39 CST
+"t_listen" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/164 Testing: t_winsize
+41/164 Test: t_winsize
+Command: "/home/water/Work/CS144_lab/build/tests/fsm_winsize"
+Directory: /home/water/Work/CS144_lab/build
+"t_winsize" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	exactly one segment sent with (A=1,ackno=2434272777,win=21536,)
+Failure message:
+	The TCP produced a segment with `ackno = 0`, but ackno was expected to be `2434272777`
+Note:
+	test 1 failed: SYN/ACK invalid
+
+Warning: Unclean shutdown of TCPConnection
+The TCP produced a segment with `ackno = 0`, but ackno was expected to be `2434272777`
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_winsize" end time: Mar 24 10:39 CST
+"t_winsize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/164 Testing: t_retx
+43/164 Test: t_retx
+Command: "/home/water/Work/CS144_lab/build/tests/fsm_retx_relaxed"
+Directory: /home/water/Work/CS144_lab/build
+"t_retx" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Expectation: exactly one segment sent with (A=0,R=0,S=1,F=0,seqno=352569012,payload_size=0,)
+
+Failure message:
+	The TCP should have produced a segment that existed, but it did not
+
+List of steps that executed successfully:
+	Action:      connect
+
+Warning: Unclean shutdown of TCPConnection
+The TCP should have produced a segment that existed, but it did not
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_retx" end time: Mar 24 10:39 CST
+"t_retx" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/164 Testing: t_retx_win
+44/164 Test: t_retx_win
+Command: "/home/water/Work/CS144_lab/build/tests/fsm_retx_win"
+Directory: /home/water/Work/CS144_lab/build
+"t_retx_win" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Expectation: exactly one segment sent with (A=0,R=0,S=1,F=0,seqno=456802692,payload_size=0,)
+
+Failure message:
+	The TCP should have produced a segment that existed, but it did not
+
+List of steps that executed successfully:
+	Action:      connect
+
+Warning: Unclean shutdown of TCPConnection
+The TCP should have produced a segment that existed, but it did not
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_retx_win" end time: Mar 24 10:39 CST
+"t_retx_win" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/164 Testing: t_loopback
+45/164 Test: t_loopback
+Command: "/home/water/Work/CS144_lab/build/tests/fsm_loopback"
+Directory: /home/water/Work/CS144_lab/build
+"t_loopback" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Expectation: exactly one segment sent with (A=0,R=0,S=1,F=0,seqno=2026676531,payload_size=0,)
+
+Failure message:
+	The TCP should have produced a segment that existed, but it did not
+
+List of steps that executed successfully:
+	Action:      connect
+
+Warning: Unclean shutdown of TCPConnection
+The TCP should have produced a segment that existed, but it did not
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_loopback" end time: Mar 24 10:39 CST
+"t_loopback" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/164 Testing: t_loopback_win
+46/164 Test: t_loopback_win
+Command: "/home/water/Work/CS144_lab/build/tests/fsm_loopback_win"
+Directory: /home/water/Work/CS144_lab/build
+"t_loopback_win" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Expectation: exactly one segment sent with (A=0,R=0,S=1,F=0,seqno=2690612870,payload_size=0,)
+
+Failure message:
+	The TCP should have produced a segment that existed, but it did not
+
+List of steps that executed successfully:
+	Action:      connect
+
+Warning: Unclean shutdown of TCPConnection
+The TCP should have produced a segment that existed, but it did not
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_loopback_win" end time: Mar 24 10:39 CST
+"t_loopback_win" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/164 Testing: t_reorder
+47/164 Test: t_reorder
+Command: "/home/water/Work/CS144_lab/build/tests/fsm_reorder"
+Directory: /home/water/Work/CS144_lab/build
+"t_reorder" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+Test Failure on expectation:
+	Expectation: exactly one segment sent with (A=0,R=0,S=1,F=0,seqno=2384101674,payload_size=0,)
+
+Failure message:
+	The TCP should have produced a segment that existed, but it did not
+
+List of steps that executed successfully:
+	Action:      connect
+
+Warning: Unclean shutdown of TCPConnection
+The TCP should have produced a segment that existed, but it did not
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_reorder" end time: Mar 24 10:39 CST
+"t_reorder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/164 Testing: t_address_dt
+48/164 Test: t_address_dt
+Command: "/home/water/Work/CS144_lab/build/doctests/address_dt"
+Directory: /home/water/Work/CS144_lab/build
+"t_address_dt" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"t_address_dt" end time: Mar 24 10:39 CST
 "t_address_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -442,14 +783,14 @@ Test Passed.
 49/164 Test: t_parser_dt
 Command: "/home/water/Work/CS144_lab/build/doctests/parser_dt"
 Directory: /home/water/Work/CS144_lab/build
-"t_parser_dt" start time: Mar 23 19:53 CST
+"t_parser_dt" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_parser_dt" end time: Mar 23 19:53 CST
+"t_parser_dt" end time: Mar 24 10:39 CST
 "t_parser_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -457,15 +798,1737 @@ Test Passed.
 50/164 Test: t_socket_dt
 Command: "/home/water/Work/CS144_lab/build/doctests/socket_dt"
 Directory: /home/water/Work/CS144_lab/build
-"t_socket_dt" start time: Mar 23 19:53 CST
+"t_socket_dt" start time: Mar 24 10:39 CST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_socket_dt" end time: Mar 23 19:53 CST
+"t_socket_dt" end time: Mar 24 10:39 CST
 "t_socket_dt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Mar 23 19:53 CST
+51/164 Testing: t_udp_client_send
+51/164 Test: t_udp_client_send
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucS"
+Directory: /home/water/Work/CS144_lab/build
+"t_udp_client_send" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_udp_client_send" end time: Mar 24 10:39 CST
+"t_udp_client_send" time elapsed: 00:00:10
+----------------------------------------------------------
+
+52/164 Testing: t_udp_server_send
+52/164 Test: t_udp_server_send
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usS"
+Directory: /home/water/Work/CS144_lab/build
+"t_udp_server_send" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_udp_server_send" end time: Mar 24 10:39 CST
+"t_udp_server_send" time elapsed: 00:00:10
+----------------------------------------------------------
+
+53/164 Testing: t_udp_client_recv
+53/164 Test: t_udp_client_recv
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucR"
+Directory: /home/water/Work/CS144_lab/build
+"t_udp_client_recv" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_udp_client_recv" end time: Mar 24 10:39 CST
+"t_udp_client_recv" time elapsed: 00:00:10
+----------------------------------------------------------
+
+54/164 Testing: t_udp_server_recv
+54/164 Test: t_udp_server_recv
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usR"
+Directory: /home/water/Work/CS144_lab/build
+"t_udp_server_recv" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_udp_server_recv" end time: Mar 24 10:39 CST
+"t_udp_server_recv" time elapsed: 00:00:10
+----------------------------------------------------------
+
+55/164 Testing: t_udp_client_dupl
+55/164 Test: t_udp_client_dupl
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucD"
+Directory: /home/water/Work/CS144_lab/build
+"t_udp_client_dupl" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_udp_client_dupl" end time: Mar 24 10:39 CST
+"t_udp_client_dupl" time elapsed: 00:00:10
+----------------------------------------------------------
+
+56/164 Testing: t_udp_server_dupl
+56/164 Test: t_udp_server_dupl
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usD"
+Directory: /home/water/Work/CS144_lab/build
+"t_udp_server_dupl" start time: Mar 24 10:39 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_udp_server_dupl" end time: Mar 24 10:40 CST
+"t_udp_server_dupl" time elapsed: 00:00:10
+----------------------------------------------------------
+
+57/164 Testing: t_ucS_1M_32k
+57/164 Test: t_ucS_1M_32k
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucSd" "1M" "-w" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucS_1M_32k" start time: Mar 24 10:40 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucS_1M_32k" end time: Mar 24 10:40 CST
+"t_ucS_1M_32k" time elapsed: 00:00:10
+----------------------------------------------------------
+
+58/164 Testing: t_ucS_128K_8K
+58/164 Test: t_ucS_128K_8K
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucSd" "128K" "-w" "8K"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucS_128K_8K" start time: Mar 24 10:40 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucS_128K_8K" end time: Mar 24 10:40 CST
+"t_ucS_128K_8K" time elapsed: 00:00:10
+----------------------------------------------------------
+
+59/164 Testing: t_ucS_16_1
+59/164 Test: t_ucS_16_1
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucSd" "16" "-w" "1"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucS_16_1" start time: Mar 24 10:40 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucS_16_1" end time: Mar 24 10:40 CST
+"t_ucS_16_1" time elapsed: 00:00:10
+----------------------------------------------------------
+
+60/164 Testing: t_ucS_32K_d
+60/164 Test: t_ucS_32K_d
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucSd" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucS_32K_d" start time: Mar 24 10:40 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucS_32K_d" end time: Mar 24 10:40 CST
+"t_ucS_32K_d" time elapsed: 00:00:10
+----------------------------------------------------------
+
+61/164 Testing: t_ucR_1M_32k
+61/164 Test: t_ucR_1M_32k
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucRd" "1M" "-w" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucR_1M_32k" start time: Mar 24 10:40 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucR_1M_32k" end time: Mar 24 10:40 CST
+"t_ucR_1M_32k" time elapsed: 00:00:10
+----------------------------------------------------------
+
+62/164 Testing: t_ucR_128K_8K
+62/164 Test: t_ucR_128K_8K
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucRd" "128K" "-w" "8K"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucR_128K_8K" start time: Mar 24 10:40 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucR_128K_8K" end time: Mar 24 10:41 CST
+"t_ucR_128K_8K" time elapsed: 00:00:10
+----------------------------------------------------------
+
+63/164 Testing: t_ucR_16_1
+63/164 Test: t_ucR_16_1
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucRd" "16" "-w" "1"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucR_16_1" start time: Mar 24 10:41 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucR_16_1" end time: Mar 24 10:41 CST
+"t_ucR_16_1" time elapsed: 00:00:10
+----------------------------------------------------------
+
+64/164 Testing: t_ucR_32K_d
+64/164 Test: t_ucR_32K_d
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucRd" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucR_32K_d" start time: Mar 24 10:41 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucR_32K_d" end time: Mar 24 10:41 CST
+"t_ucR_32K_d" time elapsed: 00:00:10
+----------------------------------------------------------
+
+65/164 Testing: t_ucD_1M_32k
+65/164 Test: t_ucD_1M_32k
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucDd" "1M" "-w" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucD_1M_32k" start time: Mar 24 10:41 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucD_1M_32k" end time: Mar 24 10:41 CST
+"t_ucD_1M_32k" time elapsed: 00:00:10
+----------------------------------------------------------
+
+66/164 Testing: t_ucD_128K_8K
+66/164 Test: t_ucD_128K_8K
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucDd" "128K" "-w" "8K"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucD_128K_8K" start time: Mar 24 10:41 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucD_128K_8K" end time: Mar 24 10:41 CST
+"t_ucD_128K_8K" time elapsed: 00:00:10
+----------------------------------------------------------
+
+67/164 Testing: t_ucD_16_1
+67/164 Test: t_ucD_16_1
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucDd" "16" "-w" "1"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucD_16_1" start time: Mar 24 10:41 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucD_16_1" end time: Mar 24 10:41 CST
+"t_ucD_16_1" time elapsed: 00:00:10
+----------------------------------------------------------
+
+68/164 Testing: t_ucD_32K_d
+68/164 Test: t_ucD_32K_d
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucDd" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucD_32K_d" start time: Mar 24 10:41 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucD_32K_d" end time: Mar 24 10:42 CST
+"t_ucD_32K_d" time elapsed: 00:00:10
+----------------------------------------------------------
+
+69/164 Testing: t_usS_1M_32k
+69/164 Test: t_usS_1M_32k
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usSd" "1M" "-w" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_usS_1M_32k" start time: Mar 24 10:42 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usS_1M_32k" end time: Mar 24 10:42 CST
+"t_usS_1M_32k" time elapsed: 00:00:10
+----------------------------------------------------------
+
+70/164 Testing: t_usS_128K_8K
+70/164 Test: t_usS_128K_8K
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usSd" "128K" "-w" "8K"
+Directory: /home/water/Work/CS144_lab/build
+"t_usS_128K_8K" start time: Mar 24 10:42 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usS_128K_8K" end time: Mar 24 10:42 CST
+"t_usS_128K_8K" time elapsed: 00:00:10
+----------------------------------------------------------
+
+71/164 Testing: t_usS_16_1
+71/164 Test: t_usS_16_1
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usSd" "16" "-w" "1"
+Directory: /home/water/Work/CS144_lab/build
+"t_usS_16_1" start time: Mar 24 10:42 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usS_16_1" end time: Mar 24 10:42 CST
+"t_usS_16_1" time elapsed: 00:00:10
+----------------------------------------------------------
+
+72/164 Testing: t_usS_32K_d
+72/164 Test: t_usS_32K_d
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usSd" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_usS_32K_d" start time: Mar 24 10:42 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usS_32K_d" end time: Mar 24 10:42 CST
+"t_usS_32K_d" time elapsed: 00:00:10
+----------------------------------------------------------
+
+73/164 Testing: t_usR_1M_32k
+73/164 Test: t_usR_1M_32k
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usRd" "1M" "-w" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_usR_1M_32k" start time: Mar 24 10:42 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usR_1M_32k" end time: Mar 24 10:42 CST
+"t_usR_1M_32k" time elapsed: 00:00:10
+----------------------------------------------------------
+
+74/164 Testing: t_usR_128K_8K
+74/164 Test: t_usR_128K_8K
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usRd" "128K" "-w" "8K"
+Directory: /home/water/Work/CS144_lab/build
+"t_usR_128K_8K" start time: Mar 24 10:42 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usR_128K_8K" end time: Mar 24 10:43 CST
+"t_usR_128K_8K" time elapsed: 00:00:10
+----------------------------------------------------------
+
+75/164 Testing: t_usR_16_1
+75/164 Test: t_usR_16_1
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usRd" "16" "-w" "1"
+Directory: /home/water/Work/CS144_lab/build
+"t_usR_16_1" start time: Mar 24 10:43 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.02 sec
+----------------------------------------------------------
+Test Failed.
+"t_usR_16_1" end time: Mar 24 10:43 CST
+"t_usR_16_1" time elapsed: 00:00:10
+----------------------------------------------------------
+
+76/164 Testing: t_usR_32K_d
+76/164 Test: t_usR_32K_d
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usRd" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_usR_32K_d" start time: Mar 24 10:43 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usR_32K_d" end time: Mar 24 10:43 CST
+"t_usR_32K_d" time elapsed: 00:00:10
+----------------------------------------------------------
+
+77/164 Testing: t_usD_1M_32k
+77/164 Test: t_usD_1M_32k
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usDd" "1M" "-w" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_usD_1M_32k" start time: Mar 24 10:43 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usD_1M_32k" end time: Mar 24 10:43 CST
+"t_usD_1M_32k" time elapsed: 00:00:10
+----------------------------------------------------------
+
+78/164 Testing: t_usD_128K_8K
+78/164 Test: t_usD_128K_8K
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usDd" "128K" "-w" "8K"
+Directory: /home/water/Work/CS144_lab/build
+"t_usD_128K_8K" start time: Mar 24 10:43 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usD_128K_8K" end time: Mar 24 10:43 CST
+"t_usD_128K_8K" time elapsed: 00:00:10
+----------------------------------------------------------
+
+79/164 Testing: t_usD_16_1
+79/164 Test: t_usD_16_1
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usDd" "16" "-w" "1"
+Directory: /home/water/Work/CS144_lab/build
+"t_usD_16_1" start time: Mar 24 10:43 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usD_16_1" end time: Mar 24 10:43 CST
+"t_usD_16_1" time elapsed: 00:00:10
+----------------------------------------------------------
+
+80/164 Testing: t_usD_32K_d
+80/164 Test: t_usD_32K_d
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usDd" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_usD_32K_d" start time: Mar 24 10:43 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usD_32K_d" end time: Mar 24 10:44 CST
+"t_usD_32K_d" time elapsed: 00:00:10
+----------------------------------------------------------
+
+81/164 Testing: t_ucS_128K_8K_l
+81/164 Test: t_ucS_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucSd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucS_128K_8K_l" start time: Mar 24 10:44 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucS_128K_8K_l" end time: Mar 24 10:44 CST
+"t_ucS_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+82/164 Testing: t_ucS_128K_8K_L
+82/164 Test: t_ucS_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucSd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucS_128K_8K_L" start time: Mar 24 10:44 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucS_128K_8K_L" end time: Mar 24 10:44 CST
+"t_ucS_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+83/164 Testing: t_ucS_128K_8K_lL
+83/164 Test: t_ucS_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucSd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucS_128K_8K_lL" start time: Mar 24 10:44 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucS_128K_8K_lL" end time: Mar 24 10:44 CST
+"t_ucS_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+84/164 Testing: t_ucR_128K_8K_l
+84/164 Test: t_ucR_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucRd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucR_128K_8K_l" start time: Mar 24 10:44 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucR_128K_8K_l" end time: Mar 24 10:44 CST
+"t_ucR_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+85/164 Testing: t_ucR_128K_8K_L
+85/164 Test: t_ucR_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucRd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucR_128K_8K_L" start time: Mar 24 10:44 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucR_128K_8K_L" end time: Mar 24 10:44 CST
+"t_ucR_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+86/164 Testing: t_ucR_128K_8K_lL
+86/164 Test: t_ucR_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucRd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucR_128K_8K_lL" start time: Mar 24 10:44 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucR_128K_8K_lL" end time: Mar 24 10:45 CST
+"t_ucR_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+87/164 Testing: t_ucD_128K_8K_l
+87/164 Test: t_ucD_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucDd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucD_128K_8K_l" start time: Mar 24 10:45 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucD_128K_8K_l" end time: Mar 24 10:45 CST
+"t_ucD_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+88/164 Testing: t_ucD_128K_8K_L
+88/164 Test: t_ucD_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucDd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucD_128K_8K_L" start time: Mar 24 10:45 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucD_128K_8K_L" end time: Mar 24 10:45 CST
+"t_ucD_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+89/164 Testing: t_ucD_128K_8K_lL
+89/164 Test: t_ucD_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-ucDd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_ucD_128K_8K_lL" start time: Mar 24 10:45 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ucD_128K_8K_lL" end time: Mar 24 10:45 CST
+"t_ucD_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+90/164 Testing: t_usS_128K_8K_l
+90/164 Test: t_usS_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usSd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_usS_128K_8K_l" start time: Mar 24 10:45 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usS_128K_8K_l" end time: Mar 24 10:45 CST
+"t_usS_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+91/164 Testing: t_usS_128K_8K_L
+91/164 Test: t_usS_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usSd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_usS_128K_8K_L" start time: Mar 24 10:45 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usS_128K_8K_L" end time: Mar 24 10:45 CST
+"t_usS_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+92/164 Testing: t_usS_128K_8K_lL
+92/164 Test: t_usS_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usSd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_usS_128K_8K_lL" start time: Mar 24 10:45 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usS_128K_8K_lL" end time: Mar 24 10:46 CST
+"t_usS_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+93/164 Testing: t_usR_128K_8K_l
+93/164 Test: t_usR_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usRd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_usR_128K_8K_l" start time: Mar 24 10:46 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usR_128K_8K_l" end time: Mar 24 10:46 CST
+"t_usR_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+94/164 Testing: t_usR_128K_8K_L
+94/164 Test: t_usR_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usRd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_usR_128K_8K_L" start time: Mar 24 10:46 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usR_128K_8K_L" end time: Mar 24 10:46 CST
+"t_usR_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+95/164 Testing: t_usR_128K_8K_lL
+95/164 Test: t_usR_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usRd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_usR_128K_8K_lL" start time: Mar 24 10:46 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usR_128K_8K_lL" end time: Mar 24 10:46 CST
+"t_usR_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+96/164 Testing: t_usD_128K_8K_l
+96/164 Test: t_usD_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usDd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_usD_128K_8K_l" start time: Mar 24 10:46 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usD_128K_8K_l" end time: Mar 24 10:46 CST
+"t_usD_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+97/164 Testing: t_usD_128K_8K_L
+97/164 Test: t_usD_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usDd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_usD_128K_8K_L" start time: Mar 24 10:46 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_usD_128K_8K_L" end time: Mar 24 10:46 CST
+"t_usD_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+98/164 Testing: t_usD_128K_8K_lL
+98/164 Test: t_usD_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-usDd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_usD_128K_8K_lL" start time: Mar 24 10:46 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_usD_128K_8K_lL" end time: Mar 24 10:47 CST
+"t_usD_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+99/164 Testing: t_ipv4_client_send
+99/164 Test: t_ipv4_client_send
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icS"
+Directory: /home/water/Work/CS144_lab/build
+"t_ipv4_client_send" start time: Mar 24 10:47 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ipv4_client_send" end time: Mar 24 10:47 CST
+"t_ipv4_client_send" time elapsed: 00:00:10
+----------------------------------------------------------
+
+100/164 Testing: t_ipv4_server_send
+100/164 Test: t_ipv4_server_send
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isS"
+Directory: /home/water/Work/CS144_lab/build
+"t_ipv4_server_send" start time: Mar 24 10:47 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ipv4_server_send" end time: Mar 24 10:47 CST
+"t_ipv4_server_send" time elapsed: 00:00:10
+----------------------------------------------------------
+
+101/164 Testing: t_ipv4_client_recv
+101/164 Test: t_ipv4_client_recv
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icR"
+Directory: /home/water/Work/CS144_lab/build
+"t_ipv4_client_recv" start time: Mar 24 10:47 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ipv4_client_recv" end time: Mar 24 10:47 CST
+"t_ipv4_client_recv" time elapsed: 00:00:10
+----------------------------------------------------------
+
+102/164 Testing: t_ipv4_server_recv
+102/164 Test: t_ipv4_server_recv
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isR"
+Directory: /home/water/Work/CS144_lab/build
+"t_ipv4_server_recv" start time: Mar 24 10:47 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ipv4_server_recv" end time: Mar 24 10:47 CST
+"t_ipv4_server_recv" time elapsed: 00:00:10
+----------------------------------------------------------
+
+103/164 Testing: t_ipv4_client_dupl
+103/164 Test: t_ipv4_client_dupl
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icD"
+Directory: /home/water/Work/CS144_lab/build
+"t_ipv4_client_dupl" start time: Mar 24 10:47 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ipv4_client_dupl" end time: Mar 24 10:47 CST
+"t_ipv4_client_dupl" time elapsed: 00:00:10
+----------------------------------------------------------
+
+104/164 Testing: t_ipv4_server_dupl
+104/164 Test: t_ipv4_server_dupl
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isD"
+Directory: /home/water/Work/CS144_lab/build
+"t_ipv4_server_dupl" start time: Mar 24 10:47 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_ipv4_server_dupl" end time: Mar 24 10:48 CST
+"t_ipv4_server_dupl" time elapsed: 00:00:10
+----------------------------------------------------------
+
+105/164 Testing: t_icS_1M_32k
+105/164 Test: t_icS_1M_32k
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icSd" "1M" "-w" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_icS_1M_32k" start time: Mar 24 10:48 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icS_1M_32k" end time: Mar 24 10:48 CST
+"t_icS_1M_32k" time elapsed: 00:00:10
+----------------------------------------------------------
+
+106/164 Testing: t_icS_128K_8K
+106/164 Test: t_icS_128K_8K
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icSd" "128K" "-w" "8K"
+Directory: /home/water/Work/CS144_lab/build
+"t_icS_128K_8K" start time: Mar 24 10:48 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icS_128K_8K" end time: Mar 24 10:48 CST
+"t_icS_128K_8K" time elapsed: 00:00:10
+----------------------------------------------------------
+
+107/164 Testing: t_icS_16_1
+107/164 Test: t_icS_16_1
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icSd" "16" "-w" "1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icS_16_1" start time: Mar 24 10:48 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.02 sec
+----------------------------------------------------------
+Test Failed.
+"t_icS_16_1" end time: Mar 24 10:48 CST
+"t_icS_16_1" time elapsed: 00:00:10
+----------------------------------------------------------
+
+108/164 Testing: t_icS_32K_d
+108/164 Test: t_icS_32K_d
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icSd" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_icS_32K_d" start time: Mar 24 10:48 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icS_32K_d" end time: Mar 24 10:48 CST
+"t_icS_32K_d" time elapsed: 00:00:10
+----------------------------------------------------------
+
+109/164 Testing: t_icR_1M_32k
+109/164 Test: t_icR_1M_32k
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icRd" "1M" "-w" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_icR_1M_32k" start time: Mar 24 10:48 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icR_1M_32k" end time: Mar 24 10:48 CST
+"t_icR_1M_32k" time elapsed: 00:00:10
+----------------------------------------------------------
+
+110/164 Testing: t_icR_128K_8K
+110/164 Test: t_icR_128K_8K
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icRd" "128K" "-w" "8K"
+Directory: /home/water/Work/CS144_lab/build
+"t_icR_128K_8K" start time: Mar 24 10:48 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icR_128K_8K" end time: Mar 24 10:49 CST
+"t_icR_128K_8K" time elapsed: 00:00:10
+----------------------------------------------------------
+
+111/164 Testing: t_icR_16_1
+111/164 Test: t_icR_16_1
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icRd" "16" "-w" "1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icR_16_1" start time: Mar 24 10:49 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.00 sec
+----------------------------------------------------------
+Test Failed.
+"t_icR_16_1" end time: Mar 24 10:49 CST
+"t_icR_16_1" time elapsed: 00:00:10
+----------------------------------------------------------
+
+112/164 Testing: t_icR_32K_d
+112/164 Test: t_icR_32K_d
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icRd" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_icR_32K_d" start time: Mar 24 10:49 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icR_32K_d" end time: Mar 24 10:49 CST
+"t_icR_32K_d" time elapsed: 00:00:10
+----------------------------------------------------------
+
+113/164 Testing: t_icD_1M_32k
+113/164 Test: t_icD_1M_32k
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icDd" "1M" "-w" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_icD_1M_32k" start time: Mar 24 10:49 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icD_1M_32k" end time: Mar 24 10:49 CST
+"t_icD_1M_32k" time elapsed: 00:00:10
+----------------------------------------------------------
+
+114/164 Testing: t_icD_128K_8K
+114/164 Test: t_icD_128K_8K
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icDd" "128K" "-w" "8K"
+Directory: /home/water/Work/CS144_lab/build
+"t_icD_128K_8K" start time: Mar 24 10:49 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icD_128K_8K" end time: Mar 24 10:49 CST
+"t_icD_128K_8K" time elapsed: 00:00:10
+----------------------------------------------------------
+
+115/164 Testing: t_icD_16_1
+115/164 Test: t_icD_16_1
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icDd" "16" "-w" "1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icD_16_1" start time: Mar 24 10:49 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icD_16_1" end time: Mar 24 10:49 CST
+"t_icD_16_1" time elapsed: 00:00:10
+----------------------------------------------------------
+
+116/164 Testing: t_icD_32K_d
+116/164 Test: t_icD_32K_d
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icDd" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_icD_32K_d" start time: Mar 24 10:49 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icD_32K_d" end time: Mar 24 10:50 CST
+"t_icD_32K_d" time elapsed: 00:00:10
+----------------------------------------------------------
+
+117/164 Testing: t_isS_1M_32k
+117/164 Test: t_isS_1M_32k
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isSd" "1M" "-w" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_isS_1M_32k" start time: Mar 24 10:50 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isS_1M_32k" end time: Mar 24 10:50 CST
+"t_isS_1M_32k" time elapsed: 00:00:10
+----------------------------------------------------------
+
+118/164 Testing: t_isS_128K_8K
+118/164 Test: t_isS_128K_8K
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isSd" "128K" "-w" "8K"
+Directory: /home/water/Work/CS144_lab/build
+"t_isS_128K_8K" start time: Mar 24 10:50 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isS_128K_8K" end time: Mar 24 10:50 CST
+"t_isS_128K_8K" time elapsed: 00:00:10
+----------------------------------------------------------
+
+119/164 Testing: t_isS_16_1
+119/164 Test: t_isS_16_1
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isSd" "16" "-w" "1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isS_16_1" start time: Mar 24 10:50 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isS_16_1" end time: Mar 24 10:50 CST
+"t_isS_16_1" time elapsed: 00:00:10
+----------------------------------------------------------
+
+120/164 Testing: t_isS_32K_d
+120/164 Test: t_isS_32K_d
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isSd" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_isS_32K_d" start time: Mar 24 10:50 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isS_32K_d" end time: Mar 24 10:50 CST
+"t_isS_32K_d" time elapsed: 00:00:10
+----------------------------------------------------------
+
+121/164 Testing: t_isR_1M_32k
+121/164 Test: t_isR_1M_32k
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isRd" "1M" "-w" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_isR_1M_32k" start time: Mar 24 10:50 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isR_1M_32k" end time: Mar 24 10:50 CST
+"t_isR_1M_32k" time elapsed: 00:00:10
+----------------------------------------------------------
+
+122/164 Testing: t_isR_128K_8K
+122/164 Test: t_isR_128K_8K
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isRd" "128K" "-w" "8K"
+Directory: /home/water/Work/CS144_lab/build
+"t_isR_128K_8K" start time: Mar 24 10:50 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isR_128K_8K" end time: Mar 24 10:51 CST
+"t_isR_128K_8K" time elapsed: 00:00:10
+----------------------------------------------------------
+
+123/164 Testing: t_isR_16_1
+123/164 Test: t_isR_16_1
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isRd" "16" "-w" "1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isR_16_1" start time: Mar 24 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isR_16_1" end time: Mar 24 10:51 CST
+"t_isR_16_1" time elapsed: 00:00:10
+----------------------------------------------------------
+
+124/164 Testing: t_isR_32K_d
+124/164 Test: t_isR_32K_d
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isRd" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_isR_32K_d" start time: Mar 24 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isR_32K_d" end time: Mar 24 10:51 CST
+"t_isR_32K_d" time elapsed: 00:00:10
+----------------------------------------------------------
+
+125/164 Testing: t_isD_1M_32k
+125/164 Test: t_isD_1M_32k
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isDd" "1M" "-w" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_isD_1M_32k" start time: Mar 24 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isD_1M_32k" end time: Mar 24 10:51 CST
+"t_isD_1M_32k" time elapsed: 00:00:10
+----------------------------------------------------------
+
+126/164 Testing: t_isD_128K_8K
+126/164 Test: t_isD_128K_8K
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isDd" "128K" "-w" "8K"
+Directory: /home/water/Work/CS144_lab/build
+"t_isD_128K_8K" start time: Mar 24 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isD_128K_8K" end time: Mar 24 10:51 CST
+"t_isD_128K_8K" time elapsed: 00:00:10
+----------------------------------------------------------
+
+127/164 Testing: t_isD_16_1
+127/164 Test: t_isD_16_1
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isDd" "16" "-w" "1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isD_16_1" start time: Mar 24 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isD_16_1" end time: Mar 24 10:51 CST
+"t_isD_16_1" time elapsed: 00:00:10
+----------------------------------------------------------
+
+128/164 Testing: t_isD_32K_d
+128/164 Test: t_isD_32K_d
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isDd" "32K"
+Directory: /home/water/Work/CS144_lab/build
+"t_isD_32K_d" start time: Mar 24 10:51 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isD_32K_d" end time: Mar 24 10:52 CST
+"t_isD_32K_d" time elapsed: 00:00:10
+----------------------------------------------------------
+
+129/164 Testing: t_icS_128K_8K_l
+129/164 Test: t_icS_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icSd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icS_128K_8K_l" start time: Mar 24 10:52 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icS_128K_8K_l" end time: Mar 24 10:52 CST
+"t_icS_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+130/164 Testing: t_icS_128K_8K_L
+130/164 Test: t_icS_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icSd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icS_128K_8K_L" start time: Mar 24 10:52 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icS_128K_8K_L" end time: Mar 24 10:52 CST
+"t_icS_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+131/164 Testing: t_icS_128K_8K_lL
+131/164 Test: t_icS_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icSd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icS_128K_8K_lL" start time: Mar 24 10:52 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icS_128K_8K_lL" end time: Mar 24 10:52 CST
+"t_icS_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+132/164 Testing: t_icR_128K_8K_l
+132/164 Test: t_icR_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icRd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icR_128K_8K_l" start time: Mar 24 10:52 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icR_128K_8K_l" end time: Mar 24 10:52 CST
+"t_icR_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+133/164 Testing: t_icR_128K_8K_L
+133/164 Test: t_icR_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icRd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icR_128K_8K_L" start time: Mar 24 10:52 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icR_128K_8K_L" end time: Mar 24 10:52 CST
+"t_icR_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+134/164 Testing: t_icR_128K_8K_lL
+134/164 Test: t_icR_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icRd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icR_128K_8K_lL" start time: Mar 24 10:52 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icR_128K_8K_lL" end time: Mar 24 10:53 CST
+"t_icR_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+135/164 Testing: t_icD_128K_8K_l
+135/164 Test: t_icD_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icDd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icD_128K_8K_l" start time: Mar 24 10:53 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icD_128K_8K_l" end time: Mar 24 10:53 CST
+"t_icD_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+136/164 Testing: t_icD_128K_8K_L
+136/164 Test: t_icD_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icDd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icD_128K_8K_L" start time: Mar 24 10:53 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icD_128K_8K_L" end time: Mar 24 10:53 CST
+"t_icD_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+137/164 Testing: t_icD_128K_8K_lL
+137/164 Test: t_icD_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icDd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icD_128K_8K_lL" start time: Mar 24 10:53 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icD_128K_8K_lL" end time: Mar 24 10:53 CST
+"t_icD_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+138/164 Testing: t_isS_128K_8K_l
+138/164 Test: t_isS_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isSd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isS_128K_8K_l" start time: Mar 24 10:53 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isS_128K_8K_l" end time: Mar 24 10:53 CST
+"t_isS_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+139/164 Testing: t_isS_128K_8K_L
+139/164 Test: t_isS_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isSd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isS_128K_8K_L" start time: Mar 24 10:53 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isS_128K_8K_L" end time: Mar 24 10:53 CST
+"t_isS_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+140/164 Testing: t_isS_128K_8K_lL
+140/164 Test: t_isS_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isSd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isS_128K_8K_lL" start time: Mar 24 10:53 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.02 sec
+----------------------------------------------------------
+Test Failed.
+"t_isS_128K_8K_lL" end time: Mar 24 10:54 CST
+"t_isS_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+141/164 Testing: t_isR_128K_8K_l
+141/164 Test: t_isR_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isRd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isR_128K_8K_l" start time: Mar 24 10:54 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isR_128K_8K_l" end time: Mar 24 10:54 CST
+"t_isR_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+142/164 Testing: t_isR_128K_8K_L
+142/164 Test: t_isR_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isRd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isR_128K_8K_L" start time: Mar 24 10:54 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isR_128K_8K_L" end time: Mar 24 10:54 CST
+"t_isR_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+143/164 Testing: t_isR_128K_8K_lL
+143/164 Test: t_isR_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isRd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isR_128K_8K_lL" start time: Mar 24 10:54 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isR_128K_8K_lL" end time: Mar 24 10:54 CST
+"t_isR_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+144/164 Testing: t_isD_128K_8K_l
+144/164 Test: t_isD_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isDd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isD_128K_8K_l" start time: Mar 24 10:54 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isD_128K_8K_l" end time: Mar 24 10:54 CST
+"t_isD_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+145/164 Testing: t_isD_128K_8K_L
+145/164 Test: t_isD_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isDd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isD_128K_8K_L" start time: Mar 24 10:54 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isD_128K_8K_L" end time: Mar 24 10:54 CST
+"t_isD_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+146/164 Testing: t_isD_128K_8K_lL
+146/164 Test: t_isD_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isDd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isD_128K_8K_lL" start time: Mar 24 10:54 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isD_128K_8K_lL" end time: Mar 24 10:55 CST
+"t_isD_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+147/164 Testing: t_icnS_128K_8K_l
+147/164 Test: t_icnS_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icSnd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icnS_128K_8K_l" start time: Mar 24 10:55 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icnS_128K_8K_l" end time: Mar 24 10:55 CST
+"t_icnS_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+148/164 Testing: t_icnS_128K_8K_L
+148/164 Test: t_icnS_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icSnd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icnS_128K_8K_L" start time: Mar 24 10:55 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icnS_128K_8K_L" end time: Mar 24 10:55 CST
+"t_icnS_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+149/164 Testing: t_icnS_128K_8K_lL
+149/164 Test: t_icnS_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icSnd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icnS_128K_8K_lL" start time: Mar 24 10:55 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icnS_128K_8K_lL" end time: Mar 24 10:55 CST
+"t_icnS_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+150/164 Testing: t_icnR_128K_8K_l
+150/164 Test: t_icnR_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icRnd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icnR_128K_8K_l" start time: Mar 24 10:55 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icnR_128K_8K_l" end time: Mar 24 10:55 CST
+"t_icnR_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+151/164 Testing: t_icnR_128K_8K_L
+151/164 Test: t_icnR_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icRnd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icnR_128K_8K_L" start time: Mar 24 10:55 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icnR_128K_8K_L" end time: Mar 24 10:55 CST
+"t_icnR_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+152/164 Testing: t_icnR_128K_8K_lL
+152/164 Test: t_icnR_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icRnd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icnR_128K_8K_lL" start time: Mar 24 10:55 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icnR_128K_8K_lL" end time: Mar 24 10:56 CST
+"t_icnR_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+153/164 Testing: t_icnD_128K_8K_l
+153/164 Test: t_icnD_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icDnd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icnD_128K_8K_l" start time: Mar 24 10:56 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icnD_128K_8K_l" end time: Mar 24 10:56 CST
+"t_icnD_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+154/164 Testing: t_icnD_128K_8K_L
+154/164 Test: t_icnD_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icDnd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icnD_128K_8K_L" start time: Mar 24 10:56 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icnD_128K_8K_L" end time: Mar 24 10:56 CST
+"t_icnD_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+155/164 Testing: t_icnD_128K_8K_lL
+155/164 Test: t_icnD_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-icDnd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_icnD_128K_8K_lL" start time: Mar 24 10:56 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_icnD_128K_8K_lL" end time: Mar 24 10:56 CST
+"t_icnD_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+156/164 Testing: t_isnS_128K_8K_l
+156/164 Test: t_isnS_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isSnd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isnS_128K_8K_l" start time: Mar 24 10:56 CST
+Output:
+----------------------------------------------------------
+DEBUG: Listening for incoming connection... new connection from 169.254.144.1:49618.
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isnS_128K_8K_l" end time: Mar 24 10:56 CST
+"t_isnS_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+157/164 Testing: t_isnS_128K_8K_L
+157/164 Test: t_isnS_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isSnd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isnS_128K_8K_L" start time: Mar 24 10:56 CST
+Output:
+----------------------------------------------------------
+DEBUG: Listening for incoming connection... new connection from 169.254.144.1:42868.
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isnS_128K_8K_L" end time: Mar 24 10:56 CST
+"t_isnS_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+158/164 Testing: t_isnS_128K_8K_lL
+158/164 Test: t_isnS_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isSnd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isnS_128K_8K_lL" start time: Mar 24 10:56 CST
+Output:
+----------------------------------------------------------
+DEBUG: Listening for incoming connection... new connection from 169.254.144.1:52148.
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isnS_128K_8K_lL" end time: Mar 24 10:57 CST
+"t_isnS_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+159/164 Testing: t_isnR_128K_8K_l
+159/164 Test: t_isnR_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isRnd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isnR_128K_8K_l" start time: Mar 24 10:57 CST
+Output:
+----------------------------------------------------------
+DEBUG: Listening for incoming connection... new connection from 169.254.144.1:35510.
+DEBUG: Outbound stream to 169.254.144.1:35510 finished (1 byte still in flight).
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isnR_128K_8K_l" end time: Mar 24 10:57 CST
+"t_isnR_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+160/164 Testing: t_isnR_128K_8K_L
+160/164 Test: t_isnR_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isRnd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isnR_128K_8K_L" start time: Mar 24 10:57 CST
+Output:
+----------------------------------------------------------
+DEBUG: Listening for incoming connection... new connection from 169.254.144.1:38710.
+DEBUG: Outbound stream to 169.254.144.1:38710 finished (1 byte still in flight).
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isnR_128K_8K_L" end time: Mar 24 10:57 CST
+"t_isnR_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+161/164 Testing: t_isnR_128K_8K_lL
+161/164 Test: t_isnR_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isRnd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isnR_128K_8K_lL" start time: Mar 24 10:57 CST
+Output:
+----------------------------------------------------------
+DEBUG: Listening for incoming connection... new connection from 169.254.144.1:42672.
+DEBUG: Outbound stream to 169.254.144.1:42672 finished (1 byte still in flight).
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isnR_128K_8K_lL" end time: Mar 24 10:57 CST
+"t_isnR_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+162/164 Testing: t_isnD_128K_8K_l
+162/164 Test: t_isnD_128K_8K_l
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isDnd" "128K" "-w" "8K" "-l" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isnD_128K_8K_l" start time: Mar 24 10:57 CST
+Output:
+----------------------------------------------------------
+DEBUG: Listening for incoming connection... new connection from 169.254.144.1:45088.
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isnD_128K_8K_l" end time: Mar 24 10:57 CST
+"t_isnD_128K_8K_l" time elapsed: 00:00:10
+----------------------------------------------------------
+
+163/164 Testing: t_isnD_128K_8K_L
+163/164 Test: t_isnD_128K_8K_L
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isDnd" "128K" "-w" "8K" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isnD_128K_8K_L" start time: Mar 24 10:57 CST
+Output:
+----------------------------------------------------------
+DEBUG: Listening for incoming connection... new connection from 169.254.144.1:39066.
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Failed.
+"t_isnD_128K_8K_L" end time: Mar 24 10:57 CST
+"t_isnD_128K_8K_L" time elapsed: 00:00:10
+----------------------------------------------------------
+
+164/164 Testing: t_isnD_128K_8K_lL
+164/164 Test: t_isnD_128K_8K_lL
+Command: "/home/water/Work/CS144_lab/txrx.sh" "-isDnd" "128K" "-w" "8K" "-l" "0.1" "-L" "0.1"
+Directory: /home/water/Work/CS144_lab/build
+"t_isnD_128K_8K_lL" start time: Mar 24 10:57 CST
+Output:
+----------------------------------------------------------
+DEBUG: Listening for incoming connection... new connection from 169.254.144.1:51020.
+<end of output>
+Test time =  10.02 sec
+----------------------------------------------------------
+Test Failed.
+"t_isnD_128K_8K_lL" end time: Mar 24 10:58 CST
+"t_isnD_128K_8K_lL" time elapsed: 00:00:10
+----------------------------------------------------------
+
+End testing: Mar 24 10:58 CST

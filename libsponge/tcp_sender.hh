@@ -109,7 +109,7 @@ public:
 
     bool ackno_valid(uint64_t abs_ackno) const;
 
-    void send_syn_ack_segment();
+    // void send_syn_ack_segment();
 };
 
 #endif // SPONGE_LIBSPONGE_TCP_SENDER_HH

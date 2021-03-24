@@ -1,0 +1,34 @@
+build
+
+＃先决条件
+* .d
+
+＃编译的目标文件
+* .slo
+* .lo
+* .o
+* .obj
+
+＃预编译头
+* .gch
+* .pch
+
+＃编译的动态库
+* .so
+* .dylib
+* .dll
+
+＃ Fortran的模块文件
+* .mod
+* .smod
+
+＃编译的静态库
+* .lai
+* .la
+* .a
+* .lib
+
+＃可执行文件
+* .exe
+* .out
+* .app

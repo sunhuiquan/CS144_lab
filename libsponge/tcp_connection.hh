@@ -7,11 +7,15 @@
 #include "tcp_state.hh"
 
 //! \brief A complete endpoint of a TCP connection
-class TCPConnection {
-  private:
+class TCPConnection
+{
+private:
     TCPConfig _cfg;
     TCPReceiver _receiver{_cfg.recv_capacity};
     TCPSender _sender{_cfg.send_capacity, _cfg.rt_timeout, _cfg.fixed_isn};
+
+    size_t _time_since_last_segment_received = 0;
+    bool _active = true;
 
     //! outbound queue of segments that the TCPConnection wants sent
     std::queue<TCPSegment> _segments_out{};
@@ -21,7 +25,7 @@ class TCPConnection {
     //! in case the remote TCPConnection doesn't know we've received its whole stream?
     bool _linger_after_streams_finish{true};
 
-  public:
+public:
     //! \name "Input" interface for the writer
     //!@{
 
@@ -87,7 +91,7 @@ class TCPConnection {
     //! moving is allowed; copying is disallowed; default construction not possible
 
     //!@{
-    ~TCPConnection();  //!< destructor sends a RST if the connection is still open
+    ~TCPConnection(); //!< destructor sends a RST if the connection is still open
     TCPConnection() = delete;
     TCPConnection(TCPConnection &&other) = default;
     TCPConnection &operator=(TCPConnection &&other) = default;
@@ -96,4 +100,4 @@ class TCPConnection {
     //!@}
 };
 
-#endif  // SPONGE_LIBSPONGE_TCP_FACTORED_HH
+#endif // SPONGE_LIBSPONGE_TCP_FACTORED_HH

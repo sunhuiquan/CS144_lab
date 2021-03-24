@@ -176,6 +176,15 @@ void TCPSender::send_empty_segment()
     _segments_out.push(empty_segment);
 }
 
+void TCPSender::send_syn_ack_segment()
+{
+    TCPSegment syn_segment;
+    syn_segment.header().syn = true;
+    syn_segment.header().seqno = wrap(_next_seqno, _isn);
+    // we don't need to track this empty segment
+    _segments_out.push(syn_segment);
+}
+
 bool TCPSender::ackno_valid(uint64_t abs_ackno) const
 {
     // If ackno less than the left edge it's not perfect

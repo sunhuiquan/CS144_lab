@@ -191,3 +191,8 @@ uint64_t StreamReassembler::unacceptable_byte() const
 {
     return _unacceptable;
 }
+
+uint64_t StreamReassembler::unreceived_byte() const
+{
+    return _unreceived;
+}

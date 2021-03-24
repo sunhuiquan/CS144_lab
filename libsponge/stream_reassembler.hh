@@ -68,6 +68,8 @@ public:
 
     // Return the byte which can't accept.
     uint64_t unacceptable_byte() const;
+
+    uint64_t unreceived_byte() const;
 };
 
 #endif // SPONGE_LIBSPONGE_STREAM_REASSEMBLER_HH

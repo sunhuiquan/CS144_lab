@@ -32,7 +32,27 @@ size_t TCPConnection::time_since_last_segment_received() const
     return _time_since_last_segment_received;
 }
 
-void TCPConnection::segment_received(const TCPSegment &seg) { DUMMY_CODE(seg); }
+void TCPConnection::segment_received(const TCPSegment &seg)
+{
+    if (seg.header().rst)
+    {
+        //! todo
+        return;
+    }
+
+    if (seg.header().ack == true)
+    {
+        _sender.ack_received(seg.header().seqno, seg.header().win);
+    }
+    else if (_receiver.segment_received(seg) == true)
+    {
+        // we don't need to track the ack segment
+        TCPSegment ack_seg;
+        ack_seg.header().ack = true;
+        ack_seg.header().seqno = wrap(_receiver.stream_rassembler().unreceived_byte() + 1, _receiver.get_isn());
+        _segments_out.push(ack_seg);
+    }
+}
 
 bool TCPConnection::active() const
 {
@@ -41,20 +61,49 @@ bool TCPConnection::active() const
 
 size_t TCPConnection::write(const string &data)
 {
-    DUMMY_CODE(data);
-    return {};
+    // to avoid the waste of invoke other functions
+    if (!data.size())
+    {
+        return 0;
+    }
+
+    size_t write_size = _sender.stream_in().write(data);
+    // after write new data in sender's byte stream, just send it as soon as possible
+    _sender.fill_window();
+    return write_size;
 }
 
 //! \param[in] ms_since_last_tick number of milliseconds since the last call to this method
-void TCPConnection::tick(const size_t ms_since_last_tick) { DUMMY_CODE(ms_since_last_tick); }
+void TCPConnection::tick(const size_t ms_since_last_tick)
+{
+    // ???
+    if (!_active)
+    {
+        return;
+    }
+    _time_since_last_segment_received += ms_since_last_tick;
+
+    _sender.tick(ms_since_last_tick);
+    if (_sender.consecutive_retransmissions() >= TCPConfig::MAX_RETX_ATTEMPTS)
+    {
+        // to do:
+        // RST
+    }
+    // ???
+}
 
 void TCPConnection::end_input_stream()
 {
-    // to-do:
-    // _sender.stream_in().end_input();
+    _sender.stream_in().end_input();
+    // end_input() may cause eof, and fill_window() then _sender
+    // may set _fin flag to true and send a empty segment with this flag
+    _sender.fill_window();
 }
 
-void TCPConnection::connect() {}
+void TCPConnection::connect()
+{
+    _sender.fill_window();
+}
 
 TCPConnection::~TCPConnection()
 {

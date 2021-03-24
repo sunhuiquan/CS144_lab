@@ -49,6 +49,8 @@ void TCPSender::fill_window()
     {
         return;
     }
+    // empty and non-eof can't send a empty segment, so return back
+    // empty and eof can send a empty segment with fin
 
     while (_receiver_window_free_space)
     {

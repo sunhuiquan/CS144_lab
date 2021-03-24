@@ -67,6 +67,10 @@ public:
     ByteStream &stream_out() { return _reassembler.stream_out(); }
     const ByteStream &stream_out() const { return _reassembler.stream_out(); }
     //!@}
+
+    const StreamReassembler &stream_rassembler() const { return _reassembler; }
+
+    WrappingInt32 get_isn() const { return WrappingInt32(_isn); }
 };
 
 #endif // SPONGE_LIBSPONGE_TCP_RECEIVER_HH

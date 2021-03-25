@@ -24,6 +24,7 @@ class TCPReceiver
     uint32_t _isn = 0;
     bool _syn = false;
     bool _fin = false;
+    bool _seqno_out_of_window = false;
 
 public:
     //! \brief Construct a TCP receiver
@@ -71,6 +72,9 @@ public:
     const StreamReassembler &stream_rassembler() const { return _reassembler; }
 
     WrappingInt32 get_isn() const { return WrappingInt32(_isn); }
+
+    bool seqno_out_of_window() { return _seqno_out_of_window; }
+    void seqno_out_of_window_clean() { _seqno_out_of_window = false; }
 };
 
 #endif // SPONGE_LIBSPONGE_TCP_RECEIVER_HH

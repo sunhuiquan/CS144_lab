@@ -81,25 +81,33 @@ void TCPConnection::segment_received(const TCPSegment &seg)
         }
     }
 
-    _receiver.segment_received(seg);
-    // _sender.ack_received(seg.header().ackno, seg.header().win);
-
+    bool send_empty = false;
     //after establising and receive a bad ack, you should send empty(the exists one)
     if (!_sender.ack_received(seg.header().ackno, seg.header().win))
     {
         if (_sender.next_seqno_absolute() > 0 && seg.header().ack)
         {
-            if (_receiver.ackno().has_value() && _sender.segments_out().empty() && !seg.length_in_sequence_space())
+            if (!seg.length_in_sequence_space())
             {
-                _sender.send_empty_segment();
+                send_empty = true;
             }
         }
     }
 
-    // empty segment will add ACK in send_segments function
-    if (_sender.segments_out().empty() && seg.length_in_sequence_space())
+    // _sender.ack_received(seg.header().ackno, seg.header().win);
+    if (!_receiver.segment_received(seg))
     {
-        _sender.send_empty_segment();
+        if (_receiver.seqno_out_of_window())
+        {
+            _receiver.seqno_out_of_window_clean();
+            send_empty = true;
+        }
+    }
+
+    // empty segment will add ACK in send_segments function
+    if (seg.length_in_sequence_space() > 0)
+    {
+        send_empty = true;
     }
 
     if (seg.header().rst)
@@ -109,6 +117,14 @@ void TCPConnection::segment_received(const TCPSegment &seg)
         // and we'll use this segment to tell the server rst have been set
         unclean_shutdown();
         return;
+    }
+
+    if (send_empty)
+    {
+        if (_receiver.ackno().has_value() && _sender.segments_out().empty())
+        {
+            _sender.send_empty_segment();
+        }
     }
 
     send_segments();

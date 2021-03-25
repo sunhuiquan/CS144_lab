@@ -42,6 +42,7 @@ bool TCPReceiver::segment_received(const TCPSegment &seg)
         // The seqno minus 1 is the index of byte stream.
         if (seqno - 1 >= _reassembler.unacceptable_byte())
         {
+            _seqno_out_of_window = true;
             return false;
         }
 

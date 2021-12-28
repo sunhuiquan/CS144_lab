@@ -2,6 +2,23 @@
 
 首先感谢CS144的老师和TA的工作，有了这个高质量的lab。另外感谢https://blog.csdn.net/kangyupl/article/details/108589594 ，上面有实验的资源，而且还有大佬的实现可以参照，要不然我就要找别人的仓库git手工git到最开始了。。。
 
+## 强烈注意事项
+
+1. 经过测试在WSL上会无法跑通t_webget测试，其他的无论是通过虚拟机或者在云服务器上跑都没有问题（可能需要测试时关闭VPN）
+
+2. 该项目我做的时间较早，当时没有注意git快照占空间的问题，导致.git文件夹比该项目实体还大...
+
+3. 别忘了需要安装libcap库才能运行测试
+
+```bash
+wget https://www.tcpdump.org/release/libpcap-1.10.1.tar.gz
+tar -zxvf 该文件 
+cd 进入该文件夹
+sudo ./configure
+sudo make
+sudo make install
+```
+
 ## LAB 0
 
 1.环境我用的是自己搭建的Ubuntu虚拟机，版本20，工具链搭建十分简单，比当时我搭建xv6的工具舒服了多少倍，不过也可能是我踩坑踩出来了。
